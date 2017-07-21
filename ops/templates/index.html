@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style type="text/css">
+        #title-center {
+            margin-top: auto;
+        }
+
+        .user {
+            color: red;
+            font-size: small;
+        }
+
+        .pass {
+            color: red;
+            font-size: small;
+        }
+
+        #container {
+            color: red;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <div id="title-center">
+        <h1>Ops Operator</h1>
+    </div>
+
+
+    <form action="/login/" method="post" onsubmit="return getUserName();">
+        用户名:<input class="username" type="text" name="username" /><br/>
+        <p class="user"></p>
+        密&nbsp;&nbsp;&nbsp;码:<input class="password" type="password" name="password" /><br/>
+        <p class="pass" ></p>
+        <input class="login" type="submit" value="登录" />
+    </form>
+    <p id="container">{{ error_msg }}</p>
+
+    <script src="/static/js/loginCheck.js" type="text/javascript"></script>
+</body>
+</html>

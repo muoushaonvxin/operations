@@ -1,0 +1,24 @@
+.menu {
+    float: left;
+    width: 10%;
+    height: 500px;
+    background-color: transparent;
+}
+
+.content {
+    float: left;
+    width: 70%;
+    height: 500px;
+    background-color: aqua;
+}
+
+.title {
+    background-color: pink;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+}
+
+.hide {
+    display: none;
+}
