@@ -9,3 +9,11 @@ class HostScan(models.Model):
     def __str__(self):
         return self.host
 
+
+class HostDetail(models.Model):
+    host_ip = models.IPAddressField(verbose_name=u"主机ip")
+    host_details = models.CharField(max_length=255, verbose_name=u"主机详情")
+
+    def __str__(self):
+        return self.host_ip
+
