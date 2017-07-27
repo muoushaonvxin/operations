@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		body {
+			background: url(bg2.jpg);
+		}
+		div {
+			position: absolute;
+			left: 20px;
+			top: 50px;
+			background-color: #FFFF00;
+			height: 140px; width: 180px;
+			border: 5px solid #000000;
+			margin-top: 5px; padding: 5px;
+			text-align: center;
+		}
+	</style>
+
+	<script type="text/javascript" src="scripts/jquery-2.1.0.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#go1").click(function(){
+				$("#block").animate({
+					opacity:"0.5",
+					width:"80%",
+					height:"200px",
+					borderWidth:"10px",
+					fontSize:"30px",
+					marginTop:"40px",
+					marginLeft:"20px"
+				},3000);
+			});
+
+			$("#go2").click(function(){
+				$("#block").animate({
+					opacity:"0",
+					width:"0",
+					height:"0",
+				},2000);
+			});
+
+
+			$("#go3").click(function(){
+				$("#block").animate({left:"400px"},2000)
+						   .animate({top:"300px"},2000)
+						   .animate({opacity:"0.5"},2000,function(){
+						   		$(this).css("borderWidth","0px");
+						   		alert("动画制定完毕");
+						   });
+			});
+
+		});
+	</script>
+
+</head>
+<body>
+	<button id="go1">Go1>></button><button id="go2">Go2>></button><button
+	id="go3">Go3>></button>
+	<div id="block">动画!</div>
+</body>
+</html>

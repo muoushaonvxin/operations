@@ -1,0 +1,46 @@
+
+Value Stack Contents
+值栈
+
+-----------------------------------------------------
+
+com.opensymphony.xwork2.DefaultTextProvider    国际bug
+
+Stack Context
+
+session：There is no read method for session
+
+org.apache.catalina.servlets.DefaultServlet      阿帕奇.catalina.servlets.默认的servlet
+
+StrutsRequestWrapper ============= Strus
+
+
+----------------------------------------------------------------------
+
+struts.multipart.maxSize = 2097152
+
+struts.devMode = false       报错更专业
+
+struts.ognl.allowStaticMethodAccess = false 默认不允许访问staticMethod方法
+
+这一节课比较难，挺住！！！
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

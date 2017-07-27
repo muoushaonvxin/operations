@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		input{
+			border: 1px solid #000000;
+			font-size: 13px; padding: 4px;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: #FFFFFF;
+			color: #000000;
+		}
+	</style>
+	<script type="text/javascript" src="scripts/jquery-2.1.0.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("input:eq(0)").click(function(){
+				$("img").hide(3000, function(){
+					alert("完成了");
+				});
+			});
+
+			$("input:eq(1)").click(function(){
+				$("img").show(3000);
+			});
+
+			$("input:eq(2)").click(function(){
+				$("img").toggle(3000);
+			});
+
+			$("input:eq(3)").click(function(){
+				$("img").FadeOut(3000);
+			});
+
+			$("input:eq(4)").click(function(){
+				$("img").FadeIn(3000);
+			});
+
+			$("input:eq(5)").click(function(){
+				$("img").FadeToggle(3000);
+			});
+
+			$("input:eq(6)").click(function(){
+				$("img").FadeTo(3000, 0.2);
+			});
+
+			$("input:eq(7)").click(function(){
+				$("img").slideUp(3000);
+			});
+
+			$("input:eq(8)").click(function(){
+				$("img").slideDown(3000);
+			})
+
+			$("input:eq(9)").click(function(){
+				$("img").slideToggle(3000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="button" value="Hide"/>
+	<input type="button" value="Show"/>
+	<input type="button" value="toggle"/>
+	<input type="button" value="FadeOut"/>
+	<input type="button" value="FadeIn"/>
+	<input type="button" value="FadeToggle"/>
+	<input type="button" value="FadeTo"/>
+	<input type="button" value="slideUp"/>
+	<input type="button" value="slideDown"/>
+	<input type="button" value="slideToggle"/>
+	<p><img src="02.jpg"></p>
+</body> 
+</html>
+
+
+
+
+
