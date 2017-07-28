@@ -16,6 +16,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -25,7 +26,7 @@ SECRET_KEY = '#a22547_-lxh#^hp#i8dij)qmma#9s0q+h@7lod2_a_dd2bg#@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -81,7 +82,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'beatall',
-        'HOST': '127.0.0.1',
+        'HOST': '8.8.8.128',
         'USER': 'beatall',
         'PASSWORD': '123456',
         'PORT': 3306,

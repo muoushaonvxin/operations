@@ -7,12 +7,13 @@
         <option name="settingsModule" value="BeatALL/settings.py" />
         <option name="manageScript" value="$MODULE_DIR$/manage.py" />
         <option name="environment" value="&lt;map/&gt;" />
+        <option name="commandsToSkip" value="" />
       </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Python 3.4.1 (/usr/local/python34/bin/python3)" jdkType="Python SDK" />
+    <content url="file:$MODULE_DIR$/../../..//$MODULE_DIR$" />
+    <orderEntry type="jdk" jdkName="Python 3.4.1 (C:\Python34\python.exe)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
