@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'attack',
     'spider',
     'scan',
+    'passcracking',
 ]
 
 MIDDLEWARE = [
