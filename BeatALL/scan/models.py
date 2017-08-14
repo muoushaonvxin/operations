@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class HostScan(models.Model):
+class arp_HostScan(models.Model):
     host = models.GenericIPAddressField(verbose_name=u"主机地址")
     port = models.IntegerField(verbose_name=u"端口号")
     add_time = models.DateField(auto_now_add=True)
@@ -13,7 +13,11 @@ class HostScan(models.Model):
 class HostDetail(models.Model):
     host_ip = models.GenericIPAddressField(verbose_name=u"主机ip")
     host_details = models.CharField(max_length=255, verbose_name=u"主机详情")
+	ip_type = models.CharField(max_length=255, verbose_name=u"IP类型")
 
     def __str__(self):
         return self.host_ip
 
+
+class Tcp_HostScan(models.Model):
+	pass
