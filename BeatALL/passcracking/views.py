@@ -1,20 +1,11 @@
 from django.shortcuts import render
-from ssh import ssh_connect
+from tools.ssh_connect import ssh_connect
+from passcracking.models import *
 
 # Create your views here.
 def dos_ssh_root_password(request):
-	if request.method == "POST":
-		print(request.POST)
-		passwdfile = open(request.POST.get("dictionary", ""), 'r')
-		for passwd in passwdfile:
-			ssh_list = [ip, passwd.strip(), request.POST.get("user", "")]
-			ssh_result = ssh_connect(ssh_list)
-			if ssh_result[0] == 0:
-				print('密码: ' + ssh_result[1].strip() + '不正确')
-			else:
-				print('密码: ' + ssh_result[1].strip() + '正确')
-				print(ssh_result[2].strip())
-
-
-
-
+    if request.method == "POST":
+        ssh_connect(request.POST.get('hostname', ''), int(request.POST.get('port', '')),
+                    request.POST.get('username', ''), request.POST.get('password', ''))
+        if request.POST.get('hostname', '') is not None and  request.POST.get('port', '') is not None and request.POST.get('username', '') is not None and request.POST.get('password', '') is not None:
+            ssh_crack(host=request.POST.get('hostname', ''), port=int(request.POST.get('port', ''))

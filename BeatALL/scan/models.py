@@ -13,7 +13,7 @@ class arp_HostScan(models.Model):
 class HostDetail(models.Model):
     host_ip = models.GenericIPAddressField(verbose_name=u"主机ip")
     host_details = models.CharField(max_length=255, verbose_name=u"主机详情")
-	ip_type = models.CharField(max_length=255, verbose_name=u"IP类型")
+    ip_type = models.CharField(max_length=255, verbose_name=u"IP类型")
 
     def __str__(self):
         return self.host_ip
