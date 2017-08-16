@@ -1,4 +1,4 @@
-from ssh import ssh_connect
+import paramiko
 
 # Create your views here.
 def dos_ssh_root_password(ip, dictionary, user="root"):
