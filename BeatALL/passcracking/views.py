@@ -4,6 +4,7 @@ from passcracking import models
 import json
 from passcracking import forms
 from tools.jload import jsonzh, jsonsingle
+import django.utils.timezone as timezone
 
 # Create your views here.
 def add_crack(request):
@@ -31,5 +32,9 @@ def ssh_crack(request):
 def dos_ssh_user_password(request):
     if request.method == "POST":
         data = jsonsingle(request.POST.get("jsonstr", ""))
-        print(data)
+        ssh_value = ssh_connect(data[1], int(data[2]), data[3], data[4])
+        ssh_value_success = ssh_value['ssh_value_success']
+        if ssh_value_success[0] == 1:
+             s = models.ssh_crack_detail(password=ssh_value_success[1],add_time=timezone.now(),ssh_crack=models.ssh_crack.objects.filter(id=data[0]))
+             s.save()
     return HttpResponse(u'没有执行成功!')

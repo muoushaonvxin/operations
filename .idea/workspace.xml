@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92c651ef-e684-4f86-9c0f-3ae575c1a1a7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BeatALL/static/css/dashboard.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BeatALL/static/js/jquery-3.2.1.slim.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BeatALL/static/js/popper.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BeatALL/tools/ssh_connect.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/css/bootstrap-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/css/bootstrap-responsive.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/img/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/img/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/js/bootstrap-alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/js/bootstrap-button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/js/bootstrap-carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/js/bootstrap-collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/js/bootstrap-dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/js/bootstrap-modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/js/bootstrap-popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/js/bootstrap-scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/js/bootstrap-tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/js/bootstrap-tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/js/bootstrap-transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/js/bootstrap-typeahead.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/static/js/bootstrap.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smblime3.tar.gz" afterPath="$PROJECT_DIR$/smblime3.tar.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
@@ -50,9 +29,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/__init__.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/admin.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/apps.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/dictionary.txt" afterPath="$PROJECT_DIR$/BeatALL/passcracking/dictionary.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/migrations/__init__.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/migrations/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/models.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/ssh.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/ssh.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/tests.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/urls.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/views.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/scan/__init__.py" afterPath="$PROJECT_DIR$/BeatALL/scan/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/scan/admin.py" afterPath="$PROJECT_DIR$/BeatALL/scan/admin.py" />
@@ -69,10 +51,18 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/spider/tests.py" afterPath="$PROJECT_DIR$/BeatALL/spider/tests.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/spider/views.py" afterPath="$PROJECT_DIR$/BeatALL/spider/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/BeatALL/static/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/css/dashboard.css" afterPath="$PROJECT_DIR$/BeatALL/static/css/dashboard.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/BeatALL/static/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/js/jquery-2.2.4.js" afterPath="$PROJECT_DIR$/BeatALL/static/js/jquery-2.2.4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/js/jquery-3.2.1.slim.min.js" afterPath="$PROJECT_DIR$/BeatALL/static/js/jquery-3.2.1.slim.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/js/jquery.js" afterPath="$PROJECT_DIR$/BeatALL/static/js/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/js/popper.min.js" afterPath="$PROJECT_DIR$/BeatALL/static/js/popper.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/js/tools.js" afterPath="$PROJECT_DIR$/BeatALL/static/js/tools.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/templates/crack/ssh_crack.html" afterPath="$PROJECT_DIR$/BeatALL/templates/crack/ssh_crack.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/templates/index.html" afterPath="$PROJECT_DIR$/BeatALL/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/tools/jload.py" afterPath="$PROJECT_DIR$/BeatALL/tools/jload.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/tools/net_tools.py" afterPath="$PROJECT_DIR$/BeatALL/tools/net_tools.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/tools/ssh_connect.py" afterPath="$PROJECT_DIR$/BeatALL/tools/ssh_connect.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ops/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/ops/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ops/.idea/misc.xml" afterPath="$PROJECT_DIR$/ops/.idea/misc.xml" />
@@ -115,13 +105,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/passcracking/models.py">
+      <file leaf-file-name="jload.py" pinned="false" current-in-tab="false">
+        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/tools/jload.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="358">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,11 +120,33 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/passcracking/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="99" lean-forward="true" selection-start-line="10" selection-start-column="99" selection-end-line="10" selection-end-column="99" />
+            <state relative-caret-position="394">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#49#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/passcracking/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ssh_connect.py" pinned="false" current-in-tab="false">
+        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/tools/ssh_connect.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,16 +160,24 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ss</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BeatALL/tools/ssh_connect.py" />
         <option value="$PROJECT_DIR$/BeatALL/passcracking/models.py" />
         <option value="$PROJECT_DIR$/BeatALL/templates/index.html" />
         <option value="$PROJECT_DIR$/BeatALL/scan/models.py" />
+        <option value="$PROJECT_DIR$/BeatALL/tools/jload.py" />
+        <option value="$PROJECT_DIR$/BeatALL/templates/crack/ssh_crack.html" />
+        <option value="$PROJECT_DIR$/BeatALL/paramiko.log" />
+        <option value="$PROJECT_DIR$/BeatALL/tools/ssh_connect.py" />
         <option value="$PROJECT_DIR$/BeatALL/passcracking/views.py" />
       </list>
     </option>
@@ -190,7 +210,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -231,6 +250,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeatALL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jload.py" />
+              <option name="myItemType" value="com.jetbrains.python.projectView.PyFileNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeatALL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -249,29 +308,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BeatALL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="crack" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,6 +377,10 @@
               <option name="myItemId" value="models.py" />
               <option name="myItemType" value="com.jetbrains.python.projectView.PyFileNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssh_crack_detail" />
+              <option name="myItemType" value="com.jetbrains.python.projectView.PyElementNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -358,10 +403,6 @@
               <option name="myItemId" value="models.py" />
               <option name="myItemType" value="com.jetbrains.python.projectView.PyFileNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssh_crack" />
-              <option name="myItemType" value="com.jetbrains.python.projectView.PyElementNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -383,6 +424,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,6 +433,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -491,6 +534,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -628,7 +677,7 @@
     <frame x="-8" y="-8" width="1382" height="723" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21709532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22012103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -666,23 +715,47 @@
     <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/scan/views.py" />
     <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/passcracking/views.py" />
     <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/passcracking/models.py" />
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/tools/ssh_connect.py">
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/tools/ssh_connect.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/tools/net_tools.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/passcracking/tests.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/static/css/bootstrap.css" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/static/img/glyphicons-halflings.png" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/static/js/bootstrap.js" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/static/js/jquery.js" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/templates/index.html" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/static/css/bootstrap.min.css" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/BeatALL/settings.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/templates/index.html" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/BeatALL/urls.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/scan/views.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/scan/models.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/passcracking/models.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/BeatALL/passcracking/views.py" />
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/templates/crack/ssh_crack.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="449">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/templates/crack/add_crack.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/tools/net_tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/passcracking/tests.py">
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/paramiko.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -690,7 +763,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/static/css/bootstrap.css">
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -698,91 +771,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/static/img/glyphicons-halflings.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/static/js/bootstrap.js">
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/tools/jload.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/static/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-900">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/static/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/BeatALL/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="61" column="53" lean-forward="true" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3640">
-          <caret line="101" column="18" lean-forward="true" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/BeatALL/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="358">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#641#673#0" expanded="false" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/scan/views.py">
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/tools/ssh_connect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/scan/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="433">
+          <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/passcracking/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="358">
+          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -791,10 +801,10 @@
     </entry>
     <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/passcracking/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="99" lean-forward="true" selection-start-line="10" selection-start-column="99" selection-end-line="10" selection-end-column="99" />
+        <state relative-caret-position="394">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>

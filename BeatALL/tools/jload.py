@@ -23,10 +23,7 @@ def jsonzh(data):
 def jsonsingle(data):
     data = json.loads(data, object_pairs_hook=OrderedDict)
     l1 = []
-
     for v in data.values():
         l1.append(v)
 
-    l1_length = len(l1)
-
-    count = l1_length/4
+    return l1

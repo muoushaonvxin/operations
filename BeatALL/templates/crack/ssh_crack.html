@@ -8,6 +8,7 @@
     <table border="1">
         <tr>
             <th>选择</th>
+            <th>所属id</th>
             <th>主机地址</th>
             <th>端口</th>
             <th>破解字典</th>
@@ -19,6 +20,7 @@
                 <td class="position">
                     <input type="checkbox" />
                 </td>
+                <td class="id">{{ ssh.id }}</td>
                 <td class="host">{{ ssh.host }}</td>
                 <td class="port">{{ ssh.port }}</td>
                 <td class="dictionary">{{ ssh.dictionary }}</td>
