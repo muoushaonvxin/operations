@@ -13,14 +13,17 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url, include
-from django.contrib import admin
+from django.conf.urls import url
 from django.views.generic import TemplateView
-import passcracking.urls as passcrack_urls
+from passcracking import views
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-   	url(r'^$', TemplateView.as_view(template_name="index.html"), name="index"),
-    url(r'^crack/', include(passcrack_urls), name="crack"),
+    url(r'^$', TemplateView.as_view(template_name="crack/index.html"), name="index"),
+    url(r'^add_crack/$', views.add_crack, name="add_crack"),
+    url(r'^ssh_crack/$', views.ssh_crack, name="ssh_crack"),
+    url(r'^dos_ssh_user_password/$', views.dos_ssh_user_password, name="dos_ssh_user_password"),
 ]
+
+
+
 

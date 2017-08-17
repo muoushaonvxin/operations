@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ssh_crack</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>选择</th>
+            <th>主机地址</th>
+            <th>端口</th>
+            <th>破解字典</th>
+            <th>用户名</th>
+        </tr>
+
+        {% for ssh in ssh_obj %}
+            <tr>
+                <td class="position">
+                    <input type="checkbox" />
+                </td>
+                <td class="host">{{ ssh.host }}</td>
+                <td class="port">{{ ssh.port }}</td>
+                <td class="dictionary">{{ ssh.dictionary }}</td>
+                <td class="user">{{ ssh.user }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <div>
+        <input type="button" value="全选" onclick="SelectALl();" />
+        <input type="button" value="取消" onclick="ClearAll();" />
+        <input type="button" value="反选" onclick="ReverseALl();" />
+        <input type="button" value="破解" onclick="CrackChoose();" />
+    </div>
+
+{#    <form action="/crack/ssh_crack/" method="post">#}
+{#        主机地址：{{ ssh_form.host }}<br/>#}
+{#        端口：{{ ssh_form.port }}<br/>#}
+{#        破解字典{{ ssh_form.dictionary }}<br/>#}
+{#        用户名：{{ ssh_form.user }}<br/>#}
+{#        自起名字：{{ ssh_form.name }}<br/>#}
+{#        时间：{{ ssh_form.add_time }}<br/>#}
+{#        <input type="submit" value="提交">#}
+{#    </form>#}
+
+</body>
+<script src="/static/js/jquery-2.2.4.js" type="text/javascript"></script>
+<script src="/static/js/tools.js" type="text/javascript"></script>
+</html>
