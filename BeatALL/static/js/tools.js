@@ -55,13 +55,14 @@ function CrackChoose() {
         dataType: "json",
         data: { jsonstr:jsonstr },
         success: function(data){
-
+            var a = data.jsonstr;
+            console.log(a);
         },
         error: function(data){
 
         },
         complete: function(XMLHttpRequest, textStatus){
-            alert(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.status);
         }
     });
 }

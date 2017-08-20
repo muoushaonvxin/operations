@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'spider',
     'scan',
     'passcracking',
+    'pure_pagination',
 ]
 
 MIDDLEWARE = [
@@ -136,3 +137,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+PAGINATION_SETTINGS = {
+    'PAGE_RANGE_DISPLAYED': 10,
+    'MARGIN_PAGES_DISPLAYED': 2,
+    'SHOW_FIRST_PAGE_WHEN_INVALID': True,
+}

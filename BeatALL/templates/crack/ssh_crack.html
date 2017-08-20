@@ -3,31 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>ssh_crack</title>
+    <link rel="stylesheet" href="/static/css/ssh_crack.css" type="text/css">
 </head>
 <body>
-    <table border="1">
-        <tr>
-            <th>选择</th>
-            <th>所属id</th>
-            <th>主机地址</th>
-            <th>端口</th>
-            <th>破解字典</th>
-            <th>用户名</th>
-        </tr>
+{#        {% for ssh in ssh_record.object_list %}#}
+{#            {{ ssh.port }}#}
+{#        {% endfor %}#}
 
-        {% for ssh in ssh_obj %}
-            <tr>
-                <td class="position">
-                    <input type="checkbox" />
-                </td>
-                <td class="id">{{ ssh.id }}</td>
-                <td class="host">{{ ssh.host }}</td>
-                <td class="port">{{ ssh.port }}</td>
-                <td class="dictionary">{{ ssh.dictionary }}</td>
-                <td class="user">{{ ssh.user }}</td>
-            </tr>
-        {% endfor %}
-    </table>
+{#        <div id="pagination">#}
+{#            {{ ssh_record.render }}#}
+{#        </div>#}
+
+        <div class="pagination">
+            {% if ssh_record.has_previous %}
+                <a href="?{{ ssh_record.previous_page_number.querystring }}" class="prev">&lsaquo;&lsaquo;</a>
+            {% endif %}
+
+            {% for ssh in ssh_record.pages %}
+                {% if ssh %}
+                    {% ifequal ssh ssh_record.number %}
+                        <span class="current page">{{ ssh }}</span>
+                    {% else %}
+                        <a href="?{{ page.querystring }}" class="page">{{ ssh }}</a>
+                    {% endifequal %}
+                {% else %}
+                    <li class="none"><a href="">...</a></li>
+                {% endif %}
+            {% endfor %}
+            {% if ssh_record.has_next %}
+                <a href="?{{ ssh_record.next_page_number.querystring }}" class="next">&rsaquo;&rsaquo;</a>
+            {% endif %}
+
+
+            <table border="1">
+                <tr>
+                    <th>选择</th>
+                    <th>所属id</th>
+                    <th>主机地址</th>
+                    <th>端口</th>
+                    <th>破解字典</th>
+                    <th>用户名</th>
+                </tr>
+
+                {% for ssh in ssh_obj %}
+                    <tr>
+                        <td class="position">
+                            <input type="checkbox" />
+                        </td>
+                        <td class="id">{{ ssh.id }}</td>
+                        <td class="host">{{ ssh.host }}</td>
+                        <td class="port">{{ ssh.port }}</td>
+                        <td class="dictionary">{{ ssh.dictionary }}</td>
+                        <td class="user">{{ ssh.user }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+
+        </div>
 
     <div>
         <input type="button" value="全选" onclick="SelectALl();" />

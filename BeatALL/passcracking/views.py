@@ -5,6 +5,8 @@ import json
 from passcracking import forms
 from tools.jload import jsonzh, jsonsingle
 import django.utils.timezone as timezone
+from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
+from datetime import datetime
 
 # Create your views here.
 def add_crack(request):
@@ -16,17 +18,30 @@ def add_crack(request):
             print("form is ok!")
             print(form)
             print(form.cleaned_data)
-            form.save()
+            form.save(commit=True)
             ssh_obj = models.ssh_crack.objects.all()
-            return render(request, 'crack/ssh_crack.html', {'ssh_obj': ssh_obj})
+            return render(request, 'crack/ssh_crack.html', {
+                'ssh_obj': ssh_obj
+            })
         else:
             print(form.errors)
-    return render(request, 'crack/add_crack.html', {'ssh_form': form})
+    return render(request, 'crack/add_crack.html', {
+        'ssh_form': form
+    })
 
 
 def ssh_crack(request):
+    try:
+        page = request.GET.get('page', 1)
+    except PageNotAnInteger:
+        page = 1
     ssh_obj = models.ssh_crack.objects.all()
-    return render(request, 'crack/ssh_crack.html', {'ssh_obj': ssh_obj})
+    p = Paginator(ssh_obj, 5, request=request)
+    ssh_record = p.page(page)
+    return render(request, 'crack/ssh_crack.html', {
+        'ssh_record': ssh_record,
+        'ssh_obj': ssh_obj,
+    })
 
 
 def dos_ssh_user_password(request):
@@ -35,6 +50,11 @@ def dos_ssh_user_password(request):
         ssh_value = ssh_connect(data[1], int(data[2]), data[3], data[4])
         ssh_value_success = ssh_value['ssh_value_success']
         if ssh_value_success[0] == 1:
-             s = models.ssh_crack_detail(password=ssh_value_success[1],add_time=timezone.now(),ssh_crack=models.ssh_crack.objects.filter(id=data[0]))
-             s.save()
+            models.ssh_crack_detail(host=models.ssh_crack.objects.get(host=data[1]).host,
+                                    password=ssh_value_success[1],
+                                    add_time=datetime.now(),
+                                    ssh_crack=models.ssh_crack.objects.get(id=int(data[0]))).save()
+            msg = u"添加成功"
+            return HttpResponse(json.dumps({"jsonstr": msg}),
+                                content_type='application/json')
     return HttpResponse(u'没有执行成功!')
