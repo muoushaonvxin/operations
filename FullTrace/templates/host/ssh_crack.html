@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ssh_crack</title>
+    <link rel="stylesheet" href="/static/css/ssh_crack.css" type="text/css">
+</head>
+<body>
+{#        {% for ssh in ssh_record.object_list %}#}
+{#            {{ ssh.port }}#}
+{#        {% endfor %}#}
+
+{#        <div id="pagination">#}
+{#            {{ ssh_record.render }}#}
+{#        </div>#}
+
+{#        <div class="pagination">#}
+{#            {% if ssh_record.has_previous %}#}
+{#                <a href="?{{ ssh_record.previous_page_number.querystring }}" class="prev">&lsaquo;&lsaquo;</a>#}
+{#            {% endif %}#}
+{##}
+{#            {% for ssh in ssh_record.pages %}#}
+{#                {% if ssh %}#}
+{#                    {% ifequal ssh ssh_record.number %}#}
+{#                        <span class="current page">{{ ssh }}</span>#}
+{#                    {% else %}#}
+{#                        <a href="?{{ page.querystring }}" class="page">{{ ssh }}</a>#}
+{#                    {% endifequal %}#}
+{#                {% else %}#}
+{#                    <li class="none"><a href="">...</a></li>#}
+{#                {% endif %}#}
+{#            {% endfor %}#}
+{#            {% if ssh_record.has_next %}#}
+{#                <a href="?{{ ssh_record.next_page_number.querystring }}" class="next">&rsaquo;&rsaquo;</a>#}
+{#            {% endif %}#}
+
+
+            <table border="1">
+                <tr>
+                    <th>选择</th>
+                    <th>所属id</th>
+                    <th>主机地址</th>
+                    <th>端口</th>
+                    <th>破解字典</th>
+                    <th>用户名</th>
+                </tr>
+
+                {% for host in host_obj %}
+                    <tr>
+                        <td class="position">
+                            <input type="checkbox" />
+                        </td>
+                        <td class="id">{{ host.id }}</td>
+                        <td class="host">{{ host.host }}</td>
+                        <td class="port">{{ host.port }}</td>
+                        <td class="dictionary">{{ host.dictionary }}</td>
+                        <td class="user">{{ host.user }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+
+{#        </div>#}
+
+    <div>
+        <input type="button" value="全选" onclick="SelectALl();" />
+        <input type="button" value="取消" onclick="ClearAll();" />
+        <input type="button" value="反选" onclick="ReverseALl();" />
+        <input type="button" value="破解" onclick="CrackChoose();" />
+    </div>
+
+{#    <form action="/host/ssh_crack/" method="post">#}
+{#        主机地址：{{ ssh_form.host }}<br/>#}
+{#        端口：{{ ssh_form.port }}<br/>#}
+{#        破解字典{{ ssh_form.dictionary }}<br/>#}
+{#        用户名：{{ ssh_form.user }}<br/>#}
+{#        自起名字：{{ ssh_form.name }}<br/>#}
+{#        时间：{{ ssh_form.add_time }}<br/>#}
+{#        <input type="submit" value="提交">#}
+{#    </form>#}
+
+</body>
+<script src="/static/js/jquery-2.2.4.js" type="text/javascript"></script>
+<script src="/static/js/tools.js" type="text/javascript"></script>
+</html>
