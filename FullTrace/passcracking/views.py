@@ -2,29 +2,10 @@ from django.shortcuts import render, HttpResponse
 from tools.ssh_connect import ssh_connect
 from passcracking import models
 import json
-from passcracking import forms
 from tools.jload import jsonzh, jsonsingle
-import django.utils.timezone as timezone
-from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 from datetime import datetime
 
 # Create your views here.
-
-
-
-def ssh_crack(request):
-    try:
-        page = request.GET.get('page', 1)
-    except PageNotAnInteger:
-        page = 1
-    ssh_obj = models.ssh_crack.objects.all()
-    p = Paginator(ssh_obj, 5, request=request)
-    ssh_record = p.page(page)
-    return render(request, 'host/ssh_crack.html', {
-        'ssh_record': ssh_record,
-        'ssh_obj': ssh_obj,
-    })
-
 
 def dos_ssh_user_password(request):
     if request.method == "POST":

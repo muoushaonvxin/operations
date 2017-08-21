@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from host import forms
 from host import models
+from django.views import View
 
 # Create your views here.
 def add_host(request):
@@ -18,3 +19,12 @@ def add_host(request):
     return render(request, 'host/add_host.html', {
         'host_form': form
     })
+
+
+class sshCrackView(View):
+    def get(self):
+        hosts = models.host.objects.all()
+        return render(self.request, 'host/ssh_crack.html', {"host_obj": hosts})
+
+    def post(self):
+        return render()
