@@ -8,6 +8,7 @@ def ssh_connect(hostname, port, dictionary, username):
 
     s = paramiko.SSHClient()
     s.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+
     f = open(dictionary, 'r')
     for password in f:
         try:
@@ -23,4 +24,5 @@ def ssh_connect(hostname, port, dictionary, username):
 
     ssh_value['ssh_value_success'] = ssh_value_success
     ssh_value['ssh_value_failed'] = ssh_value_failed
+
     return ssh_value
