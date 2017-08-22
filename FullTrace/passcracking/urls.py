@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.views.generic import TemplateView
-from passcracking import views
+
 
 urlpatterns = [
-    url(r'^$', TemplateView.as_view(template_name="host/index.html"), name="index"),
-    url(r'^dos_ssh_user_password/$', views.dos_ssh_user_password, name="dos_ssh_user_password"),
+    # url(r'^$', TemplateView.as_view(template_name="host/index.html"), name="index"),
+
 ]
 
 

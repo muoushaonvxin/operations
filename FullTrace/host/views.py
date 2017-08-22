@@ -22,9 +22,7 @@ def add_host(request):
 
 
 class sshCrackView(View):
-    def get(self):
+    def get(self, request):
         hosts = models.host.objects.all()
-        return render(self.request, 'host/ssh_crack.html', {"host_obj": hosts})
+        return render(request, 'host/ssh_crack.html', {"host_obj": hosts})
 
-    def post(self):
-        return render()

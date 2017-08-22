@@ -8,7 +8,7 @@ class host_ModelForm(forms.ModelForm):
 		exclude = ()
 
 		widgets = {
-			"host": forms.TextInput(attrs={"class": "host_ip"}),
+			"host_ip": forms.TextInput(attrs={"class": "host_ip"}),
             "port": forms.TextInput(attrs={"class": "port"}),
             "dictionary": forms.TextInput(attrs={"class": "dictionary"}),
 			"user": forms.TextInput(attrs={"class": "user"}),

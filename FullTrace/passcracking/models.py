@@ -9,10 +9,11 @@ class PasswordCrack(models.Model):
 
 
 class ssh_crack_detail(models.Model):
-    host = models.GenericIPAddressField(verbose_name=u"目标ip地址")
+    host_ip = models.GenericIPAddressField(verbose_name=u"目标ip地址")
+    username = models.CharField(max_length=50, verbose_name=u"用户名")
     password = models.CharField(max_length=50, verbose_name=u"破解的密码")
     add_time = models.DateTimeField(default=datetime.now, verbose_name=u"添加时间")
     host = models.ForeignKey(des_host)
 
     def __str__(self):
-        return "<%s>" % self.password
+        return "<host ip address is %s, username is %s, password is %s>"

@@ -17,10 +17,12 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.views.generic import TemplateView
 import host.urls as host_urls
+import passcracking.urls as passwdcrack_urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
    	url(r'^$', TemplateView.as_view(template_name="index.html"), name="index"),
-    url(r'^host/', include(host_urls), name="host"),
+    url(r'^host/', include(host_urls, namespace="hostlist")),
+
 ]
 

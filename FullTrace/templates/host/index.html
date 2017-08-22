@@ -6,8 +6,8 @@
 </head>
 <body>
     <div>
-        <a href="/host/add_host/">添加主机</a><br/>
-        <a href="/host/ssh_crack/">ssh密码破解</a>
+        <a href="{% url 'hostlist:add_host' %}">添加主机</a><br/>
+        <a href="{% url 'hostlist:ssh_crack' %}">ssh密码破解</a>
     </div>
 </body>
 </html>

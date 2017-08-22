@@ -25,5 +25,4 @@ def jsonsingle(data):
     l1 = []
     for v in data.values():
         l1.append(v)
-
     return l1

@@ -50,19 +50,19 @@ function CrackChoose() {
 
     $.ajax({
         // contentType: "application/json; charset=utf-8",
-        url: "/host/dos_ssh_user_password/",
+        url: "{% url 'hostlist:dos_ssh_user_password' %}",
         type: "post",
         dataType: "json",
         data: { jsonstr:jsonstr },
         success: function(data){
-            var a = data.jsonstr;
-            console.log(a);
+            alert(data.jsonstr);
         },
         error: function(data){
 
         },
         complete: function(XMLHttpRequest, textStatus){
             console.log(XMLHttpRequest.status);
+            console.log(textStatus.toString());
         }
     });
 }

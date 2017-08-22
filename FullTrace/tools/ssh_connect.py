@@ -5,7 +5,7 @@ def ssh_connect(hostname, port, dictionary, username):
     ssh_value = {}
     ssh_value_success = []
     ssh_value_failed = []
-    # paramiko.util.log_to_file('paramiko.log')
+
     s = paramiko.SSHClient()
     s.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     f = open(dictionary, 'r')
@@ -15,6 +15,7 @@ def ssh_connect(hostname, port, dictionary, username):
             print("The password {0} is success.".format(password.strip()))
             ssh_value_success.append(1)
             ssh_value_success.append(password.strip())
+            break
         except Exception as e:
             print("The password {0} is {1}".format(password.strip(),e))
             s.close()
