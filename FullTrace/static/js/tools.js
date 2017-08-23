@@ -50,7 +50,7 @@ function CrackChoose() {
 
     $.ajax({
         // contentType: "application/json; charset=utf-8",
-        url: "{% url 'hostlist:dos_ssh_user_password' %}",
+        url: "/host/dos_ssh_user_password/",
         type: "post",
         dataType: "json",
         data: { jsonstr:jsonstr },

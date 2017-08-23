@@ -20,9 +20,28 @@ def jsonzh(data):
     return d1
 
 
-def jsonsingle(data):
+# 用于给ssh密码取值, ssh密码五个值为一组
+def json_ssh_crack_passwd(data):
     data = json.loads(data, object_pairs_hook=OrderedDict)
     l1 = []
+    d1 = OrderedDict()  # 赋值一个OrderedDict字典
+
     for v in data.values():
         l1.append(v)
-    return l1
+
+    x = len(l1)/5
+    y = 0
+    for i in range(0, int(x)):
+        var1 = "v" + str(i)
+        d1[var1] = []
+        var2 = d1[var1]
+
+        for j in [l1[j] for j in range(y, y + 5)]:
+            var2.append(j)
+        y+=5
+
+    l2 = []
+    for v in d1.values():
+        l2.append(v)
+
+    return l2

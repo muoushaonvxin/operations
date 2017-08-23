@@ -12,3 +12,5 @@ class host(models.Model):
 
     def __str__(self):
         return "<%s>" % self.host_ip
+
+
