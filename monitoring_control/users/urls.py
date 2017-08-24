@@ -13,30 +13,13 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url, include
-from django.contrib import admin
+from django.conf.urls import url
 from django.views.generic import TemplateView
-from users.views import LoginView, LogoutView
-from users.views import IndexView
 
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
 
-    # 默认首页是登录界面
-    url(r'^$', TemplateView.as_view(template_name="login.html"), name="login"),
-
-    # 登录成功之后,跳转到主界面
-    url(r'^index/$', IndexView.as_view(), name="index"),
-
-    # 用户登录方法
-    url(r'^user_login/$', LoginView.as_view(), name="user_login"),
-
-    # 用户登出方法
-    url(r'^user_logout/$', LogoutView.as_view(), name="user_logout"),
 ]
-
-
 
 
 
