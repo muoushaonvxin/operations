@@ -6,9 +6,9 @@ from datetime import datetime
 # 监控的主机表
 class Host(models.Model):
     # 主机名唯一
-    name = models.CharField(max_length=32, unique=True, verbose_name=u"主机名")
+    name = models.CharField(max_length=32, verbose_name=u"主机名")
     # IP地址唯一
-    host_ip = models.GenericIPAddressField(unique=True, verbose_name=u"IP地址")
+    host_ip = models.GenericIPAddressField(verbose_name=u"IP地址")
     # 主机组
     host_group = models.ManyToManyField('HostGroup', blank=True, verbose_name=u"主机组")
     # 默认模板
@@ -92,8 +92,8 @@ class Service(models.Model):
 # 模板表
 class Template(models.Model):
     name = models.CharField(verbose_name=u"模板名称", max_length=64, unique=True)
-    services = models.ManyToManyField('Service', verbose_name=u"服务列表")
-    triggers = models.ManyToManyField('Trigger', verbose_name=u"触发器列表", blank=True)
+    services = models.ManyToManyField('Service', blank=True, verbose_name=u"服务列表")
+    triggers = models.ManyToManyField('Trigger', blank=True, verbose_name=u"触发器列表")
 
     def __str__(self):
         return self.name
@@ -102,11 +102,11 @@ class Template(models.Model):
 # 触发一个报警，由多个指标来判断，触发关联表,一个表达式只能关联一个trigger
 class TriggerExpression(models.Model):
     # 所需触发器
-    trigger = models.ForeignKey('Trigger', verbose_name=u"所属触发器")
+    trigger = models.ForeignKey('Trigger', blank=True, verbose_name=u"所属触发器")
     # 关联服务
-    service = models.ForeignKey('Service', verbose_name=u"关联服务")
+    service = models.ForeignKey('Service', blank=True, verbose_name=u"关联服务")
     # 关联服务指标
-    service_index = models.ForeignKey('ServiceIndex', verbose_name=u"关联服务指标")
+    service_index = models.ForeignKey('ServiceIndex', blank=True, verbose_name=u"关联服务指标")
     # 只能监控专门指定的指标key
     specified_index_key = models.CharField(verbose_name=u"只能监控专门指定的指标key", max_length=64, blank=True, null=True)
 
@@ -182,7 +182,7 @@ class Action(models.Model):
     # 告警间隔
     interval = models.IntegerField(default=300, verbose_name=u"告警间隔(s)")
     # 关联别的动作
-    operations = models.ManyToManyField('ActionOperation', verbose_name=u"ActionOperation")
+    operations = models.ManyToManyField('ActionOperation', blank=True, verbose_name=u"ActionOperation")
     # 故障回复是否要通知
     recover_notice = models.BooleanField(verbose_name=u"故障回复后发送通知消息", default=True)
     # 恢复后通知的主题是什么
@@ -208,7 +208,7 @@ class ActionOperation(models.Model):
     action_type = models.CharField(verbose_name=u"动作类型", choices=action_type_choices, default='email', max_length=64)
 
     # 告警通知对象
-    notifiers = models.ManyToManyField(UserProfile, verbose_name=u"通知对象", blank=True)
+    notifiers = models.ManyToManyField(UserProfile, blank=True, verbose_name=u"通知对象")
     _msg_format = '''Host({hostname}, {ip}) service({service_name}) has issue,msg:{msg}'''
     # 消息格式
     msg_format = models.TextField(verbose_name=u"消息格式", default=_msg_format)
@@ -223,7 +223,7 @@ class Maintenance(models.Model):
     # 主机
     hosts = models.ManyToManyField('Host', verbose_name='主机', blank=True)
     # 主机组
-    host_groups = models.ManyToManyField('HostGroup', verbose_name=u"主机组", blank=True)
+    host_groups = models.ManyToManyField('HostGroup', blank=True, verbose_name=u"主机组")
     # 维护内容
     content = models.TextField(verbose_name=u"维护内容")
     # 开始时间

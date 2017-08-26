@@ -5,31 +5,31 @@ from django.contrib.auth.models import AbstractUser, PermissionsMixin, UserManag
 # Create your models here.
 
 class UserProfile(AbstractUser):
+    username = models.CharField(max_length=50, unique=True, verbose_name=u"用户名")
     nick_name = models.CharField(max_length=50, verbose_name=u"名称", default="")
     email = models.EmailField(verbose_name=u"email address", max_length=255, unique=True)
     mobile = models.CharField(max_length=11, null=True, blank=True, verbose_name=u"电话号码")
     weixin = models.CharField(max_length=64, blank=True, null=True)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(verbose_name=u"staff status", default=True, help_text=u"Designates whether the user can log into this admin site.")
-    name = models.CharField(max_length=32)
     memo = models.TextField(verbose_name='备注', blank=True, null=True, default=None)
     date_joined = models.DateTimeField(blank=True, null=True, auto_now_add=True)
     image = models.ImageField(upload_to="image/%Y/%m", default=u"image/default.png", max_length=100, verbose_name=u"个人图像")
     type = models.IntegerField(default=0, verbose_name=u"用户类型", choices=((0, u"普通用户"), (1, u"管理员")))
     add_time = models.DateTimeField(default=datetime.now, verbose_name=u"添加时间")
 
-    USERNAME_FIELD = 'email'
-
-    REQUIRED_FIELDS = ['name']
-
-    def get_full_name(self):
-        return self.email
-
-    def get_short_name(self):
-        return self.email
+    # USERNAME_FIELD = 'username'
+    #
+    # REQUIRED_FIELDS = ['username']
+    #
+    # def get_full_name(self):
+    #     return self.username
+    #
+    # def get_short_name(self):
+    #     return self.username
 
     def __str__(self):
-        return self.email
+        return self.username
 
     def has_perms(self, perm_list, obj=None):
         "Does the user have a specific permission?"
