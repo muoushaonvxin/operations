@@ -8,9 +8,9 @@ class Host(models.Model):
     # 主机名唯一
     name = models.CharField(max_length=32, verbose_name=u"主机名")
     # IP地址唯一
-    host_ip = models.GenericIPAddressField(verbose_name=u"IP地址")
+    ip_addr = models.GenericIPAddressField(verbose_name=u"IP地址")
     # 主机组
-    host_group = models.ManyToManyField('HostGroup', blank=True, verbose_name=u"主机组")
+    host_groups = models.ManyToManyField('HostGroup', blank=True, verbose_name=u"主机组")
     # 默认模板
     templates = models.ManyToManyField('Template', blank=True, verbose_name=u"默认模板")
 
@@ -79,6 +79,7 @@ class Service(models.Model):
     # 监控间隔
     interval = models.IntegerField(default=60, verbose_name=u"监控间隔")
     # 插件名, 比如cpu下有多个指标, 是一对多的关系
+    plugin_name = models.CharField(verbose_name=u"插件名", max_length=64, default='n/a')
     items = models.ManyToManyField('ServiceIndex', blank=True, verbose_name=u"指标列表")
     # 子服务
     has_sub_service = models.BooleanField(default=False, help_text=u"如果一个服务还有独立的子服务 ,选择这个,比如 网卡服务有多个独立的子网卡", verbose_name=u"子服务")
@@ -187,6 +188,7 @@ class Action(models.Model):
     recover_notice = models.BooleanField(verbose_name=u"故障回复后发送通知消息", default=True)
     # 恢复后通知的主题是什么
     recover_subject = models.CharField(max_length=255, blank=True, null=True, verbose_name=u"通知文本")
+    recover_message = models.TextField(blank=True, null=True)
     # 是否停用
     enabled = models.BooleanField(default=True, verbose_name=u"是否停用")
 

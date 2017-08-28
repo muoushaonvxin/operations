@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44f8d5d3-7c48-413a-a1a5-c10607293384" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/passcracking/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/passcracking/ssh.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeatALL/scan/migrations/0001_initial.py" afterPath="" />
+    <list default="true" id="39a476f4-2bbd-45a1-8906-12d1c01e4903" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smblime3.tar.gz" afterPath="$PROJECT_DIR$/smblime3.tar.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
@@ -12,63 +9,69 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/operation.iml" afterPath="$PROJECT_DIR$/.idea/operation.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/.idea/BeatALL.iml" afterPath="$PROJECT_DIR$/BeatALL/.idea/BeatALL.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/BeatALL/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/.idea/misc.xml" afterPath="$PROJECT_DIR$/BeatALL/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/.idea/modules.xml" afterPath="$PROJECT_DIR$/BeatALL/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/.idea/workspace.xml" afterPath="$PROJECT_DIR$/BeatALL/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/BeatALL/__init__.py" afterPath="$PROJECT_DIR$/BeatALL/BeatALL/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/BeatALL/settings.py" afterPath="$PROJECT_DIR$/BeatALL/BeatALL/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/BeatALL/urls.py" afterPath="$PROJECT_DIR$/BeatALL/BeatALL/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/BeatALL/wsgi.py" afterPath="$PROJECT_DIR$/BeatALL/BeatALL/wsgi.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/attack/__init__.py" afterPath="$PROJECT_DIR$/BeatALL/attack/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/attack/admin.py" afterPath="$PROJECT_DIR$/BeatALL/attack/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/attack/apps.py" afterPath="$PROJECT_DIR$/BeatALL/attack/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/attack/migrations/__init__.py" afterPath="$PROJECT_DIR$/BeatALL/attack/migrations/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/attack/models.py" afterPath="$PROJECT_DIR$/BeatALL/attack/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/attack/tests.py" afterPath="$PROJECT_DIR$/BeatALL/attack/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/attack/views.py" afterPath="$PROJECT_DIR$/BeatALL/attack/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/manage.py" afterPath="$PROJECT_DIR$/BeatALL/manage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/__init__.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/admin.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/apps.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/dictionary.txt" afterPath="$PROJECT_DIR$/BeatALL/passcracking/dictionary.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/forms.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/migrations/__init__.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/migrations/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/models.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/tests.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/urls.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/passcracking/views.py" afterPath="$PROJECT_DIR$/BeatALL/passcracking/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/scan/__init__.py" afterPath="$PROJECT_DIR$/BeatALL/scan/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/scan/admin.py" afterPath="$PROJECT_DIR$/BeatALL/scan/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/scan/apps.py" afterPath="$PROJECT_DIR$/BeatALL/scan/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/scan/migrations/__init__.py" afterPath="$PROJECT_DIR$/BeatALL/scan/migrations/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/scan/models.py" afterPath="$PROJECT_DIR$/BeatALL/scan/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/scan/tests.py" afterPath="$PROJECT_DIR$/BeatALL/scan/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/scan/views.py" afterPath="$PROJECT_DIR$/BeatALL/scan/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/spider/__init__.py" afterPath="$PROJECT_DIR$/BeatALL/spider/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/spider/admin.py" afterPath="$PROJECT_DIR$/BeatALL/spider/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/spider/apps.py" afterPath="$PROJECT_DIR$/BeatALL/spider/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/spider/migrations/__init__.py" afterPath="$PROJECT_DIR$/BeatALL/spider/migrations/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/spider/models.py" afterPath="$PROJECT_DIR$/BeatALL/spider/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/spider/tests.py" afterPath="$PROJECT_DIR$/BeatALL/spider/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/spider/views.py" afterPath="$PROJECT_DIR$/BeatALL/spider/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/BeatALL/static/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/css/dashboard.css" afterPath="$PROJECT_DIR$/BeatALL/static/css/dashboard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/BeatALL/static/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/js/jquery-2.2.4.js" afterPath="$PROJECT_DIR$/BeatALL/static/js/jquery-2.2.4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/js/jquery-3.2.1.slim.min.js" afterPath="$PROJECT_DIR$/BeatALL/static/js/jquery-3.2.1.slim.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/js/jquery.js" afterPath="$PROJECT_DIR$/BeatALL/static/js/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/js/popper.min.js" afterPath="$PROJECT_DIR$/BeatALL/static/js/popper.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/static/js/tools.js" afterPath="$PROJECT_DIR$/BeatALL/static/js/tools.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/templates/crack/add_crack.html" afterPath="$PROJECT_DIR$/BeatALL/templates/crack/add_crack.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/templates/crack/index.html" afterPath="$PROJECT_DIR$/BeatALL/templates/crack/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/templates/crack/ssh_crack.html" afterPath="$PROJECT_DIR$/BeatALL/templates/crack/ssh_crack.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/templates/index.html" afterPath="$PROJECT_DIR$/BeatALL/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/tools/jload.py" afterPath="$PROJECT_DIR$/BeatALL/tools/jload.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/tools/net_tools.py" afterPath="$PROJECT_DIR$/BeatALL/tools/net_tools.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeatALL/tools/ssh_connect.py" afterPath="$PROJECT_DIR$/BeatALL/tools/ssh_connect.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/.idea/FullTrace.iml" afterPath="$PROJECT_DIR$/FullTrace/.idea/FullTrace.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/FullTrace/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/.idea/misc.xml" afterPath="$PROJECT_DIR$/FullTrace/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/.idea/modules.xml" afterPath="$PROJECT_DIR$/FullTrace/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/.idea/workspace.xml" afterPath="$PROJECT_DIR$/FullTrace/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/FullTrace/__init__.py" afterPath="$PROJECT_DIR$/FullTrace/FullTrace/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/FullTrace/settings.py" afterPath="$PROJECT_DIR$/FullTrace/FullTrace/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/FullTrace/urls.py" afterPath="$PROJECT_DIR$/FullTrace/FullTrace/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/FullTrace/wsgi.py" afterPath="$PROJECT_DIR$/FullTrace/FullTrace/wsgi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/attack/__init__.py" afterPath="$PROJECT_DIR$/FullTrace/attack/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/attack/admin.py" afterPath="$PROJECT_DIR$/FullTrace/attack/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/attack/apps.py" afterPath="$PROJECT_DIR$/FullTrace/attack/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/attack/migrations/__init__.py" afterPath="$PROJECT_DIR$/FullTrace/attack/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/attack/models.py" afterPath="$PROJECT_DIR$/FullTrace/attack/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/attack/tests.py" afterPath="$PROJECT_DIR$/FullTrace/attack/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/attack/views.py" afterPath="$PROJECT_DIR$/FullTrace/attack/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/host/urls.py" afterPath="$PROJECT_DIR$/FullTrace/host/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/manage.py" afterPath="$PROJECT_DIR$/FullTrace/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/__init__.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/admin.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/apps.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/dictionary.txt" afterPath="$PROJECT_DIR$/FullTrace/passcracking/dictionary.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/forms.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/migrations/__init__.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/models.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/tests.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/urls.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/views.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/scan/__init__.py" afterPath="$PROJECT_DIR$/FullTrace/scan/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/scan/admin.py" afterPath="$PROJECT_DIR$/FullTrace/scan/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/scan/apps.py" afterPath="$PROJECT_DIR$/FullTrace/scan/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/scan/migrations/__init__.py" afterPath="$PROJECT_DIR$/FullTrace/scan/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/scan/models.py" afterPath="$PROJECT_DIR$/FullTrace/scan/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/scan/tests.py" afterPath="$PROJECT_DIR$/FullTrace/scan/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/scan/views.py" afterPath="$PROJECT_DIR$/FullTrace/scan/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/spider/__init__.py" afterPath="$PROJECT_DIR$/FullTrace/spider/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/spider/admin.py" afterPath="$PROJECT_DIR$/FullTrace/spider/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/spider/apps.py" afterPath="$PROJECT_DIR$/FullTrace/spider/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/spider/migrations/__init__.py" afterPath="$PROJECT_DIR$/FullTrace/spider/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/spider/models.py" afterPath="$PROJECT_DIR$/FullTrace/spider/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/spider/tests.py" afterPath="$PROJECT_DIR$/FullTrace/spider/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/spider/views.py" afterPath="$PROJECT_DIR$/FullTrace/spider/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/FullTrace/static/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/static/css/dashboard.css" afterPath="$PROJECT_DIR$/FullTrace/static/css/dashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/static/css/ssh_crack.css" afterPath="$PROJECT_DIR$/FullTrace/static/css/ssh_crack.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/FullTrace/static/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/static/js/jquery-2.2.4.js" afterPath="$PROJECT_DIR$/FullTrace/static/js/jquery-2.2.4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/static/js/jquery-3.2.1.slim.min.js" afterPath="$PROJECT_DIR$/FullTrace/static/js/jquery-3.2.1.slim.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/static/js/jquery.js" afterPath="$PROJECT_DIR$/FullTrace/static/js/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/static/js/popper.min.js" afterPath="$PROJECT_DIR$/FullTrace/static/js/popper.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/static/js/tools.js" afterPath="$PROJECT_DIR$/FullTrace/static/js/tools.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/templates/host/add_host.html" afterPath="$PROJECT_DIR$/FullTrace/templates/host/add_host.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/templates/host/index.html" afterPath="$PROJECT_DIR$/FullTrace/templates/host/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/templates/host/ssh_crack.html" afterPath="$PROJECT_DIR$/FullTrace/templates/host/ssh_crack.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/templates/index.html" afterPath="$PROJECT_DIR$/FullTrace/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/tools/net_tools.py" afterPath="$PROJECT_DIR$/FullTrace/tools/net_tools.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/tools/ssh/jload.py" afterPath="$PROJECT_DIR$/FullTrace/tools/ssh/jload.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/tools/ssh/ssh_connect.py" afterPath="$PROJECT_DIR$/FullTrace/tools/ssh/ssh_connect.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/manage.py" afterPath="$PROJECT_DIR$/Published/manage.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/admin.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/models.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/manage.py" afterPath="$PROJECT_DIR$/monitoring_control/manage.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ops/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/ops/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ops/.idea/misc.xml" afterPath="$PROJECT_DIR$/ops/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ops/.idea/modules.xml" afterPath="$PROJECT_DIR$/ops/.idea/modules.xml" />
@@ -111,12 +114,24 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/passcracking/models.py">
+        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/TimeSpace/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="398">
+              <caret line="86" column="10" lean-forward="true" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/TimeSpace/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,7 +145,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BeatALL/passcracking/models.py" />
+        <option value="$PROJECT_DIR$/monitoring_control/TimeSpace/admin.py" />
       </list>
     </option>
   </component>
@@ -141,10 +156,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="723" />
+    <option name="x" value="667" />
+    <option name="y" value="17" />
+    <option name="width" value="1239" />
+    <option name="height" value="638" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -161,7 +176,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -184,7 +199,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BeatALL" />
+              <option name="myItemId" value="monitoring_control" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -198,17 +213,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BeatALL" />
+              <option name="myItemId" value="monitoring_control" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="passcracking" />
+              <option name="myItemId" value="TimeSpace" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,19 +234,19 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="44f8d5d3-7c48-413a-a1a5-c10607293384" name="Default" comment="" />
-      <created>1503231844083</created>
+      <changelist id="39a476f4-2bbd-45a1-8906-12d1c01e4903" name="Default" comment="" />
+      <created>1503942258381</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1503231844083</updated>
+      <updated>1503942258381</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="723" extended-state="6" />
+    <frame x="667" y="17" width="1239" height="638" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18381241" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -262,21 +277,20 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/TimeSpace/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/BeatALL/passcracking/models.py">
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/TimeSpace/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="398">
+          <caret line="86" column="10" lean-forward="true" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
