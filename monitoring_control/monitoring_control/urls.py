@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 from users.views import LoginView, LogoutView
 from users.views import IndexView
+from TimeSpace import urls as timespace_url
 
 
 urlpatterns = [
@@ -34,6 +35,9 @@ urlpatterns = [
 
     # 用户登出方法
     url(r'^user_logout/$', LogoutView.as_view(), name="user_logout"),
+
+    # 监控url
+    url(r'^monitor/', include(timespace_url), name="monitor"),
 ]
 
 

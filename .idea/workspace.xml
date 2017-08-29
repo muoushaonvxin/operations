@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39a476f4-2bbd-45a1-8906-12d1c01e4903" name="Default" comment="">
+    <list default="true" id="99a075b3-1765-4305-ab6c-5d0a66841ed0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/Analyze.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/Analyze.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/SocialFrontierlogo.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/SocialFrontierlogo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/creaqte-content.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/creaqte-content.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/distribution.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/distribution.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/info1.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/info1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/info2.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/info2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/info3.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/info3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/key.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/key.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/laptop.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/laptop.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/optimisation.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/optimisation.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/partnerlogo-01.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/partnerlogo-01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/partnerlogo-02.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/partnerlogo-02.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/partnerlogo-03.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/partnerlogo-03.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/partnerlogo-04.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/partnerlogo-04.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/partnerlogo-05.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/partnerlogo-05.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/partnerlogo-06.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/partnerlogo-06.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/user-information.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/user-information.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/white_logo.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/white_logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smblime3.tar.gz" afterPath="$PROJECT_DIR$/smblime3.tar.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
@@ -9,6 +27,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/operation.iml" afterPath="$PROJECT_DIR$/.idea/operation.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/.idea/.name" afterPath="$PROJECT_DIR$/FullTrace/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/.idea/FullTrace.iml" afterPath="$PROJECT_DIR$/FullTrace/.idea/FullTrace.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/FullTrace/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/.idea/misc.xml" afterPath="$PROJECT_DIR$/FullTrace/.idea/misc.xml" />
@@ -25,13 +44,24 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/attack/models.py" afterPath="$PROJECT_DIR$/FullTrace/attack/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/attack/tests.py" afterPath="$PROJECT_DIR$/FullTrace/attack/tests.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/attack/views.py" afterPath="$PROJECT_DIR$/FullTrace/attack/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/host/__init__.py" afterPath="$PROJECT_DIR$/FullTrace/host/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/host/admin.py" afterPath="$PROJECT_DIR$/FullTrace/host/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/host/apps.py" afterPath="$PROJECT_DIR$/FullTrace/host/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/host/forms.py" afterPath="$PROJECT_DIR$/FullTrace/host/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/host/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/FullTrace/host/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/host/migrations/__init__.py" afterPath="$PROJECT_DIR$/FullTrace/host/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/host/models.py" afterPath="$PROJECT_DIR$/FullTrace/host/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/host/tests.py" afterPath="$PROJECT_DIR$/FullTrace/host/tests.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/host/urls.py" afterPath="$PROJECT_DIR$/FullTrace/host/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/host/views.py" afterPath="$PROJECT_DIR$/FullTrace/host/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/manage.py" afterPath="$PROJECT_DIR$/FullTrace/manage.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/__init__.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/admin.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/apps.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/apps.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/dictionary.txt" afterPath="$PROJECT_DIR$/FullTrace/passcracking/dictionary.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/forms.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/migrations/0002_auto_20170823_2314.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/migrations/0002_auto_20170823_2314.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/migrations/__init__.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/migrations/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/models.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/passcracking/tests.py" afterPath="$PROJECT_DIR$/FullTrace/passcracking/tests.py" />
@@ -40,6 +70,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/scan/__init__.py" afterPath="$PROJECT_DIR$/FullTrace/scan/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/scan/admin.py" afterPath="$PROJECT_DIR$/FullTrace/scan/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/scan/apps.py" afterPath="$PROJECT_DIR$/FullTrace/scan/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/scan/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/FullTrace/scan/migrations/0001_initial.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/scan/migrations/__init__.py" afterPath="$PROJECT_DIR$/FullTrace/scan/migrations/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/scan/models.py" afterPath="$PROJECT_DIR$/FullTrace/scan/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/scan/tests.py" afterPath="$PROJECT_DIR$/FullTrace/scan/tests.py" />
@@ -67,11 +98,70 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/tools/net_tools.py" afterPath="$PROJECT_DIR$/FullTrace/tools/net_tools.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/tools/ssh/jload.py" afterPath="$PROJECT_DIR$/FullTrace/tools/ssh/jload.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FullTrace/tools/ssh/ssh_connect.py" afterPath="$PROJECT_DIR$/FullTrace/tools/ssh/ssh_connect.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/.idea/Published.iml" afterPath="$PROJECT_DIR$/Published/.idea/Published.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/Published/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/.idea/misc.xml" afterPath="$PROJECT_DIR$/Published/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/.idea/modules.xml" afterPath="$PROJECT_DIR$/Published/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Published/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/Published/__init__.py" afterPath="$PROJECT_DIR$/Published/Published/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/Published/settings.py" afterPath="$PROJECT_DIR$/Published/Published/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/Published/urls.py" afterPath="$PROJECT_DIR$/Published/Published/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/Published/wsgi.py" afterPath="$PROJECT_DIR$/Published/Published/wsgi.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/manage.py" afterPath="$PROJECT_DIR$/Published/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/publish/__init__.py" afterPath="$PROJECT_DIR$/Published/publish/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/publish/admin.py" afterPath="$PROJECT_DIR$/Published/publish/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/publish/apps.py" afterPath="$PROJECT_DIR$/Published/publish/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/publish/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/Published/publish/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/publish/migrations/__init__.py" afterPath="$PROJECT_DIR$/Published/publish/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/publish/models.py" afterPath="$PROJECT_DIR$/Published/publish/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/publish/tests.py" afterPath="$PROJECT_DIR$/Published/publish/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/publish/views.py" afterPath="$PROJECT_DIR$/Published/publish/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/monitoring_control/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/.idea/misc.xml" afterPath="$PROJECT_DIR$/monitoring_control/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/.idea/modules.xml" afterPath="$PROJECT_DIR$/monitoring_control/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/.idea/monitoring_control.iml" afterPath="$PROJECT_DIR$/monitoring_control/.idea/monitoring_control.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/.idea/workspace.xml" afterPath="$PROJECT_DIR$/monitoring_control/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/admin.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/apps.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/forms.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/migrations/0002_actionoperation_notifiers.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/migrations/0002_actionoperation_notifiers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/migrations/0003_auto_20170827_0036.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/migrations/0003_auto_20170827_0036.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/migrations/0004_auto_20170827_0039.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/migrations/0004_auto_20170827_0039.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/migrations/0005_auto_20170827_0105.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/migrations/0005_auto_20170827_0105.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/migrations/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/migrations/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/models.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/tests.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/urls.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/views.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/manage.py" afterPath="$PROJECT_DIR$/monitoring_control/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor_client/conf/settings.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor_client/conf/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor_client/core/client.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor_client/core/client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitoring_control/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/monitoring_control/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitoring_control/settings.py" afterPath="$PROJECT_DIR$/monitoring_control/monitoring_control/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitoring_control/urls.py" afterPath="$PROJECT_DIR$/monitoring_control/monitoring_control/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitoring_control/wsgi.py" afterPath="$PROJECT_DIR$/monitoring_control/monitoring_control/wsgi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/js/jquery-migrate-1.2.1.min.js" afterPath="$PROJECT_DIR$/monitoring_control/static/js/jquery-migrate-1.2.1.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/js/jquery.min.js" afterPath="$PROJECT_DIR$/monitoring_control/static/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/templates/base.html" afterPath="$PROJECT_DIR$/monitoring_control/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/templates/index.html" afterPath="$PROJECT_DIR$/monitoring_control/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/templates/login.html" afterPath="$PROJECT_DIR$/monitoring_control/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/users/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/admin.py" afterPath="$PROJECT_DIR$/monitoring_control/users/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/apps.py" afterPath="$PROJECT_DIR$/monitoring_control/users/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/forms.py" afterPath="$PROJECT_DIR$/monitoring_control/users/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/monitoring_control/users/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/migrations/0002_auto_20170826_0027.py" afterPath="$PROJECT_DIR$/monitoring_control/users/migrations/0002_auto_20170826_0027.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/migrations/0003_auto_20170826_2206.py" afterPath="$PROJECT_DIR$/monitoring_control/users/migrations/0003_auto_20170826_2206.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/migrations/0004_remove_userprofile_name.py" afterPath="$PROJECT_DIR$/monitoring_control/users/migrations/0004_remove_userprofile_name.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/migrations/0005_auto_20170826_2209.py" afterPath="$PROJECT_DIR$/monitoring_control/users/migrations/0005_auto_20170826_2209.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/migrations/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/users/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/models.py" afterPath="$PROJECT_DIR$/monitoring_control/users/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/tests.py" afterPath="$PROJECT_DIR$/monitoring_control/users/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/urls.py" afterPath="$PROJECT_DIR$/monitoring_control/users/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/views.py" afterPath="$PROJECT_DIR$/monitoring_control/users/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ops/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/ops/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ops/.idea/misc.xml" afterPath="$PROJECT_DIR$/ops/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ops/.idea/modules.xml" afterPath="$PROJECT_DIR$/ops/.idea/modules.xml" />
@@ -113,31 +203,48 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/TimeSpace/models.py">
+      <file leaf-file-name="rest_urls.py" pinned="false" current-in-tab="false">
+        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/TimeSpace/rest_urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="86" column="10" lean-forward="true" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
+            <state relative-caret-position="175">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#26#67#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/TimeSpace/admin.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/TimeSpace/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="425">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#49#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/monitor_client/conf/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="61" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="61" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -145,7 +252,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/monitoring_control/TimeSpace/admin.py" />
+        <option value="$PROJECT_DIR$/monitoring_control/monitoring_control/settings.py" />
+        <option value="$PROJECT_DIR$/monitoring_control/monitoring_control/urls.py" />
+        <option value="$PROJECT_DIR$/monitoring_control/TimeSpace/urls.py" />
+        <option value="$PROJECT_DIR$/monitoring_control/monitor_client/conf/settings.py" />
+        <option value="$PROJECT_DIR$/monitoring_control/monitor_client/bin/monitor_client.py" />
+        <option value="$PROJECT_DIR$/monitoring_control/monitor_client/plugins/plugin_api.py" />
+        <option value="$PROJECT_DIR$/monitoring_control/monitor_client/core/client.py" />
+        <option value="$PROJECT_DIR$/monitoring_control/TimeSpace/rest_urls.py" />
+        <option value="$PROJECT_DIR$/monitoring_control/TimeSpace/views.py" />
       </list>
     </option>
   </component>
@@ -156,10 +271,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="667" />
-    <option name="y" value="17" />
-    <option name="width" value="1239" />
-    <option name="height" value="638" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="723" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -176,6 +291,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -217,36 +333,354 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="monitor_client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Serializer.py" />
+              <option name="myItemType" value="com.jetbrains.python.projectView.PyFileNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitoring_control" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitor_client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitoring_control" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitor_client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitoring_control" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitor_client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitoring_control" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimeSpace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views.py" />
+              <option name="myItemType" value="com.jetbrains.python.projectView.PyFileNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitoring_control" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="TimeSpace" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="operation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="operation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="operation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="operation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="operation" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="operation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="operation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="operation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="operation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="operation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="39a476f4-2bbd-45a1-8906-12d1c01e4903" name="Default" comment="" />
-      <created>1503942258381</created>
+      <changelist id="99a075b3-1765-4305-ab6c-5d0a66841ed0" name="Default" comment="" />
+      <created>1504013884703</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1503942258381</updated>
+      <updated>1504013884703</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="667" y="17" width="1239" height="638" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="723" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21633889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -277,22 +711,112 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/TimeSpace/admin.py">
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/monitor_client/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/monitoring_control/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <caret line="20" column="62" lean-forward="true" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/monitoring_control/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#652#693#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/TimeSpace/models.py">
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/monitor_client/Serializer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="86" column="10" lean-forward="true" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
+        <state relative-caret-position="-417">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/monitor_client/plugins/plugin_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="e#27#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/monitor_client/core/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1300">
+          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/monitor_client/core/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-328">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/monitor_client/bin/monitor_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/TimeSpace/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/monitor_client/conf/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="61" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/TimeSpace/rest_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#26#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/TimeSpace/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>

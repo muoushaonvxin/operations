@@ -1,7 +1,7 @@
 import time, threading, json
 import requests
-from conf import settings
-from plugins import plugin_api
+from monitor_client.conf import settings
+from monitor_client.plugins import plugin_api
 
 
 class ClientHandlers(object):
@@ -55,7 +55,7 @@ class ClientHandlers(object):
             report_data = {
                 "client_id": settings.configs['HostID'],
                 "service_name": service_name,
-                "data": plugin_callback,
+                "data": json.dumps(plugin_callback),
             }
 
             request_action = settings.configs["urls"]["service_report"][1]
