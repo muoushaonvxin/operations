@@ -3,11 +3,10 @@ from django.views.generic import View
 import json
 # Create your views here.
 
-from monitor_client.Serializer import ClientHandler
+from .Serializer import ClientHandler
 
 
 class Client_Config_View(View):
-
     def get(self, request, client_id):
         client_obj = ClientHandler(client_id)
         client_config = client_obj.fetch_configs()

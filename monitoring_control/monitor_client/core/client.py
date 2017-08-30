@@ -9,7 +9,7 @@ class ClientHandlers(object):
     def __init__(self):
         self.monitor_services = {}
 
-    def load_lastest_config(self):
+    def load_latest_config(self):
         """
         加载最新的配置信息
         :return:
@@ -24,7 +24,7 @@ class ClientHandlers(object):
         config_lastest_update_time = 0
         while not exit_flag:
             if time.time() - config_lastest_update_time > settings.configs["ConfigUpdateInterval"]:
-                self.load_lastest_config()
+                self.load_latest_config()
                 print("Lastest_config:", self.monitor_services)
                 config_lastest_update_time = time.time()
 

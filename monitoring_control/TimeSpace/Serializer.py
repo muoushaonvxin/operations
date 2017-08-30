@@ -26,4 +26,5 @@ class ClientHandler(View):
                     self.client_configs['services'][service.name] = [service.plugin_name, service.interval]
         except:
             traceback.print_exc()
+        print(self.client_configs)
         return self.client_configs
