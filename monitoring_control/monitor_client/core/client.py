@@ -69,7 +69,8 @@ class ClientHandlers(object):
         abs_url = "http://{ip_addr}:{port}/{url}".format(ip_addr=settings.configs["Server"],
                                                          port=settings.configs["ServerPort"],
                                                          url=request_url)
-        print("\033[31m;1m{abs_url}\033[0m".format(abs_url=abs_url), type(extra_data), extra_data)
+        print("\033[31m{abs_url}\033[0m".format(abs_url=abs_url), type(extra_data), extra_data)
+        print(extra_data)
         if action in ('get', "GET"):
             print(abs_url, extra_data)
             try:
