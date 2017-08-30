@@ -93,8 +93,8 @@ class Service(models.Model):
 # 模板表
 class Template(models.Model):
     name = models.CharField(verbose_name=u"模板名称", max_length=64, unique=True)
-    services = models.ManyToManyField('Service', blank=True, verbose_name=u"服务列表")
-    triggers = models.ManyToManyField('Trigger', blank=True, verbose_name=u"触发器列表")
+    services = models.ManyToManyField('Service', verbose_name=u"服务列表")
+    triggers = models.ManyToManyField('Trigger', verbose_name=u"触发器列表")
 
     def __str__(self):
         return self.name
@@ -103,11 +103,11 @@ class Template(models.Model):
 # 触发一个报警，由多个指标来判断，触发关联表,一个表达式只能关联一个trigger
 class TriggerExpression(models.Model):
     # 所需触发器
-    trigger = models.ForeignKey('Trigger', blank=True, verbose_name=u"所属触发器")
+    trigger = models.ForeignKey('Trigger', verbose_name=u"所属触发器")
     # 关联服务
-    service = models.ForeignKey('Service', blank=True, verbose_name=u"关联服务")
+    service = models.ForeignKey('Service', verbose_name=u"关联服务")
     # 关联服务指标
-    service_index = models.ForeignKey('ServiceIndex', blank=True, verbose_name=u"关联服务指标")
+    service_index = models.ForeignKey('ServiceIndex', verbose_name=u"关联服务指标")
     # 只能监控专门指定的指标key
     specified_index_key = models.CharField(verbose_name=u"只能监控专门指定的指标key", max_length=64, blank=True, null=True)
 
@@ -183,12 +183,12 @@ class Action(models.Model):
     # 告警间隔
     interval = models.IntegerField(default=300, verbose_name=u"告警间隔(s)")
     # 关联别的动作
-    operations = models.ManyToManyField('ActionOperation', blank=True, verbose_name=u"ActionOperation")
+    operations = models.ManyToManyField('ActionOperation', verbose_name=u"ActionOperation")
     # 故障回复是否要通知
     recover_notice = models.BooleanField(verbose_name=u"故障回复后发送通知消息", default=True)
     # 恢复后通知的主题是什么
-    recover_subject = models.CharField(max_length=255, blank=True, null=True, verbose_name=u"通知文本")
-    recover_message = models.TextField(blank=True, null=True)
+    recover_subject = models.CharField(max_length=255, blank=True, null=True, verbose_name=u"通知主题")
+    recover_message = models.TextField(blank=True, null=True, verbose_name=u"通知文本")
     # 是否停用
     enabled = models.BooleanField(default=True, verbose_name=u"是否停用")
 

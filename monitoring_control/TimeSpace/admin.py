@@ -9,6 +9,10 @@ class HostAdmin(admin.ModelAdmin):
     filter_horizontal = ('host_groups', 'templates')
 
 
+class HostGroupAdmin(admin.ModelAdmin):
+    filter_horizontal = ('templates',)
+
+
 class TemplateAdmin(admin.ModelAdmin):
     filter_horizontal = ('services', 'triggers')
 
@@ -18,22 +22,23 @@ class ServiceAdmin(admin.ModelAdmin):
     list_display = ('name', 'interval', 'plugin_name')
 
 
-class TriggerExpressionInline(admin.ModelAdmin):
+class TriggerExpressionInline(admin.TabularInline):
     model = TriggerExpression
 
 
 class TriggerAdmin(admin.ModelAdmin):
     list_display = ('name', 'serverity', 'enabled')
-    inlines = [TriggerExpressionInline]
+    inlines = [
+        TriggerExpressionInline,
+    ]
 
 
 class TriggerExpressionAdmin(admin.ModelAdmin):
-    list_display = ('trigger', 'service', 'service_index', 'specified_index_key')
-
+    list_display = ('trigger','service','service_index','specified_index_key','operator_type','data_calc_func','threshold','logic_type')
 
 
 admin.site.register(Host, HostAdmin)
-admin.site.register(HostGroup)
+admin.site.register(HostGroup, HostGroupAdmin)
 admin.site.register(Service, ServiceAdmin)
 admin.site.register(ServiceIndex)
 admin.site.register(Template, TemplateAdmin)

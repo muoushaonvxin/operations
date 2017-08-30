@@ -1,7 +1,7 @@
 import time, threading, json
 import requests
-from monitor_client.conf import settings
-from monitor_client.plugins import plugin_api
+from conf import settings
+from plugins import plugin_api
 
 
 class ClientHandlers(object):
