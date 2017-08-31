@@ -15,7 +15,7 @@ class ClientHandlers(object):
         :return:
         """
         request_type = settings.configs["urls"]["get_configs"][1]
-        request_url = "%s/%s" % (settings.configs["urls"]["get_configs"][0], settings.configs["HostID"])
+        request_url = "%s/%s" % (settings.configs["urls"]["get_configs"][0], settings.configs["HostIP"])
         lastest_config = self.url_request(request_type, request_url)
         self.monitor_services.update(lastest_config)
 
@@ -53,7 +53,7 @@ class ClientHandlers(object):
             print("#################################################")
 
             report_data = {
-                "client_id": settings.configs['HostID'],
+                "client_ip": settings.configs['HostIP'],
                 "service_name": service_name,
                 "data": json.dumps(plugin_callback),
             }

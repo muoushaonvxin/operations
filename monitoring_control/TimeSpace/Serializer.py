@@ -5,15 +5,15 @@ from TimeSpace.models import Host
 
 class ClientHandler(View):
 
-    def __init__(self, client_id):
-        self.client_id = client_id
+    def __init__(self, client_ip):
+        self.client_ip = client_ip
         self.client_configs = {
             "services": {}
         }
 
     def fetch_configs(self):
         try:
-            host_obj_id = Host.objects.get(id=self.client_id)
+            host_obj_id = Host.objects.get(ip_addr=self.client_ip)
             print(">>>>>>>>", host_obj_id)
             template_list = list(host_obj_id.templates.select_related())
             print(">>>>>>>>", template_list)

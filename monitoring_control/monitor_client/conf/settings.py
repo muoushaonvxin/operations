@@ -1,6 +1,6 @@
 configs = {
-    'HostID': 2,
-    'Server': '8.8.8.128',
+    'HostIP': '10.203.106.250',
+    'Server': '127.0.0.1',
     'ServerPort': 8000,
     'urls': {
         'get_configs': ['monitor/api/client/config', 'get'],

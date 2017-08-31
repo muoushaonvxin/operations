@@ -7,10 +7,11 @@ from .Serializer import ClientHandler
 
 
 class Client_Config_View(View):
-    def get(self, request, client_id):
-        client_obj = ClientHandler(client_id)
+    def get(self, request, client_ip):
+        print(request)
+        client_obj = ClientHandler(client_ip)
         client_config = client_obj.fetch_configs()
-        print("客户端ID", client_id)
+        print("客户端ID", client_ip)
         if client_config:
             return HttpResponse(json.dumps(client_config), content_type="application/json")
 
