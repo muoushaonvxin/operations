@@ -8,11 +8,10 @@ from .Serializer import ClientHandler
 
 class Client_Config_View(View):
     def get(self, request, client_ip):
-        print(request)
         client_obj = ClientHandler(client_ip)
         client_config = client_obj.fetch_configs()
-        print("客户端ID", client_ip)
         if client_config:
+            print("客户端ID ---> {0}, 客户端配置 ---> {1}".format(client_ip, client_config))
             return HttpResponse(json.dumps(client_config), content_type="application/json")
 
 

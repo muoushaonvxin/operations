@@ -93,8 +93,8 @@ class Service(models.Model):
 # 模板表
 class Template(models.Model):
     name = models.CharField(verbose_name=u"模板名称", max_length=64, unique=True)
-    services = models.ManyToManyField('Service', verbose_name=u"服务列表")
-    triggers = models.ManyToManyField('Trigger', verbose_name=u"触发器列表")
+    services = models.ManyToManyField('Service', blank=True, verbose_name=u"服务列表")
+    triggers = models.ManyToManyField('Trigger', blank=True, verbose_name=u"触发器列表")
 
     def __str__(self):
         return self.name

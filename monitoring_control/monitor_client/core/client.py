@@ -9,6 +9,7 @@ class ClientHandlers(object):
     def __init__(self):
         self.monitor_services = {}
 
+
     def load_latest_config(self):
         """
         加载最新的配置信息
@@ -18,6 +19,7 @@ class ClientHandlers(object):
         request_url = "%s/%s" % (settings.configs["urls"]["get_configs"][0], settings.configs["HostIP"])
         lastest_config = self.url_request(request_type, request_url)
         self.monitor_services.update(lastest_config)
+
 
     def forever_run(self):
         exit_flag = False
@@ -43,6 +45,7 @@ class ClientHandlers(object):
                     print("监控的服务： {ServiceName} 距离下次启动时间：{interval} secs".format(ServiceName=service_name, interval=monitor_interval - (time.time() - last_invoke_time)))
                     time.sleep(5)
 
+
     def invoke_plugin(self, service_name, val):
         plugin_name = val[0]
         if hasattr(plugin_api, plugin_name):
@@ -62,8 +65,9 @@ class ClientHandlers(object):
             request_url = settings.configs["urls"]["service_report"][0]
             self.url_request(request_action, request_url, params=report_data)
         else:
-            print("\033[31m;1mCannot find service [%s]' plugin name [%s] in plugin_api\033[0m" % (service_name, plugin_name))
+            print("\033[31mCannot find service [%s]' plugin name [%s] in plugin_api\033[0m" % (service_name, plugin_name))
         print('--plugin:', val)
+
 
     def url_request(self, action, request_url, **extra_data):
         abs_url = "http://{ip_addr}:{port}/{url}".format(ip_addr=settings.configs["Server"],
