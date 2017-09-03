@@ -144,3 +144,19 @@ EMAIL_FROM = ""
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+REDIS_CONN = {
+    'HOST': 'localhost',
+    'PORT': 6379,
+    'PASSWD': '',
+}
+
+STATUS_DATA_OPTIMIZATION = {
+    'latest': [0, 600],
+    '10mins': [600, 600],
+    '30mins': [1000, 600],
+    '60mins': [3600, 600],
+}
+
+REPORT_LATE_TOLERANCE_TIME = 10

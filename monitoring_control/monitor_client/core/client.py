@@ -40,10 +40,10 @@ class ClientHandlers(object):
                     self.monitor_services["services"][service_name][2] = time.time()
                     t = threading.Thread(target=self.invoke_plugin, args=(service_name, val))
                     t.start()
-                    print("启动监控的服务: [{ServiceName}]".format(ServiceName=service_name))
+                    print("start monitor service: [{ServiceName}]".format(ServiceName=service_name))
                 else:
-                    print("监控的服务： {ServiceName} 距离下次启动时间：{interval} secs".format(ServiceName=service_name, interval=monitor_interval - (time.time() - last_invoke_time)))
-                    time.sleep(5)
+                    print("Going to monitor service [{ServiceName}] in [{interval}] secs".format(ServiceName=service_name, interval=monitor_interval - (time.time() - last_invoke_time)))
+                    time.sleep(1)
 
 
     def invoke_plugin(self, service_name, val):
@@ -51,9 +51,7 @@ class ClientHandlers(object):
         if hasattr(plugin_api, plugin_name):
             func = getattr(plugin_api, plugin_name)
             plugin_callback = func()
-            print("#################################################")
             print(plugin_callback)
-            print("#################################################")
 
             report_data = {
                 "client_ip": settings.configs['HostIP'],
@@ -81,7 +79,6 @@ class ClientHandlers(object):
                 r = requests.get(abs_url, timeout=settings.configs["RequestTimeout"])
                 r_data = r.json()
                 return r_data
-
             except requests.RequestException as E:
                 exit("\033[31;1m%s\033[0m" % E)
 

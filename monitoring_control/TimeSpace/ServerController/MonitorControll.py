@@ -16,9 +16,8 @@ class ClientHandler(View):
             try:
                 host_obj = Host.objects.get(ip_addr=self.client_ip)
                 template_list = list(host_obj.templates.select_related())
-                host_group_obj = host_obj.host_groups.select_related()
-                print(host_group_obj)
-                template_list.extend([template for template in host_group_obj])
+                for host_group in host_obj.host_groups.select_related():
+                    template_list.extend(host_group.templates.select_related())
                 for template in template_list:
                     for service in template.services.select_related():
                         self.client_configs['services'][service.name] = [service.plugin_name, service.interval]
@@ -27,3 +26,19 @@ class ClientHandler(View):
         except:
             traceback.print_exc()
         return self.client_configs
+
+
+class GetTrigger(object):
+
+    def __init__(self, host_obj):
+        self.host_obj = host_obj
+        self.trigger_configs = []
+
+    def get_trigger(self):
+        for template in self.host_obj.templates.select_related():
+            self.trigger_configs.extend(template.triggers.select_related())
+        for group in self.host_obj.host_groups.select_related():
+            for template in group.templates.select_related():
+                self.trigger_configs.extend(template.triggers.select_related())
+        return set(self.trigger_configs)
+
