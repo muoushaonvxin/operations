@@ -1,9 +1,9 @@
-from .linux import linux_network
+from .linux import linux_network, linux_cpu
 from .windows import windows_network
 
 
 def GetLinuxCpuStatus():
-	pass
+	return linux_cpu.monitor()
 
 def GetNginxStatus():
 	pass
@@ -16,3 +16,4 @@ def GetLinuxNetworkStatus():
 
 def GetMySQLStatus():
 	pass
+
