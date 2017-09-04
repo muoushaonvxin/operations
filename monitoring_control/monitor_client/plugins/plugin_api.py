@@ -1,3 +1,5 @@
+from .linux import linux_network
+from .windows import windows_network
 
 
 def GetLinuxCpuStatus():
@@ -10,8 +12,7 @@ def GetLinuxMemStatus():
 	pass
 
 def GetLinuxNetworkStatus():
-	pass
+	return linux_network.monitor()
 
 def GetMySQLStatus():
 	pass
-

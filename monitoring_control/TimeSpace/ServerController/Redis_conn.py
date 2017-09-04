@@ -8,3 +8,6 @@ def redis_conn(django_settings):
 	r = redis.Redis(connection_pool=pool)
 	return r
 
+
+
+
