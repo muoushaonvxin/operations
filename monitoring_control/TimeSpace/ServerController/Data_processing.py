@@ -35,11 +35,15 @@ class DataHandler(object):
                             self.global_monitor_dic[h]['services'][service_obj.id][1] = time.time()
                             self.data_point_validation(h, service_obj)
                         else:
+                            pass
 
 
 
+    def update_or_load_configs(self):
+        pass
 
-
+    def data_point_validation(self):
+        pass
 
 
 

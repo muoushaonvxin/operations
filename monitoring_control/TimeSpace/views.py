@@ -4,6 +4,8 @@ import json
 # Create your views here.
 from .ServerController import MonitorControll, Redis_conn, Data_optimization, Data_processing
 from monitoring_control import settings
+from TimeSpace import models
+from users import models
 
 
 # 连接redis 的实例对象

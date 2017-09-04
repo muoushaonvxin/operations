@@ -4,7 +4,7 @@ import time
 import json
 import copy
 
-class DataStore(object)
+class DataStore(object):
 
 	def __init__(self, client_ip, service_name, data, redis_obj):
 		self.client_ip = client_ip
@@ -112,6 +112,11 @@ class DataStore(object)
 		print("optimized empty dic: ", optimized_dic)
 
 		return optimized_dic
+
+
+
+	def save_optimized_data(self):
+        pass
 
 
 	def get_average(self, data_set):
