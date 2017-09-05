@@ -3,7 +3,7 @@
 import subprocess
 
 def monitor():
-	shell_command = 'sar -n DEV 1 5 | grep -v IFACE | grep Average > network.txt'
+	shell_command = 'sar -n DEV 1 5 | grep -v IFACE | grep Average > ./network.txt'
 	result = subprocess.Popen(shell_command,shell=True,stdout=subprocess.PIPE)
 	value_dict = {'status': 0, 'data': {}}
 

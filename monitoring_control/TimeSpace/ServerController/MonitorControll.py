@@ -11,6 +11,7 @@ class ClientHandler(View):
             "services": {}
         }
 
+    # 获取服务端的配置
     def fetch_configs(self):
         try:
             try:

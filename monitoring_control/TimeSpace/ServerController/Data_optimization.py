@@ -116,7 +116,7 @@ class DataStore(object):
 
 
 	def save_optimized_data(self):
-        pass
+		pass
 
 
 	def get_average(self, data_set):
