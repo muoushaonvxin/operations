@@ -7,7 +7,7 @@ def monitor():
 	result = subprocess.Popen(shell_command,shell=True,stdout=subprocess.PIPE)
 	value_dict = {'status': 0, 'data': {}}
 
-	files = open('/tools/operations/monitoring_control/monitor_client/plugins/linux/network.txt', 'r').readlines()
+	files = open('./network.txt', 'r').readlines()
 	for line in files:
 		line = line.split()
 		nic_name, t_in, t_out = line[1], line[4], line[5]
