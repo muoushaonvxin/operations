@@ -42,6 +42,7 @@ class DataHandler(object):
     def update_or_load_configs(self):
         pass
 
+
     def data_point_validation(self):
         pass
 

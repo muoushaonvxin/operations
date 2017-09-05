@@ -42,3 +42,7 @@ class GetTrigger(object):
                 self.trigger_configs.extend(template.triggers.select_related())
         return set(self.trigger_configs)
 
+    def load_service_data_and_calulating(self, host_obj, trigger, REDIS_OBJ):
+        pass
+
+
