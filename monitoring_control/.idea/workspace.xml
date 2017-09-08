@@ -54,8 +54,8 @@
       <file leaf-file-name="linux_cpu.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/monitor_client/plugins/linux/linux_cpu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -135,8 +135,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="174" />
-    <option name="y" value="61" />
+    <option name="x" value="67" />
+    <option name="y" value="289" />
     <option name="width" value="1645" />
     <option name="height" value="912" />
   </component>
@@ -588,7 +588,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="174" y="61" width="1645" height="912" extended-state="1" />
+    <frame x="67" y="289" width="1645" height="912" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18386492" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -987,8 +987,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/monitor_client/plugins/linux/linux_cpu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           <folding />
         </state>
       </provider>
