@@ -46,7 +46,8 @@ class DataHandler(object):
     def data_point_validation(self):
         pass
 
-
+    def load_service_data_and_calulating(self, host_obj, trigger, REDIS_OBJ):
+        pass
 
 
 
