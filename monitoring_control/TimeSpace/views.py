@@ -41,7 +41,7 @@ class Service_Data_Report(View):
         except Exception as e:
             print(e)
 
-        return HttpResponse("ok!")
+        return HttpResponse(json.dumps("-----report success-----"))
 
 
 
