@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 from linux import GetLinuxSysInfo
+from windows import GetWindowsSysInfo
 
 
 def LinuxSysInfo():
-    pass
+    return GetLinuxSysInfo.collect()
 
 def WindowsSysInfo():
-    pass
-
+    return GetWindowsSysInfo.collect()

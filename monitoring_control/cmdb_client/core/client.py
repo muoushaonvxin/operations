@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 from conf import settings
-import urllib, urllib2, sys, os, json, datetime
-import api_token
+import urllib, sys, os, json, datetime
+# import api_token
 
 class ClientHandler(object):
 
@@ -37,18 +37,18 @@ class ClientHandler(object):
 				args = args[1:]
 				url_with_args = "%s?%s" % (url, args)
 				try:
-					req = urllib2.Request(url_with_args)
-					req_data = urllib2.urlopen(req, timeout=settings.Params['request_timeout'])
+					req = urllib.Request(url_with_args)
+					req_data = urllib.urlopen(req, timeout=settings.Params['request_timeout'])
 					callback = req_data.read()
 					print("----> server response: ", callback)
 					return callback
-				except urllib2.URLError as e:
+				except urllib.URLError as e:
 					sys.exit("\033[31;1m%s\033[0m" % e)
 			elif method == "post":
 				try:
 					data_encode = urllib.urlencode(data)
-					req = urllib2.Request(url=url, data=data_encode)
-					res_data = urllib2.urlopen(req, timeout=settings.Params['request_timeout'])
+					req = urllib.Request(url=url, data=data_encode)
+					res_data = urllib.urlopen(req, timeout=settings.Params['request_timeout'])
 					callback = res_data.read()
 					callback = json.loads(callback)
 					print("\033[31;1m[%s]:[%s]\033[0m response:\n%s" % (method, url, callback))

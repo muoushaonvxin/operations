@@ -1,15 +1,10 @@
-# -*- encoding: utf-8 -*-
-import os, sys, platform
+import os, sys
 
-if platform.system() == 'Windows':
-	BASE_DIR = '\\'.join(os.path.abspath(os.path.dirname(__file__)).split('\\')[:-1])
-	print(BASE_DIR)
-else:
-	BASE_DIR = '/'.join(os.path.abspath(os.path.dirname(__file__)).split('/')[:-1])
-
-sys.path.append(BASE_DIR)
+current_path = os.path.abspath(__file__)
+base_dir = os.path.dirname(os.path.dirname(current_path))
+sys.path.append(base_dir)
 
 from core import main
 
 if __name__ == '__main__':
-	
+    client = main.CmdbClientHandler(sys.argv)

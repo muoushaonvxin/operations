@@ -21,12 +21,12 @@ class InfoCollection(object):
 		except AttributeError as e:
 			sys.exit("Error:MadKing doens't support os [%s]!" % os_platform)
 
-	def Linux(self):
+	def linux(self):
 		sys_info = plugin_api.LinuxSysInfo()
 		return sys_info
 
 
-	def Windows(self):
+	def windows(self):
 		sys_info = plugin_api.WindowsSysInfo()
 		return sys_info
 

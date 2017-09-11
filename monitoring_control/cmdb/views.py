@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from django.generic import View
+from django.views.generic import View
 from .ServerHandler import core
 import json
 
@@ -7,7 +7,6 @@ import json
 class AssetReport(View):
 	def get(self, request):
 		print(request.GET)
-		
 
 	def post(self, request):
 		ass_handler = core.Asset(request)

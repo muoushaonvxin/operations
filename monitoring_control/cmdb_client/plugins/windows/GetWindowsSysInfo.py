@@ -119,14 +119,3 @@ class Win32Info(object):
 		return {'nic': data}
 
 
-
-
-
-
-
-
-
-
-
-
-

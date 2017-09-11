@@ -263,6 +263,8 @@ class Asset(object):
 
 
 	def __update_server_component(self):
+		pass
+
 
 
 
