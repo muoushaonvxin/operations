@@ -1,3 +1,5 @@
+# -*- coding: utf8 -*-
+
 from core.client import ClientHandler
 import sys
 
@@ -9,8 +11,9 @@ class CmdbClientHandler(object):
         if len(sys_argv) < 2:
             sys.exit(u"""Please input start or stop:
 
-                        start:  argument start is start the monitor client. 
-                        stop:   argument stop is stop the monitor client.
+                        start:          argument start is start the monitor client. 
+                        stop:           argument stop is stop the monitor client.
+                        collect_data:   argument stop is stop the monitor client.
 
                 """)
         else:
@@ -26,7 +29,8 @@ class CmdbClientHandler(object):
 
 
     def collect_data(self):
-        pass
+        client = ClientHandler('start').collect_data()
+        print(client)
 
 
     def start(self):

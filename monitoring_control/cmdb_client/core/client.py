@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 from conf import settings
 import urllib, sys, os, json, datetime
+from core import info_collection
 # import api_token
 
 class ClientHandler(object):
@@ -100,6 +101,10 @@ class ClientHandler(object):
 		f = open(asset_id_file, 'wb')
 		f.write(str(new_asset_id))
 		f.close()
+
+
+	def parse_argv(self):
+		pass
 
 
 

@@ -1,6 +1,6 @@
-# -*- encoding: utf-8 -*-
-from linux import GetLinuxSysInfo
-from windows import GetWindowsSysInfo
+# _*_ encoding: utf-8 _*_
+from .linux import GetLinuxSysInfo
+from .windows import GetWindowsSysInfo
 
 
 def LinuxSysInfo():
