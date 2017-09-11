@@ -88,10 +88,9 @@
       <file leaf-file-name="GetWindowsSysInfo.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cmdb_client/plugins/windows/GetWindowsSysInfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+            <state relative-caret-position="80">
+              <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
               <folding>
-                <element signature="e#27#42#0" expanded="true" />
                 <marker date="1505149810259" expanded="true" signature="1192:1226" ph="Select * fro... Win32_PhysicalMemory" />
               </folding>
             </state>
@@ -1002,10 +1001,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cmdb_client/plugins/windows/GetWindowsSysInfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        <state relative-caret-position="80">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
           <folding>
-            <element signature="e#27#42#0" expanded="true" />
             <marker date="1505149810259" expanded="true" signature="1192:1226" ph="Select * fro... Win32_PhysicalMemory" />
           </folding>
         </state>
