@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-import os, sys, subprocess, commands, re
+import os, sys, subprocess, re
 
 def collect():
 	filter_keys = ['Manufacturer', 'Serial Number', 'Product Name', 'UUID', 'Wake-up Type']
@@ -8,21 +8,22 @@ def collect():
 
 	for key in filter_keys:
 		try:
-			cmd_res = commands.getoutput("dmidecode -t system | grep '%s'" % key)
-			cmd_res = cmd_res.strip()
+			cmd = "dmidecode -t system | grep '%s'" % key
+			cmd_result = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE).stdout.readlines()
+			cmd_res = cmd_result[0].decode().strip()
 
 			res_to_list = cmd_res.split(':')
 			if len(res_to_list) > 1:
-				raw_data[key] = res_to_list[1].strip()
+					raw_data[key] = res_to_list[1].strip()
 			else:
-				raw_data[key] = -1
+					raw_data[key] = -1
 
 		except Exception as e:
 			print(e)
 			raw_data[key] = -2
 
 	data = {"asset_type": "server"}
-	data['manufactory'] = raw_data['ManuFacturer']
+	data['manufactory'] = raw_data['Manufacturer']
 	data['sn'] = raw_data['Serial Number']
 	data['model'] = raw_data['Product Name']
 	data['uuid'] = raw_data['UUID']
@@ -42,8 +43,10 @@ def diskinfo():
 	return obj.linux()
 
 def nicinfo():
-	raw_data = commands.getoutput("ifconfig -a")
-	raw_data = raw_data.split("\n")
+	raw_data_result = subprocess.Popen("ifconfig -a",shell=True,stdout=subprocess.PIPE).stdout.readlines()
+	raw_data = []
+	for i in raw_data_result:
+		raw_data.append(i.decode().strip())
 
 	nic_dic = {}
 	next_ip_line = False
@@ -95,7 +98,8 @@ def nicinfo():
 			next_ip_line = True
 			last_mac_addr = line
 
-	nic_last = []
+
+	nic_list = []
 	for k, v in nic_dic.items():
 		nic_list.append(v)
 
