@@ -46,8 +46,20 @@ class DataHandler(object):
     def data_point_validation(self):
         pass
 
-    def load_service_data_and_calulating(self, host_obj, trigger, REDIS_OBJ):
-        pass
+    def load_service_data_and_calulating(self, host_obj, trigger_obj, redis_obj):
+        self.redis = redis_obj
+        calc_sub_res_list = []
+        positive_expressions = []
+        expression_res_string = ''
+        for expression in trigger_obj.triggerexpression_set.select_related().order_by('id'):
+            print(expression,expression.logic_type)
+            exprpession_process_obj = ExpressionProcess(self,host_obj, expression)
+            single_expression_res = expression_process_obj.process()
+            if single_expression_res:
+                calc_sub_res_list.append(single_expression_res)
+                if single_expression_res['expression_obj'].logic_type:
+                    expression_res_string += str(single_expression_res['calc_res']) + ' ' + \
+                                             single_expression_res['expression_obj'].logic_type + 
 
 
 
@@ -55,4 +67,34 @@ class DataHandler(object):
 
 
 
+class ExpressionProcess(object):
 
+    def __init__(self,):
+
+
+    def process(self):
+        data = self.load_data_from_redis()
+        data_calc_func = getattr(self, 'get_%s' % self.expression_obj)
+        single_expression_calc_res = data_calc_fun(data)
+        print("--- res of single_expression_calc_res", single_expression_calc_res)
+        if single_expression_calc_res:
+            res_dic = {
+                'calc_res': single_expression_calc_res[0],
+                'calc_res_val': single_expression_calc_res[1],
+                'expression_obj': self.expression_obj,
+                'service_item': single_expression_calc_res[2],
+            }
+
+
+
+    def load_data_from_redis(self):
+        time_in_sec = int(self.time_range) * 60
+        approximate_data_points = (time_in_sec + 60) / self.expression_obj.service.interval
+        print("approximate dataset nums:", approximate_data_points, time_in_sec)
+        data_range_raw = self.main_ins.redis.lrange(self.service_redis_key, -approximate_data_points, -1)
+        approximate_data_range = [json.loads(i) for i in data_range_raw]
+        data_range = []
+        for point in approximate_data_range:
+            val, saving_time = point
+            if time.time() - saving_time < time_in_sec:
+                data_range.append(point)

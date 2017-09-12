@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b19e54b-ba1f-41cf-88d2-ba0ab5d81778" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/ServerHandler/core.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/ServerController/core.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/Analyze.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/Analyze.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/SocialFrontierlogo.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/SocialFrontierlogo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/creaqte-content.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/creaqte-content.png" />
@@ -150,6 +149,29 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/tests.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/tests.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/urls.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/views.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/admin.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/apps.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/models.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/tests.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/urls.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/views.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/bin/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/bin/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/bin/cmdb_client.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/bin/cmdb_client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/conf/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/conf/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/conf/settings.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/conf/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/api_token.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/api_token.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/client.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/info_collection.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/info_collection.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/main.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/GetLinuxSysInfo.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/GetLinuxSysInfo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/plugin_api.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/plugin_api.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/windows/GetWindowsSysInfo.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/windows/GetWindowsSysInfo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/var/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/var/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/manage.py" afterPath="$PROJECT_DIR$/monitoring_control/manage.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor_client/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/monitoring_control/monitor_client/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor_client/.idea/misc.xml" afterPath="$PROJECT_DIR$/monitoring_control/monitor_client/.idea/misc.xml" />
@@ -164,6 +186,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor_client/core/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor_client/core/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor_client/core/client.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor_client/core/client.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor_client/core/main.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor_client/core/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor_client/network.txt" afterPath="$PROJECT_DIR$/monitoring_control/monitor_client/network.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor_client/plugins/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor_client/plugins/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor_client/plugins/linux/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor_client/plugins/linux/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor_client/plugins/linux/files/network.txt" afterPath="$PROJECT_DIR$/monitoring_control/monitor_client/plugins/linux/files/network.txt" />
@@ -238,83 +261,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="info_collection.py" pinned="false" current-in-tab="false">
-        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb_client/core/info_collection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plugin_api.py" pinned="false" current-in-tab="false">
-        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/plugin_api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetLinuxSysInfo.py" pinned="false" current-in-tab="false">
-        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/GetLinuxSysInfo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetWindowsSysInfo.py" pinned="false" current-in-tab="false">
-        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/windows/GetWindowsSysInfo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3300">
-              <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-              <folding>
-                <element signature="e#27#42#0" expanded="true" />
-                <marker date="1505032880680" expanded="true" signature="1192:1226" ph="Select * fro... Win32_PhysicalMemory" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/monitoring_control/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="core.py" pinned="false" current-in-tab="false">
-        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb/ServerHandler/core.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -342,6 +289,7 @@
         <option value="$PROJECT_DIR$/monitoring_control/monitoring_control/urls.py" />
         <option value="$PROJECT_DIR$/monitoring_control/cmdb/ServerHandler/core.py" />
         <option value="$PROJECT_DIR$/monitoring_control/cmdb/views.py" />
+        <option value="$PROJECT_DIR$/monitoring_control/TimeSpace/ServerController/Data_optimization.py" />
       </list>
     </option>
   </component>
@@ -375,7 +323,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -402,268 +349,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitor_client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitor_client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main.py" />
-              <option name="myItemType" value="com.jetbrains.python.projectView.PyFileNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitor_client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cmdb_client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cmdb_client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cmdb_client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="windows" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cmdb_client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cmdb_client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cmdb_client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cmdb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cmdb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ServerHandler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -672,6 +360,8 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -769,6 +459,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -904,9 +600,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="723" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20347957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20953101" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -937,113 +633,40 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/monitor_client/core/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/monitor_client/core/main.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/cmdb_client/core/main.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/cmdb_client/core/client.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/cmdb_client/conf/settings.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/cmdb_client/core/api_token.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/cmdb_client/bin/cmdb_client.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/cmdb_client/core/info_collection.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/cmdb_client/plugins/plugin_api.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/cmdb_client/plugins/linux/GetLinuxSysInfo.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/cmdb_client/plugins/windows/GetWindowsSysInfo.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/monitoring_control/urls.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/cmdb/ServerHandler/core.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/cmdb/views.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/TimeSpace/ServerController/Redis_conn.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/TimeSpace/ServerController/MonitorControll.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/TimeSpace/ServerController/Data_processing.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/TimeSpace/ServerController/Data_optimization.py" />
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb_client/core/main.py">
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb_client/core/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="18" column="59" lean-forward="true" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
           <folding>
-            <element signature="e#26#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb_client/conf/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb_client/core/api_token.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb_client/bin/cmdb_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb_client/core/info_collection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/plugin_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/GetLinuxSysInfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/windows/GetWindowsSysInfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3300">
-          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding>
-            <element signature="e#27#42#0" expanded="true" />
-            <marker date="1505032880680" expanded="true" signature="1192:1226" ph="Select * fro... Win32_PhysicalMemory" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/monitoring_control/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb/ServerHandler/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#22#31#0" expanded="false" />
           </folding>
         </state>
       </provider>

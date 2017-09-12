@@ -30,6 +30,7 @@ class Service_Data_Report(View):
             service_name = request.POST.get('service_name')
             data_save_obj = Data_optimization.DataStore(client_ip, service_name, data, REDIS_OBJ)
 
+            # 获取触发器，并触发报警
             host_obj = models.Host.objects.get(ip_addr=client_ip)
             trigger_obj = MonitorControll.GetTrigger(host_obj)
             service_triggers = trigger_obj.get_trigger()
@@ -39,7 +40,7 @@ class Service_Data_Report(View):
                 trigger_handler.load_service_data_and_calulating(host_obj, trigger, REDIS_OBJ)
             print("service trigger::", service_triggers)
         except Exception as e:
-            print(e)
+            print('err --- >', e)
 
         return HttpResponse(json.dumps("-----report success-----"))
 

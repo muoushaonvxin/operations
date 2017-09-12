@@ -4,6 +4,7 @@ import time
 import json
 import copy
 
+
 class DataStore(object):
 
 	def __init__(self, client_ip, service_name, data, redis_obj):
@@ -50,9 +51,11 @@ class DataStore(object):
 							if optimized_data:
 								self.save_optimized_data(data_series_key_in_redis, optimized_data)
 
-		if self.redis_conn_obj.llen(data_series_key_in_redis) >= data_series_val[1]:
-			self.redis_conn_obj.lpop(data_series_key_in_redis)
-
+				if self.redis_conn_obj.llen(data_series_key_in_redis) >= data_series_val[1]:
+					self.redis_conn_obj.lpop(data_series_key_in_redis)
+		else:
+			print("report data is invalid:;", self.data)
+			raise ValueError
 
 
 
@@ -115,8 +118,10 @@ class DataStore(object):
 
 
 
-	def save_optimized_data(self):
-		pass
+	def save_optimized_data(self, data_series_key_in_redis, optimized_data):
+		self.redis_conn_obj.rpush(data_series_key_in_redis, json.dumps([optimized_data]))
+		
+
 
 
 	def get_average(self, data_set):

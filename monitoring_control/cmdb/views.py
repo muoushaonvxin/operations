@@ -1,6 +1,6 @@
 from django.shortcuts import render, HttpResponse
 from django.views.generic import View
-from .ServerHandler import core
+from .ServerControllere import core
 import json
 
 # Create your views here.
