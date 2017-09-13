@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b19e54b-ba1f-41cf-88d2-ba0ab5d81778" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/ServerHandler/core.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/ServerController/core.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/Analyze.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/Analyze.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/SocialFrontierlogo.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/SocialFrontierlogo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/creaqte-content.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/creaqte-content.png" />
@@ -149,6 +148,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/tests.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/tests.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/urls.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/TimeSpace/views.py" afterPath="$PROJECT_DIR$/monitoring_control/TimeSpace/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/ServerController/core.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/ServerController/core.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/admin.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/apps.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/apps.py" />
@@ -169,8 +169,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/main.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/GetLinuxSysInfo.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/GetLinuxSysInfo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/plugin_api.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/plugin_api.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/windows/GetWindowsSysInfo.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/windows/GetWindowsSysInfo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/windows/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/windows/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/var/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/var/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/manage.py" afterPath="$PROJECT_DIR$/monitoring_control/manage.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor_client/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/monitoring_control/monitor_client/.idea/inspectionProfiles/profiles_settings.xml" />
@@ -261,7 +263,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -351,8 +353,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -602,7 +604,7 @@
     <frame x="-8" y="-8" width="1382" height="723" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20953101" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21255673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -650,26 +652,7 @@
     <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/TimeSpace/ServerController/MonitorControll.py" />
     <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/TimeSpace/ServerController/Data_processing.py" />
     <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/TimeSpace/ServerController/Data_optimization.py" />
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="59" lean-forward="true" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-          <folding>
-            <element signature="e#22#31#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/README.md" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/manage.py" />
   </component>
 </project>

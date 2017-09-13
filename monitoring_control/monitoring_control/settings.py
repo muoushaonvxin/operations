@@ -154,6 +154,8 @@ REDIS_CONN = {
     'DB': 10,
 }
 
+TRIGGER_CHAN = 'trigger_event_channel'
+
 STATUS_DATA_OPTIMIZATION = {
     'latest': [0, 600],
     '10mins': [600, 600],
