@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 import time
 from .Redis_conn import redis_conn
+import json
 
 class DataHandler(object):
 

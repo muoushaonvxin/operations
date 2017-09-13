@@ -151,6 +151,7 @@ REDIS_CONN = {
     'HOST': 'localhost',
     'PORT': 6379,
     'PASSWD': '',
+    'DB': 10,
 }
 
 STATUS_DATA_OPTIMIZATION = {

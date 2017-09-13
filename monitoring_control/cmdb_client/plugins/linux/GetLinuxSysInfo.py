@@ -158,7 +158,7 @@ class DiskPlugin(object):
 			shell_command = "%s/MegaCli -PDList -aALL" % script_path
 			output = commands.getstatusoutput(shell_command)
 			result['physical_disk_driver'] = self.parse(output[1])
-		except Exception, e:
+		except Exception as e:
 			result['error'] = e
 		return result
 
@@ -190,7 +190,7 @@ class DiskPlugin(object):
 		return response
 
 	def mega_patter_match(self, needle):
-		grep_pattern = {'Slot': 'slot', 'Raw Size': 'capacity', 'Inquiry':}
+		grep_pattern = {'Slot': 'slot', 'Raw Size': 'capacity', 'Inquiry': }
 
 
 

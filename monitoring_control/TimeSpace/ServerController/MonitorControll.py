@@ -1,9 +1,9 @@
 import traceback
-from django.views.generic import View
+# from django.views.generic import View
 from TimeSpace.models import Host
 
 
-class ClientHandler(View):
+class ClientHandler(object):
 
     def __init__(self, client_ip):
         self.client_ip = client_ip

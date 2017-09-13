@@ -58,6 +58,8 @@ class DataStore(object):
 			raise ValueError
 
 
+	def save_optimized_data(self, data_series_key_in_redis, optimized_data):
+		self.redis_conn_obj.rpush(data_series_key_in_redis, json.dumps([optimized_data]))
 
 
 	def get_optimized_data(self, data_set_key, raw_service_data):
@@ -115,13 +117,6 @@ class DataStore(object):
 		print("optimized empty dic: ", optimized_dic)
 
 		return optimized_dic
-
-
-
-	def save_optimized_data(self, data_series_key_in_redis, optimized_data):
-		self.redis_conn_obj.rpush(data_series_key_in_redis, json.dumps([optimized_data]))
-		
-
 
 
 	def get_average(self, data_set):

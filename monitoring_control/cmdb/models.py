@@ -1,4 +1,5 @@
 from django.db import models
+from users.models import UserProfile
 
 # Create your models here.
 class Asset(models.Model):
@@ -16,7 +17,7 @@ class Asset(models.Model):
 
 	asset_type = models.CharField(choices=asset_type_choices, max_length=64, default='server')
 	name = models.CharField(max_length=64, unique=True)
-	sn = models.CharField(max_length=128, unique=True, u'资产SN号')
+	sn = models.CharField(u'资产SN号', max_length=128, unique=True)
 	manufactory = models.ForeignKey('Manufactory', verbose_name=u'制造商', null=True, blank=True)
 	management_ip = models.GenericIPAddressField(u'管理IP', blank=True, null=True)
 	
@@ -119,7 +120,7 @@ class RAM(models.Model):
 	sn = models.CharField(u'SN号', max_length=128, blank=True, null=True)
 	model = models.CharField(u'内存型号', max_length=128)
 	slot = models.CharField(u'插槽', max_length=64)
-	capacity = models.Integerfield(u'内存大小(MB)')
+	capacity = models.IntegerField(u'内存大小(MB)')
 	memo = models.CharField(u'备注', max_length=128, blank=True, null=True)
 	create_date = models.DateTimeField(blank=True, auto_now_add=True)
 	update_date = models.DateTimeField(blank=True, null=True)
@@ -234,7 +235,7 @@ class Manufactory(models.Model):
 
 
 class BusinessUnit(models.Model):
-	parent_unit = models.ForeignKey('self'm related_name'parent_level', blank=True, null=True)
+	parent_unit = models.ForeignKey('self', related_name='parent_level', blank=True, null=True)
 	name = models.CharField(u'业务线', max_length=64, unique=True)
 	memo = models.CharField(u'备注', max_length=64, blank=True)
 
@@ -250,11 +251,11 @@ class Contract(models.Model):
 	sn = models.CharField(u'合同号', max_length=128, unique=True)
 	name = models.CharField(u'合同名称', max_length=64)
 	memo = models.TextField(u'备注', blank=True, null=True)
-	price = models.Integerfield(u'合同金额')
+	price = models.IntegerField(u'合同金额')
 	detail = models.TextField(u'合同详细', blank=True, null=True)
 	start_date = models.DateField(blank=True)
 	end_date = models.DateField(blank=True)
-	license_num = models.Integerfield(u'license数量', blank=True)
+	license_num = models.IntegerField(u'license数量', blank=True)
 	create_date = models.DateField(auto_now_add=True)
 	update_date = models.DateField(auto_now=True)
 
@@ -332,7 +333,7 @@ class NewAssetApprovalZone(models.Model):
 		('firewall', u'防火墙'),
 		('storage', u'存储设备'),
 		('NLB', u'NetScaler'),
-		('wireless', u'无线AP')，
+		('wireless', u'无限AP'),
 		('software', u'软件资产'),
 		('others', u'其它类'),
 	)

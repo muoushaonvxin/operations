@@ -37,7 +37,7 @@ urlpatterns = [
     url(r'^user_logout/$', LogoutView.as_view(), name="user_logout"),
 
     # cmdb 资产管理
-    url(r'asset/', include('cmdb.urls')),
+    url(r'cmdb/', include('cmdb.urls')),
 
     # 监控url
     url(r'^monitor/', include(timespace_url), name="monitor"),
