@@ -45,7 +45,7 @@ class IndexView(View):
     def get(self, request):
         all_banners = Banner.objects.all().order_by('index')
         return render(request, "index.html", {
-            'all_banner':all_banners,
+            'all_banner': all_banners,
         })
 
 

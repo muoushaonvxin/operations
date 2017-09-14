@@ -60,7 +60,7 @@ class DataHandler(object):
                 calc_sub_res_list.append(single_expression_res)
                 if single_expression_res['expression_obj'].logic_type:
                     expression_res_string += str(single_expression_res['calc_res']) + ' ' + \
-                                             single_expression_res['expression_obj'].logic_type + 
+                                             single_expression_res['expression_obj'].logic_type
 
 
 

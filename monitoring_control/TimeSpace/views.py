@@ -39,6 +39,7 @@ class Service_Data_Report(View):
             for trigger in service_triggers:
                 trigger_handler.load_service_data_and_calulating(host_obj, trigger, REDIS_OBJ)
             print("service trigger::", service_triggers)
+            
         except Exception as e:
             print('err --- >', e)
 
