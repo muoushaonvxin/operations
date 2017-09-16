@@ -60,9 +60,14 @@ class DataHandler(object):
                 calc_sub_res_list.append(single_expression_res)
                 if single_expression_res['expression_obj'].logic_type:
                     expression_res_string += str(single_expression_res['calc_res']) + ' ' + \
-                                             single_expression_res['expression_obj'].logic_type
+                                             single_expression_res['expression_obj'].logic_type + ' '
+                else:
+                    expression_res_string += str(single_expression_res['calc_res']) + ' '
 
-
+                if single_expression_res['calc_res'] == True:
+                    single_expression_res['expression_obj'] = single_expression_res['expression_obj']
+                    positive_expressions.append(single_expression_res)
+                    
 
 
 
@@ -70,12 +75,18 @@ class DataHandler(object):
 
 class ExpressionProcess(object):
 
-    def __init__(self,):
+    def __init__(self, main_ins, host_obj, expression_obj, specified_item):
+        self.host_obj = host_obj
+        self.expression_obj = expression_obj
+        self.main_ins = main_ins
+        self.service_redis_key = "StatusData_%s_%s_latest" % (host_obj.ip_addr, expression_obj.service.name)
+        self.time_range = self.expression_obj.data_calc_args.split(',')[0]
+        print("\033[1m ------------> %s\033[0m" % self.service_redis_key)
 
 
     def process(self):
         data = self.load_data_from_redis()
-        data_calc_func = getattr(self, 'get_%s' % self.expression_obj)
+        data_calc_func = getattr(self, 'get_%s' % self.expression_obj.data_calc_func)
         single_expression_calc_res = data_calc_fun(data)
         print("--- res of single_expression_calc_res", single_expression_calc_res)
         if single_expression_calc_res:
@@ -85,6 +96,11 @@ class ExpressionProcess(object):
                 'expression_obj': self.expression_obj,
                 'service_item': single_expression_calc_res[2],
             }
+
+            print("\033[41;1mmsingle_expression_calc_res: %s\033[0m" % )
+            return res_dic
+        else:
+            return False
 
 
 
@@ -99,3 +115,66 @@ class ExpressionProcess(object):
             val, saving_time = point
             if time.time() - saving_time < time_in_sec:
                 data_range.append(point)
+
+        print(data_range)
+        return data_range
+
+
+
+    def get_avg(self, data_set):
+
+        clean_data_list = []
+        clean_data_dic = {}
+        for point in data_set:
+            val, save_time = point
+
+            if val:
+                if 'data' not in val:
+                    clean_data_list.append(val[self.expression_obj.service_index.key])
+                else:
+                    for k, v in val['data'].items():
+                        if k not in clean_data_dic:
+                            clean_data_dic[k] = []
+                        clean_data_dic[k].append(v[self.expression_obj.service_index.key])
+
+        if clean_data_list:
+            clean_data_list = [float(i) for i in clean_data_list]
+            avg_res = sum(clean_data_list) / len(clean_data_list)
+            print("\033[46;1m ----- avg res: %s\033[0m" % avg_res)
+            return [self.judge(avg_res), avg_res, None]
+            print("clean_data_list: ", clean_data_list)
+        elif clean_data_dic:
+            for k, v in clean_data_dic.items():
+                clean_v_list = [float(i) for i in v]
+                avg_res = 0 if sum(clean_v_list) == 0 else sum(clean_v_list)
+                print("\033[46;1m --%s--------avg res: %s\033[0m" % (k, avg_res))
+                if self.expression_obj.specified_index_key:
+                    if k == self.expression_obj.specified_index_key:
+
+
+
+
+
+    def judge(self, calculated_val):
+        calc_func = getattr(operator, self.expression_obj.operator_type)
+        return calc_func(calculated_val, self.expression_obj.threshold)
+
+
+    def get_hit(self, data_set):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -36,6 +36,7 @@ class DataStore(object):
 				last_point_from_redis = self.redis_conn_obj.lrange(data_serise_key_in_redis, -1, -1)
 				if not last_point_from_redis:
 					self.redis_conn_obj.rpush(data_serise_key_in_redis, json.dumps([None, time.time()]))
+				
 				if data_series_val[0] == 0:
 					self.redis_conn_obj.rpush(data_series_key_in_redis, json.dumps(self.data, time.time()))
 				else:
@@ -59,7 +60,7 @@ class DataStore(object):
 
 
 	def save_optimized_data(self, data_series_key_in_redis, optimized_data):
-		self.redis_conn_obj.rpush(data_series_key_in_redis, json.dumps([optimized_data]))
+		self.redis_conn_obj.rpush(data_series_key_in_redis, json.dumps([optimized_data, time.time()]))
 
 
 	def get_optimized_data(self, data_set_key, raw_service_data):
