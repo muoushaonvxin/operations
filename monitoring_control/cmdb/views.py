@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponse
 from django.views.generic import View
 from .ServerControllere import core
 import json
+import scrapy
 
 # Create your views here.
 class AssetReport(View):

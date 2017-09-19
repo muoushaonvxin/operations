@@ -12,6 +12,7 @@ class Asset(object):
 			'server': ['model', 'cpu_count', 'cpu_core_count', 'cpu_model', 'raid_type', 'os_type', 'os_distribution', 'os_release'],
 			'networkdevice': []
 		}
+
 		self.response = {
 			'error': [],
 			'info': [],
@@ -34,7 +35,7 @@ class Asset(object):
 
 		try:
 			if not only_check_sn:
-				self.asset_obj = Asset.objects.get(int(data['asset_id']),sn=data['sn'])			
+				self.asset_obj = Asset.objects.get(id=int(data['asset_id']), sn=data['sn'])			
 			else:
 				self.asset_obj = Asset.objects.get(sn=data['sn'])
 			return True
@@ -45,10 +46,19 @@ class Asset(object):
 
 
 	def get_asset_id_by_sn(self):
-		pass
+		data = self.request.POST.get('asset_data')
+		response = {}
+		if data:
+			try:
+				data = json.loads(data)
+			except Exception as e:
+				raise e  
+
 
 	def save_new_asset_to_approval_zone(self):
-		pass
+		asset_sn = self.clean_data.get('sn')
+		asset_already_in_approval_zone = models.NewAssetApprovalZone.objects.get_or_
+
 
 	def data_is_valid(self):
 		data = self.request.POST.get("asset_data")
@@ -257,14 +267,27 @@ class Asset(object):
 						obj.save()
 
 				except Exception as e:
-					self.response_msg('error', 'ObjectCreationException', 'Object')
+					self.response_msg('error', 'ObjectCreationException', 'Object [rmm] %s' % str(e) )
 		else:
-			self.response_msg('error', 'LackOfData', 'RAM info is not provided')
+			self.response_msg('error', 'LackOfData', 'RAM info is not provied in your reporting data')
 
 
 	def __update_server_component(self):
-		pass
+		update_fields = ['model', 'raid_type', 'os_type', 'os_distribution', 'os_release']
+		if hasattr(self.asset_obj, 'server'):
+			self.__compare_componet(model_obj=self.asset_obj.server, fields_from_db=update_fields, data_source=self.clean_data)
+		else:
+			self.__create_server_info(ignore_errs=True)
 
+
+	def __update_manufactory_component(self):
+		self.__create_or_update_manufactory(ignore_errs=True)
+
+
+	def __update_cpu_component(self):
+		update_fields = ['cpu_model', 'cpu_count', 'cpu_core_count']
+		if hasattr(self.asset_obj, 'cpu'):
+			self._compare_componet(model_obj=self.asset_obj.cpu, fields_from_db=update_fields, data_source=self.clean_data)
 
 
 
