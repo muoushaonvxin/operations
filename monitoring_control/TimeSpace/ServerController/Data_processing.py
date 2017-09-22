@@ -36,16 +36,35 @@ class DataHandler(object):
                             self.global_monitor_dic[h]['services'][service_obj.id][1] = time.time()
                             self.data_point_validation(h, service_obj)
                         else:
-                            pass
+                            next_monitor_time = time.time() - last_monitor_time - service_obj.interval
+                            print("service [%s] next monitor time is %s" % (service_obj.name, next_monitor_time))
 
+                    if time.time() - self.global_monitor_dic[h]['status_last_check'] > 10:
+                        trigger_redis_key = "host_%s_trigger" % (h.id)
+                        trigger_keys = self.redis.keys(trigger_redis_key)
+                        if len(trigger_keys) == 0:
+                            h.status = 1
+                            h.save()
+
+            time.sleep(self.poll_interval)
 
 
     def update_or_load_configs(self):
-        pass
+        all_enabled_hosts = models.Host.objects.all()
+        for h in all_enabled_hosts:
+            if h not in self.global_monitor_dic:
+                self.global_monitor_dic[h] = {'services': {}, 'triggers': {}}
+
+            for group in h.host_groups.select_related():
+                service_list = []
+                trigger_list = []
+                for template in group.templates.select_related():
+                     
 
 
     def data_point_validation(self):
-        pass
+        
+
 
     def load_service_data_and_calulating(self, host_obj, trigger_obj, redis_obj):
         self.redis = redis_obj
@@ -161,6 +180,9 @@ class ExpressionProcess(object):
 
 
     def get_hit(self, data_set):
+        pass
+
+
 
 
 

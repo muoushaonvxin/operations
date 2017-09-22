@@ -4,7 +4,19 @@ from django.views import View
 from .forms import LoginForm
 from django.contrib.auth import authenticate, login, logout
 from django.core.urlresolvers import reverse
+from django.contrib.auth.backedns import ModelBackend
+from django.db.models import Q
 # Create your views here.
+
+class CustomBackend(ModelBackend):
+    def authenticate(self, username=None, password=None, **kwargs):
+        try:
+            user = UserProfile.objects.get(Q(username=username)|Q(email=username))
+            if user.check_password(password):
+                return user
+        except Exception as e:
+            return None
+
 
 
 class LoginView(View):

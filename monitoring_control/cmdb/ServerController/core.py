@@ -31,7 +31,7 @@ class Asset(object):
 				self.response_msg('error', 'MandatoryCheckFailed', 'The field [%s] is mandatory and not provided in your reporting data' % field)
 		else:
 			if self.response['error']:
-				return False
+				return False  
 
 		try:
 			if not only_check_sn:
