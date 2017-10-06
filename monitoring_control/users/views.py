@@ -4,8 +4,9 @@ from django.views import View
 from .forms import LoginForm
 from django.contrib.auth import authenticate, login, logout
 from django.core.urlresolvers import reverse
-from django.contrib.auth.backedns import ModelBackend
 from django.db.models import Q
+from django.contrib.auth.backends import ModelBackend, RemoteUserBackend
+# from django.contrib.auth.hashers import make_password
 # Create your views here.
 
 class CustomBackend(ModelBackend):
@@ -16,7 +17,6 @@ class CustomBackend(ModelBackend):
                 return user
         except Exception as e:
             return None
-
 
 
 class LoginView(View):
@@ -55,9 +55,4 @@ class LogoutView(View):
 
 class IndexView(View):
     def get(self, request):
-        all_banners = Banner.objects.all().order_by('index')
-        return render(request, "index.html", {
-            'all_banner': all_banners,
-        })
-
-
+        return render(request, "control.html", {})

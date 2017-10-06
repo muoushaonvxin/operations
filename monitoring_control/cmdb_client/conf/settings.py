@@ -8,10 +8,10 @@ Params = {
 	'port': 8000,
 	'request_timeout': 30,
 	'urls': {
-		'asset_report_with_no_id': '/asset/report/asset_with_no_asset_id/',
-		'asset_report': '/asset/report/',
+		'asset_report_with_no_id': '/cmdb/asset/report/asset_with_no_asset_id/',
+		'asset_report': '/cmdb/asset/report/',
 	},
-	'asset_id': '%s/var/asset_id' % BaseDir,
+	'asset_id': '%s/var/.asset_id' % BaseDir,
 	'log_file': '%s/logs/run_log' % BaseDir,
 
 	'auth': {

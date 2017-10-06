@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 import json
-from .models import Asset, Server, Manufactory, CPU, Disk, NIC, RAM
+from cmdb.models import Asset, Server, Manufactory, CPU, Disk, NIC, RAM
 
 class Asset(object):
 	
@@ -20,10 +20,11 @@ class Asset(object):
 		}
 
 	def response_msg(self, msg_type, key, msg):
-		if self.response.has_key(msg_type):
+		if msg_type in self.response:
 			self.response[msg_type].append({key: msg})
 		else:
 			raise ValueError
+
 
 	def mandatory_check(self, data, only_check_sn=False):
 		for filed in self.mandatory_fields:
@@ -39,8 +40,8 @@ class Asset(object):
 			else:
 				self.asset_obj = Asset.objects.get(sn=data['sn'])
 			return True
-		except ObjectDoesNotExist as e:
-			self.response_msg('error', 'AssetDataInvalid', 'Cannot find asset object')
+		except ObjectDoesNotExist as e:		
+			self.response_msg('error', 'AssetDataInvalid', 'Cannot find asset object in DB by using asset id [%s] and SN [%s]' % (data))
 			self.waiting_approval = True
 			return False
 
@@ -51,13 +52,46 @@ class Asset(object):
 		if data:
 			try:
 				data = json.loads(data)
-			except Exception as e:
-				raise e  
+				if self.mandatory_check(data, only_check_sn=True):
+					response = {
+						'asset_id': self.asset_obj.id
+					}
+				else:
+					if hasattr(self, 'waiting_approval'):
+						response = {
+							'needs_aproval': 'this is a new asset_obj'
+						}
+
+						self.clean_data = data
+						self.save_new_asset_to_approval_zone()
+						print(response)
+					else:
+						response = self.response
+			except VauleError as e:
+				self.response_msg('error', 'AssetDataInvalid', str(e))
+				response = self.response
+		else:
+			self.response_msg('error', 'AssetDataInvalid', 'The reported')
+			response = self.response
+
+		return response
 
 
 	def save_new_asset_to_approval_zone(self):
 		asset_sn = self.clean_data.get('sn')
-		asset_already_in_approval_zone = models.NewAssetApprovalZone.objects.get_or_
+		asset_already_in_approval_zone = models.NewAssetApprovalZone.objects.get_or_create(sn=asset_sn,
+																						   data=json.dumps(self.clean_data),
+																						   manufactory=self.clean_data.get('manufactory'),
+																						   model=self.clean_data.get('model'),
+																						   asset_type=self.clean_data.get('asset_type'),
+																						   ram_size=self.clean_data.get('ram_size'),
+																						   cpu_model=self.clean_data.get('cpu_model'),
+																						   cpu_count=self.clean_data.get('cpu_count'),
+																						   cpu_core_count=self.clean_data.get('cpu_core_count'),
+																						   os_distribution=self.clean_data.get('os_distribution'),
+																						   os_release=self.clean_data.get('os_release'),
+																						   os_type=self.clean_data.get('os_type')
+																						   )
 
 
 	def data_is_valid(self):
@@ -73,7 +107,7 @@ class Asset(object):
 				self.response_msg('error', 'AssetDataInvalid', str(e))
 		else:
 			self.response_msg('error', 'AssetDataInvalid', 'The reported asset data is not valid or provided')
-
+				
 
 	def __is_new_asset(self):
 		if not hasattr(self.asset_obj, self.clean_data['asset_type']):
@@ -91,6 +125,14 @@ class Asset(object):
 			self.update_asset()
 
 
+	def data_is_valid_without_id(self):
+		data = self.request.POST.get("asset_data")
+		if data:
+			try:
+
+
+
+
 	def __verify_field(self, data_set, field_key, data_type, required=True):
 		field_val = data_set.get(field_key)
 		if field_val:
@@ -100,9 +142,6 @@ class Asset(object):
 				self.response_msg('error', 'InvalidField', "The field [%s]'s data type ")
 		elif required == True:
 			self.response_msg('error', 'LackOfField', "The field [%s] has no value")
-
-
-
 
 
 	def create_asset(self):
@@ -116,13 +155,29 @@ class Asset(object):
 
 
 	def _update_server(self):
-		nic = self.__update_asset_component()
+		nic = self.__update_asset_component(data_source=self.clean_data['nic'],
+											fk='nic_set',
+											update_fields=['name', 'sn', 'model', 'macaddress', 'ipaddress', 'netmask', 'bonding'],
+											identify_field='macaddress'
+											)
+		disk = self.__update_asset_component(data_source=self.clean_data['physical_disk_driver'],
+											 fk='disk_set',
+											 update_fields=['slot', 'sn', 'model', 'manufactory', 'capacity', 'iface_type'],
+											 identify_field='slot'
+											 )
+		ram = self.__update_asset_component(data_source=self.clean_data['ram'],
+											fk='ram_set',
+											update_fields=['slot', 'sn', 'model', 'capacity'],
+											identify_field='slot'
+											)
+		cpu = self.__update_cpu_component()
+		manufactory = self.__update_manufactory_component()
+		server = self.__update_server_component()
 
 
 	def _create_server(self):
 		self.__create_server_info()
 		self.__create_or_update_manufactory()
-
 		self.__create_cpu_component()
 		self.__create_disk_component()
 		self.__create_nic_component()
@@ -149,8 +204,8 @@ class Asset(object):
 				obj.save()
 				return obj
 		except Exception as e:
-			self.response_msg('error', 'ObjectCreationException', 'Object [server] %s' % )
-
+			# self.response_msg('error', 'ObjectCreationException', 'Object [server] %s' % )
+			print("aaa")
 
 	def __create_or_update_manufactory(self, ignore_errs=False):
 		try:
@@ -184,7 +239,7 @@ class Asset(object):
 
 				obj = CPU(**data_set)
 				obj.save()
-				log_msg = "Asset[%s] ---> has added now [cpu] component with data [%s]" 
+				log_msg = "Asset[%s] ---> has added now [cpu] component with data [%s]" % (self.asset_obj)
 				self.response_msg('info', 'NewComponentAdded', log_msg)
 				return obj
 		except Exception as e:
@@ -272,10 +327,163 @@ class Asset(object):
 			self.response_msg('error', 'LackOfData', 'RAM info is not provied in your reporting data')
 
 
+	def __compare_componet(self, model_obj, fields_from_db, data_source):
+		for field in fields_from_db:
+			val_from_db = getattr(model_obj, field)
+			val_from_data_source = data_source.get(field)
+			if val_from_data_source:
+				if type(val_from_db) in (int,):
+					val_from_data_source = int(val_from_data_source)
+				elif type(val_from_db) is float:
+					val_from_data_source = float(val_from_data_source)
+
+				if val_from_db == val_from_data_source:
+					pass
+				else:
+					print('\033[34;1m val_from_db[%s] != val_from_data_source[%s]\033[0m' % (val_from_data_source))
+					db_field = model_obj._meta.get_field(field)
+					db_field.save_from_data(model_obj, val_from_data_source)
+					model_obj.update_date = timezone.now()
+					model_obj.save()
+					log_msg = "Asset[%s] --> componet[%s] --> field[%s] has changed from [%s] to "
+					self.response_msg('info', 'FieldChanged', log_msg)
+					log_handler(self.asset_obj, 'FieldChanged', self.request.user, log_msg, model_obj)
+			else:
+				self.response_msg('warning', 'AssetUpdateWarning', "Asset component [%s]'s field [%s] is not")
+
+		model_obj.save()
+
+
+	def log_handler(asset_obj, event_name, user, detail, component=None):
+
+
+
+	def __filter_add_or_deleted_components(self, model_obj_name, data_from_db, data_source, identify_field):
+		print(data_from_db, data_source, identify_field)
+		data_source_key_list = []
+		if type(data_source) is list:
+			for data in data_source:
+				data_source_key_list.append(data.get(identify_field))
+		elif type(data_source) is dict:
+			for key, data in data_source.items():
+				if data.get(identify_field):
+					data_source_key_list.append(data.get(identify_field))
+				else:
+					data_source_key_list.append(key)
+		print('--->identify field [%s] from db :', data_source_key_list)
+		print('--->identify[%s] from data source :', [getattr(obj, identify_field) for obj in data_from_obj])
+
+		data_source_key_list = set(data_source_key_list)
+		data_identify_val_from_db = set([getattr(obj, identify_field) for obj in data_from_obj])
+		data_only_in_db = data_identify_val_from_db - data_source_key_list
+		data_only_in_data_source = data_source_key_list - data_identify_val_from_db
+		print('\033[31;1mdata_only_in_db:\033[0m', data_only_in_db)
+		print('\033[31;1mdata_only_in_data source:\033[0m', data_only_in_data_source)
+		self.__delete_components(all_components=data_from_db,delete_list=data_only_in_db,identify_field=identify_field)
+		if data_only_in_data_source:
+			self.__add_components(model_obj_name=model_obj_name,all_components=data_source,add_list=data_only_in_data_source,identify_field=identify_field)
+
+
+	def __add_components(self, model_obj_name, all_components, add_list, identify_field):
+		model_class = getattr(models, model_obj_name)
+		will_be_creating_list = []
+		print('--- add component list:', add_list)
+		if type(all_components) is list:
+			for data in all_components:
+				if data[identify_field] in add_list:
+					will_be_creating_list.append(data)
+		elif type(all_components) is dict:
+			for k, data in all_components.items():
+				if data.get(identify_field):
+					if data[identify_field] in add_list:
+						will_be_creating_list.append(data)
+				else:
+					if k in add_list:
+						data[identify_field] = k
+						will_be_creating_list.append(data)
+
+		try:
+			for component in will_be_creating_list:
+				data_set = {}
+				for filed in model_class.auto_create_fields:
+					data_set[field] = component.get(field)
+				data_set['asset_id'] = self.asset_obj.id
+				obj = model_class(**data_set)
+				obj.save()
+				print('\033[32;1mCreated component with data:\033[0m')
+				log_msg = "Asset[%s] ---> component[%s] has just"
+				self.response_msg('info', 'NewComponentAdded', log_msg)
+				log_handler(self.asset_obj, 'NewComponentAdded', self.request.user)
+		except Exception as e:
+			print("\033[31;1m %s \033[0m" % e)
+			log_msg = "Asset[%s] --> component[%s] has error"
+			self.response_msg('error', "AddingComponentException")
+
+
+	def __delete_components(self, all_components, delete_list, identify_field):
+		deleting_obj_list = []
+		print('--deleting components', delete_list, identify_field)
+		for obj in all_components:
+			val = getattr(obj, identify_field)
+			if val in delete_list:
+				deleting_obj_list.append(obj)
+
+		for i in deleting_obj_list:
+			log_msg = "Asset[%s] ---> component[%s] ---> is lacking from reporting source data, assume it has been removed "
+			self.response_msg('info', 'HardwareChanges', log_msg)
+			log_handler(self.asset_obj, 'HardwareChanges', self.request.user, log_msg, identify_field)
+			i.delete()
+
+
+	def __update_asset_component(self, data_source, fk, update_fields, identify_field):
+		print(data_source, update_fields, identify_field)
+		try:
+			component_obj = getattr(self.asset_obj, fk)
+			if hasattr(component_obj, 'select_related'):
+				objects_from_db = component_obj.select_related()
+				for obj in objects_from_db:
+					key_field_data = getattr(obj, identify_field)
+					if type(data_source) is list:
+						for source_data_item in data_source:
+							key_field_data_from_source_data = source_data_item.get(identify_field)
+							if key_field_data_from_source_data:
+								if key_field_data == key_field_data_from_source_data:
+									self.__compare_componet(model_obj=obj,fields_from_db=update_fields,data_source=source_data_item)
+									break
+							else:
+								self.response_msg('warning', 'AssetUpdateWarning', "Asset component [%s]'s key field [%s] is not provided in reporting data" % (fk, identify_field))
+						else:
+							print('\033[33;1mError:cannot find any matches in source data by using key field val [%s], component data is missing in reporting data!' % (key_field_data))
+							self.response_msg("warning", "AssetUpdateWarning", "Cannot find any matches in source data by using key field val [%s], component data is missing in reporting data!" % (key_field_data))
+
+					elif type(data_source) is dict:
+						for key,source_data_item in data_source.items():
+							key_field_data_from_source_data = source_data_item.get(identify_field)
+							if key_field_data_from_source_data:
+								if key_field_data == key_field_data_from_source_data:
+									self.__compare_componet(model_obj=obj,fields_from_db=update_fields,data_source=source_data_item)
+									break
+							else:
+								self.response_msg('warning', 'AssetUpdateWarning')
+						else:
+							print('\033[33;1mError:cannot find any matches in source data')
+
+					else:
+						print('\033[31;1mMust be sth wrong, logic should goes to here at all')
+
+				self.__filter_add_or_deleted_components(model_obj_name=component_obj.model._meta.object_name, data_from_db=objects_from_db, data_source=data_source, identify_field=identify_field)
+			else:
+				pass
+		except ValueError as e:
+			print('\033[41;1m%s\033[0m' % str(e))
+
+
 	def __update_server_component(self):
 		update_fields = ['model', 'raid_type', 'os_type', 'os_distribution', 'os_release']
 		if hasattr(self.asset_obj, 'server'):
-			self.__compare_componet(model_obj=self.asset_obj.server, fields_from_db=update_fields, data_source=self.clean_data)
+			self.__compare_componet(model_obj=self.asset_obj.server, 
+				                    fields_from_db=update_fields, 
+				                    data_source=self.clean_data)
 		else:
 			self.__create_server_info(ignore_errs=True)
 
@@ -287,7 +495,9 @@ class Asset(object):
 	def __update_cpu_component(self):
 		update_fields = ['cpu_model', 'cpu_count', 'cpu_core_count']
 		if hasattr(self.asset_obj, 'cpu'):
-			self._compare_componet(model_obj=self.asset_obj.cpu, fields_from_db=update_fields, data_source=self.clean_data)
+			self._compare_componet(model_obj=self.asset_obj.cpu, 
+								   fields_from_db=update_fields, 
+								   data_source=self.clean_data)
 
 
 

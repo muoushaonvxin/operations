@@ -107,32 +107,92 @@ def nicinfo():
 
 
 def raminfo():
-	raw_data = commands.getoutput("dmidecode -t 17")
+	raw_data = subprocess.Popen("dmidecode -t 17",shell=True,stdout=subprocess.PIPE).stdout.read().decode().strip()
 	raw_list = raw_data.split("\n")
 	raw_ram_list = []
 	item_list = []
 	for line in raw_list:
+		if line.startswith('Memory Device'):
+			raw_ram_list.append(item_list)
+			item_list = []
+		else:
+			item_list.append(line.strip())
+
+	ram_list = []
+	for item in raw_ram_list:
+		item_ram_size = 0
+		ram_item_to_dic = {}
+		for i in item:
+			data = i.split(":")
+			if len(data) == 2:
+				key, v = data
+
+				if key == 'Size':
+					if v.strip() != "No Module Installed":
+						ram_item_to_dic['capacity'] = v.split()[0].strip()
+						item_ram_size = int(v.split()[0])
+					else:
+						ram_item_to_dic['capacity'] = 0
+
+				if key == 'Type':
+					ram_item_to_dic['model'] = v.strip()
+				if key == 'Manufacturer':
+					ram_item_to_dic['manufactory'] = v.strip()
+				if key == 'Serial Number':
+					ram_item_to_dic['sn'] = v.strip()
+				if key == 'Asset Tag':
+					ram_item_to_dic['asset_tag'] = v.strip()
+				if key == 'Locator':
+					ram_item_to_dic['slot'] = v.strip()
+
+		if item_ram_size == 0:
+			pass
+		else:
+			ram_list.append(ram_item_to_dic)
+
+	raw_total_size = subprocess.Popen("cat /proc/meminfo | grep 'MemTotal' ",shell=True,stdout=subprocess.PIPE).stdout.read().decode().strip()
+	raw_total_size = re.sub(':','',raw_total_size)
+	raw_total_size = raw_total_size.split()
+	
+	raw_data = {
+		'ram': ram_list,
+	}
+
+	if len(raw_total_size) >= 2:
+		total_mb_size = int(raw_total_size[1]) / 1024
+		raw_data['ram_size'] = total_mb_size
+
+	return raw_data
+
 
 
 def osinfo():
-	distributor = commands.getoutput("lsb_release -a | grep 'Distributor ID' ").split(':')
-	release = commands.getoutput("lsb_release -a | grep 'Description' ").split(':')
+	distributor = subprocess.Popen("lsb_release -a | grep 'Distributor ID' ",shell=True,stdout=subprocess.PIPE).stdout.read().decode().strip().split(':')
+	release = subprocess.Popen("lsb_release -a | grep 'Description' ",shell=True,stdout=subprocess.PIPE).stdout.read().decode().strip().split(':')
 
-
-def cpuinfo():
-	base_cmd = 'cat /proc/cpuinfo'
-
-	raw_data = {
-		'cpu_model': "%s | grep 'model name' | head -1" % base_cmd,
-		'cpu_count': "%s | grep 'processor' | wc -l" % base_cmd,
-		'cpu_core_count': "%s | grep 'cpu cores' | awk -F '{SUM += $2} END {print SUM}' " % base_cmd,
+	data_dic = {
+		'os_distribution': distributor[1].strip() if len(distributor) > 1 else None,
+		'os_release': release[1].strip() if len(release) > 1 else None,
+		'os_type': "linux",
 	}
 
-	for k, cmd in raw_data.items():
-		try:
-			cmd_res = commands.getoutput(cmd)
-		except ValueError as e:
-			print(e)
+	return data_dic
+	
+
+def cpuinfo():
+	var1 = "cat /proc/cpuinfo | grep 'model name' | head -1"
+	var2 = "cat /proc/cpuinfo | grep 'processor' | wc -l"
+	var3 = "cat /proc/cpuinfo | grep 'cpu cores' | awk -F ':' '{SUM += $2} END { print SUM}' "
+
+	cpu_model = subprocess.Popen(var1,shell=True,stdout=subprocess.PIPE).stdout.read().decode().strip()
+	cpu_count = subprocess.Popen(var2,shell=True,stdout=subprocess.PIPE).stdout.read().decode().strip()
+	cpu_core_count = subprocess.Popen(var3,shell=True,stdout=subprocess.PIPE).stdout.read().decode().strip()
+
+	raw_data = {
+		'cpu_model': cpu_model,
+		'cpu_count': cpu_count,
+		'cpu_core_count': cpu_core_count,
+	}
 
 	data = {
 		'cpu_count': raw_data["cpu_count"],
@@ -151,7 +211,9 @@ def cpuinfo():
 class DiskPlugin(object):
 
 	def linux(self):
-		result = {'physical_disk_driver': []}
+		result = {
+		 	'physical_disk_driver': [],
+		}
 
 		try:
 			script_path = os.path.dirname(os.path.abspath(__file__))
@@ -187,25 +249,25 @@ class DiskPlugin(object):
 
 				if temp_dict:
 					response.append(temp_dict)
+
 		return response
 
+
 	def mega_patter_match(self, needle):
-		grep_pattern = {'Slot': 'slot', 'Raw Size': 'capacity', 'Inquiry': }
+		grep_pattern = {
+			'Slot': 'slot', 
+			'Raw Size': 'capacity', 
+			'Inquiry':  'model',
+			'PD Type': 'iface_type',
+		}
+
+		for key, value in grep_pattern.items():
+			if needle.startswith(key):
+				return value
+		return False
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    a = collect()
+    print(a)
+    print(a['asset_type'])

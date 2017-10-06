@@ -204,14 +204,14 @@ class Software(models.Model):
 		('centos', 'CentOS'),
 		('ubuntu', 'Ubuntu'),
 	)
-	type = models.CharField(u'系统类型', choices=os_types_choice)
-	distribution = models.CharField(u'发型版本', choices=os_distribution_choice)
+	type = models.CharField(u'系统类型', choices=os_types_choice, max_length=32)
+	distribution = models.CharField(u'发型版本', choices=os_distribution_choice, max_length=32)
 	version = models.CharField(u'软件/系统版本', max_length=64)
 	language_choices = (
 		('cn', u'中文'),
 		('en', u'英文'),
 	)
-	language = models.CharField(u'系统语言', choices=language_choices, default='cn')
+	language = models.CharField(u'系统语言', choices=language_choices, default='cn', max_length=32)
 
 	def __str__(self):
 		return self.version
@@ -337,7 +337,7 @@ class NewAssetApprovalZone(models.Model):
 		('software', u'软件资产'),
 		('others', u'其它类'),
 	)
-	asset_type = models.CharField(choices=asset_type_choices, null=True, blank=True)
+	asset_type = models.CharField(max_length=32, choices=asset_type_choices, null=True, blank=True)
 	manufactory = models.CharField(max_length=64, blank=True, null=True)
 	model = models.CharField(max_length=128, blank=True, null=True)
 	ram_size = models.IntegerField(blank=True, null=True)

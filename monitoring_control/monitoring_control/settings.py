@@ -30,7 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-AUTHENTICATION_BACKENDS == (
+AUTHENTICATION_BACKENDS = (
     'users.views.CustomBackend',
 )
 
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'users',
     'TimeSpace',
     'cmdb',
+    # 'captcha',
 ]
 
 AUTH_USER_MODEL = "users.UserProfile"

@@ -18,7 +18,7 @@ from django.views.generic import TemplateView
 
 
 urlpatterns = [
-    # url(r'^$', TemplateView.as_view(template_name="host/index.html"), name="index"),
+    # url(r'^$', TemplateView.as_view(template_name="host/control.html"), name="index"),
 ]
 
 

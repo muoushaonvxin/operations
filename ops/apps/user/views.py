@@ -3,7 +3,7 @@ from user import models
 
 # Create your views here.
 def index(request):
-    return render(request, "index.html")
+    return render(request, "control.html")
 
 
 def login(request):
@@ -14,7 +14,7 @@ def login(request):
                             user.userpass == request.POST.get("password",""):
                 return render(request, "main.html")
     msg = "用户名或密码错误"
-    return render(request, "index.html", { 'error_msg': msg })
+    return render(request, "control.html", { 'error_msg': msg })
 
 
 def addUser(request):

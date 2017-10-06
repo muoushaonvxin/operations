@@ -19,9 +19,11 @@ from django.views.generic import TemplateView
 from users.views import LoginView, LogoutView
 from users.views import IndexView
 from TimeSpace import urls as timespace_url
+from cmdb import urls as cmdb_url
 
 
 urlpatterns = [
+    # django admin 管理后台页面
     url(r'^admin/', admin.site.urls),
 
     # 默认首页是登录界面
@@ -37,7 +39,7 @@ urlpatterns = [
     url(r'^user_logout/$', LogoutView.as_view(), name="user_logout"),
 
     # cmdb 资产管理
-    url(r'cmdb/', include('cmdb.urls')),
+    url(r'^cmdb/', include(cmdb_url), name="cmdb"),
 
     # 监控url
     url(r'^monitor/', include(timespace_url), name="monitor"),

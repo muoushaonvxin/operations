@@ -1,43 +1,47 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0024)http://admin.518fax.net/ -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>用户登录</TITLE><LINK 
+href="/static/css/login/User_Login.css" type=text/css rel=stylesheet>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="renderer" content="webkit">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
-    </head>
-    <body>
 
-        <section>
-            <div class="c-box bg-box">
-                <div class="login-box clearfix">
-                    <div class="hd-login clearfix">
-                        <a class="index-logo" href="/"></a>
-                        <h1>用户登录</h1>
-                        <a class="index-font" href="{% url 'index' %}">回到首页</a>
-                    </div>
-
-                    <div class="fl form-box">
-                        <h2>帐号登录</h2>
-                        <form action="/user_login/" method="post" autocomplete="off">
-                            <div class="form-group marb20 {% if login_form.errors.username %}errorput{% endif %}">
-                                <label>用&nbsp;户&nbsp;名</label>
-                                <input name="username" id="account_l" type="text" placeholder="手机号/邮箱" />
-                            </div>
-                            <div class="form-group marb8 {% if login_form.errors.password %}errorput{% endif %}">
-                                <label>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</label>
-                                <input name="password" id="password_l" type="password" placeholder="请输入您的密码" />
-                            </div>
-                            <div class="error btns login-form-tips" id="jsLoginTips">{% for key,error in login_form.errors.items %}{{ error }}{% endfor %}{{ msg }}</div>
-                             <div class="auto-box marb38">
-{#                                <a class="fr" href="{% url 'forget_pwd' %}">忘记密码？</a>#}
-                             </div>
-                             <input class="btn btn-green" id="jsLoginBtn" type="submit" value="立即登录 > " />
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </body>
-</html>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META content="MSHTML 6.00.6000.16809" name=GENERATOR></HEAD>
+<BODY id=userlogin_body>
+<FORM id=theform name=theform action="/user_login/"
+method=post><INPUT type=hidden value=login name=action> <INPUT id=logintype 
+type=hidden name=logintype> 
+<DIV id=panSiteFactory>
+<DIV id=siteFactoryLogin>
+<DIV id=user_login>
+<DL>
+  <DD id=user_top>
+  <UL>
+    <LI class=user_top_l></LI>
+    <LI class=user_top_c></LI>
+    <LI class=user_top_r></LI></UL>
+  <DD id=user_main>
+  <UL>
+    <LI class=user_main_l></LI>
+    <LI class=user_main_c>
+    <DIV class=user_main_box>
+    <UL>
+      <LI class=user_main_text>用户名： </LI>
+      <LI class=user_main_input><INPUT class=TxtUserNameCssClass id=account 
+      maxLength=20 name=username> </LI></UL>
+    <UL>
+      <LI class=user_main_text>密 码： </LI>
+      <LI class=user_main_input><INPUT class=TxtPasswordCssClass id=password 
+      type=password name=password>  </LI></UL>
+    <UL>
+      </LI></UL></DIV></LI>
+    <LI class=user_main_r>
+        <input type="submit">
+    </LI></UL></LI>
+  </DL></DIV></DIV></DIV></FORM>
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script src="" type="text/javascript">
+    function doLogin() {
+        $('#theform').submit();
+    }
+</script>
+</BODY></HTML>

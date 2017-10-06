@@ -20,7 +20,7 @@ import host.urls as host_urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-   	url(r'^$', TemplateView.as_view(template_name="index.html"), name="index"),
+   	url(r'^$', TemplateView.as_view(template_name="control.html"), name="index"),
     url(r'^host/', include(host_urls, namespace="hostlist"), name="host"),
 ]
 

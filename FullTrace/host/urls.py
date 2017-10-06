@@ -20,7 +20,7 @@ from passcracking.views import dos_ssh_user_password_view
 
 
 urlpatterns = [
-    url(r'^$', TemplateView.as_view(template_name="host/index.html"), name="index"),
+    url(r'^$', TemplateView.as_view(template_name="host/control.html"), name="index"),
     url(r'^add_host/$', views.add_host, name="add_host"),
     url(r'^ssh_crack/$', views.sshCrackView.as_view(), name="ssh_crack"),
     url(r'^dos_ssh_user_password/$', dos_ssh_user_password_view.as_view(), name="dos_ssh_user_password"),
