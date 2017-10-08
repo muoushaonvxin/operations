@@ -109,7 +109,7 @@ class Win32Info(object):
 				if nic.IPAddress is not None:
 					item_data['ipaddress'] = nic.IPAddress[0]
 					item_data['netmask'] = nic.IPSubnet
- 				else:
+				else:
 					item_data['ipaddress'] = ''
 					item_data['netmask'] = ''
 				

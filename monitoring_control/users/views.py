@@ -9,6 +9,8 @@ from django.contrib.auth.backends import ModelBackend, RemoteUserBackend
 # from django.contrib.auth.hashers import make_password
 # Create your views here.
 
+# 登录装饰检测
+
 class CustomBackend(ModelBackend):
     def authenticate(self, username=None, password=None, **kwargs):
         try:
@@ -19,6 +21,7 @@ class CustomBackend(ModelBackend):
             return None
 
 
+# 用户登录
 class LoginView(View):
     """
         用户登录
@@ -44,6 +47,7 @@ class LoginView(View):
             return render(request, "login.html", {"login_form":login_form})
 
 
+# 用户登出
 class LogoutView(View):
     """
         用户登出
@@ -53,6 +57,7 @@ class LogoutView(View):
         return HttpResponseRedirect(reverse("login"))
 
 
+# 跳转到用户登录首页
 class IndexView(View):
     def get(self, request):
-        return render(request, "control.html", {})
+        return render(request, "index.html", {})

@@ -25,6 +25,7 @@ class AssetWithNoAssetId(View):
 	def post(self, request):
 		ass_handler = core.Asset(request)
 		res = ass_handler.get_asset_id_by_sn()
+		return HttpResponse(json.dumps(res), content_type="application/json")
 
 
 # 资产入库

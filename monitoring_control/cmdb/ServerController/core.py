@@ -27,7 +27,7 @@ class Asset(object):
 
 
 	def mandatory_check(self, data, only_check_sn=False):
-		for filed in self.mandatory_fields:
+		for field in self.mandatory_fields:
 			if not field in data:
 				self.response_msg('error', 'MandatoryCheckFailed', 'The field [%s] is mandatory and not provided in your reporting data' % field)
 		else:
@@ -40,8 +40,8 @@ class Asset(object):
 			else:
 				self.asset_obj = Asset.objects.get(sn=data['sn'])
 			return True
-		except ObjectDoesNotExist as e:		
-			self.response_msg('error', 'AssetDataInvalid', 'Cannot find asset object in DB by using asset id [%s] and SN [%s]' % (data))
+		except Exception as e:		
+			self.response_msg('error', 'AssetDataInvalid', 'Cannot find asset object in DB by using asset id [%s] and SN [%s]' % (data['asset_id'], data['sn']))
 			self.waiting_approval = True
 			return False
 
@@ -53,21 +53,15 @@ class Asset(object):
 			try:
 				data = json.loads(data)
 				if self.mandatory_check(data, only_check_sn=True):
-					response = {
-						'asset_id': self.asset_obj.id
-					}
+					response = { 'asset_id': self.asset_obj.id }
 				else:
 					if hasattr(self, 'waiting_approval'):
-						response = {
-							'needs_aproval': 'this is a new asset_obj'
-						}
-
+						response = { 'needs_aproval': 'this is a new asset_obj' }
 						self.clean_data = data
 						self.save_new_asset_to_approval_zone()
-						print(response)
 					else:
 						response = self.response
-			except VauleError as e:
+			except Exception as e:
 				self.response_msg('error', 'AssetDataInvalid', str(e))
 				response = self.response
 		else:
@@ -129,8 +123,9 @@ class Asset(object):
 		data = self.request.POST.get("asset_data")
 		if data:
 			try:
-
-
+				pass
+			except:
+				pass
 
 
 	def __verify_field(self, data_set, field_key, data_type, required=True):
@@ -207,6 +202,7 @@ class Asset(object):
 			# self.response_msg('error', 'ObjectCreationException', 'Object [server] %s' % )
 			print("aaa")
 
+
 	def __create_or_update_manufactory(self, ignore_errs=False):
 		try:
 			self.__verify_field(self.clean_data, 'manufactory', str)
@@ -273,7 +269,6 @@ class Asset(object):
 					self.response_msg('error', 'ObjectCreationException', 'Object')
 		else:
 			self.response_msg('error', 'LackOfData', 'Disk info is not provided in your reporting data')
-
 
 
 	def __create_nic_component(self):
@@ -355,7 +350,7 @@ class Asset(object):
 
 
 	def log_handler(asset_obj, event_name, user, detail, component=None):
-
+		pass
 
 
 	def __filter_add_or_deleted_components(self, model_obj_name, data_from_db, data_source, identify_field):

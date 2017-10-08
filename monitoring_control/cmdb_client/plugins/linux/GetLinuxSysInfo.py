@@ -1,6 +1,9 @@
 # -*- encoding: utf-8 -*-
 
-import os, sys, subprocess, re
+import os
+import sys
+import subprocess
+import re
 
 def collect():
 	filter_keys = ['Manufacturer', 'Serial Number', 'Product Name', 'UUID', 'Wake-up Type']

@@ -1,15 +1,18 @@
 # -*- encoding: utf-8 -*-
 import platform
 from plugins import plugin_api
+import sys
 
 class InfoCollection(object):
 
 	def __init__(self):
 		pass
 
+
 	def get_platform(self):
 		os_platform = platform.system()
 		return os_platform
+
 
 	def collect(self):
 		os_platform = self.get_platform()
@@ -21,12 +24,22 @@ class InfoCollection(object):
 		except AttributeError as e:
 			sys.exit("Error:MadKing doens't support os [%s]!" % os_platform)
 
+
 	def linux(self):
 		sys_info = plugin_api.LinuxSysInfo()
 		return sys_info
 
 
+	def Linux(self):
+		sys_info = plugin_api.LinuxSysInfo()
+		return sys_info
+
+
 	def windows(self):
+		sys_info = plugin_api.WindowsSysInfo()
+
+
+	def Windows(self):
 		sys_info = plugin_api.WindowsSysInfo()
 		return sys_info
 

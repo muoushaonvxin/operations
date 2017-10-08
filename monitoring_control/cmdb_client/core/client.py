@@ -1,14 +1,17 @@
 # -*- encoding: utf-8 -*-
 from conf import settings
-import urllib, sys, os, json, datetime
+import urllib, requests
+import sys, os, json, datetime, platform
 from core import info_collection
-import api_token
+from core import api_token
+
 
 class ClientHandler(object):
 
 	def __init__(self, argv_list):
 		self.argvs = argv_list
 		self.parse_argv()
+
 
 	def parse_argv(self):
 		if len(self.argvs) > 1:
@@ -19,7 +22,6 @@ class ClientHandler(object):
 				self.help_msg()
 		else:
 			self.help_msg()
-
 
 
 	def help_msg(self):
@@ -35,10 +37,12 @@ class ClientHandler(object):
 	def collect_data(self):
 		obj = info_collection.InfoCollection()
 		asset_data = obj.collect()
-		print(asset_data)
+		return asset_data
+
 
 	def run_forever(self):
 		pass
+
 
 	def __attach_token(self, url_str):
 		user = settings.Params['auth']['user']
@@ -57,7 +61,7 @@ class ClientHandler(object):
 	def __submit_data(self, action_type, data, method):
 		if action_type in settings.Params['urls']:
 			if type(settings.Params['port']) is int:
-				url = "http://%s:%s%s" % (settings.Params['server'],settings.Params['port'],settings.Params['urls'])
+				url = "http://%s:%s%s" % (settings.Params['server'],settings.Params['port'],settings.Params['urls'][action_type])
 			else:
 				url = "http://%s%s" % (settings.Params['server'],settings.Params['urls'][action_type])
 
@@ -81,10 +85,10 @@ class ClientHandler(object):
 
 			elif method == "post":
 				try:
-					data_encode = urllib.urlencode(data)
+					data_encode = urllib.parse.urlencode(data).encode('utf-8')
 					req = urllib.request.Request(url=url, data=data_encode)
 					res_data = urllib.request.urlopen(req, timeout=settings.Params['request_timeout'])
-					callback = res_data.read()
+					callback = res_data.read().decode('utf8')
 					callback = json.loads(callback)
 					print("\033[31;1m[%s]:[%s]\033[0m response:\n%s" % (method, url, callback))
 					return callback
@@ -120,7 +124,12 @@ class ClientHandler(object):
 
 
 	def log_record(self, log, action_type=None):
-		f = open(settings.Params["log_file"], "ab")
+		os_platform = platform.system()
+
+		if os_platform == "Windows":
+			f = open(settings.Params["windows_log_file"], "a+")
+		else:
+			f = open(settings.Params["log_file"], "a+")
 
 		if log is str:
 			pass
@@ -128,19 +137,18 @@ class ClientHandler(object):
 		if type(log) is dict:
 			if "info" in log:
 				for msg in log["info"]:
-					log_format = "%s\tINFO\t%s\n" % (datetime.datetime.now())
+					log_format = "%s\tINFO\t%s\n" % (datetime.datetime.now(), log)
 					f.write(log_format)
 			if "error" in log:
 				for msg in log["error"]:
-					log_format = "%s\tERROR\t%s\n" % (datetime.datetime.now())
+					log_format = "%s\tERROR\t%s\n" % (datetime.datetime.now(), log)
 					f.write(log_format)
 			if "warning" in log:
 				for msg in log["warning"]:
-					log_format = "%s\tWARNING\t%s\n" % (datetime.datetime.now())
+					log_format = "%s\tWARNING\t%s\n" % (datetime.datetime.now(), log)
 					f.write(log_format)
 
 		f.close()
-
 
 
 	def load_asset_id(self, sn=None):

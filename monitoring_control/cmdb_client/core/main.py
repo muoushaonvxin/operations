@@ -14,7 +14,7 @@ class CmdbClientHandler(object):
                         start:          argument start is start the monitor client. 
                         stop:           argument stop is stop the monitor client.
                         collect_data:   argument stop is stop the monitor client.
-
+                        report_asset:   reporting data.
                 """)
         else:
             self.entry_command()
@@ -29,12 +29,19 @@ class CmdbClientHandler(object):
 
 
     def collect_data(self):
-        client = ClientHandler('start').collect_data()
-        print(client)
+        client = ClientHandler(['start', 'collect_data'])
+        data = client.collect_data()
+        print(data)
+
+
+    def report_asset(self):
+        client = ClientHandler(['start', 'report_asset'])
+        client.report_asset()
 
 
     def start(self):
         client = ClinetHandler()
+
 
     def stop(self):
         pass

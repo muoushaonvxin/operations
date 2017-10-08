@@ -4,18 +4,21 @@ import os
 BaseDir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 Params = {
-	'server': '192.168.2.1',
+	'server': '8.8.8.128',
 	'port': 8000,
 	'request_timeout': 30,
+	
 	'urls': {
 		'asset_report_with_no_id': '/cmdb/asset/report/asset_with_no_asset_id/',
 		'asset_report': '/cmdb/asset/report/',
 	},
+	
 	'asset_id': '%s/var/.asset_id' % BaseDir,
-	'log_file': '%s/logs/run_log' % BaseDir,
+	'log_file': '%s/logs/linux_run_log' % BaseDir,
+	'windows_log_file': '%s\\logs\\windows_run_log' % BaseDir,
 
 	'auth': {
-		'user': 'zhangyz@163.com',
+		'user': 'jinxueyin@163.com',
 		'token': 'abc',
 	}
 }

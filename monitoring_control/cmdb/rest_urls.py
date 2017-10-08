@@ -7,5 +7,4 @@ urlpatterns = [
 
     url(r'report/$', AssetReport.as_view()),
 
-    url(r'', ),
 ]
