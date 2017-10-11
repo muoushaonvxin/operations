@@ -137,15 +137,15 @@ class ClientHandler(object):
 		if type(log) is dict:
 			if "info" in log:
 				for msg in log["info"]:
-					log_format = "%s\tINFO\t%s\n" % (datetime.datetime.now(), log)
+					log_format = "%s\tINFO\t%s\n" % (datetime.datetime.now().strftime("%Y-%m-%d-%H:%M:%S"), msg)
 					f.write(log_format)
 			if "error" in log:
 				for msg in log["error"]:
-					log_format = "%s\tERROR\t%s\n" % (datetime.datetime.now(), log)
+					log_format = "%s\tERROR\t%s\n" % (datetime.datetime.now().strftime("%Y-%m-%d-%H:%M:%S"), msg)
 					f.write(log_format)
 			if "warning" in log:
 				for msg in log["warning"]:
-					log_format = "%s\tWARNING\t%s\n" % (datetime.datetime.now(), log)
+					log_format = "%s\tWARNING\t%s\n" % (datetime.datetime.now().strftime("%Y-%m-%d-%H:%M-%S"), msg)
 					f.write(log_format)
 
 		f.close()

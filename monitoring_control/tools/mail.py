@@ -7,6 +7,7 @@ from email.header import Header
 from email.mime.text import MIMEText
 
 def sendMail(email, subject, mailtext):
+	
     mailInfo = {
 	    "from": "15071567976@163.com",
 	    "to": email,
