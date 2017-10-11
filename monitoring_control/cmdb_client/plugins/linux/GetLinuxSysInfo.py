@@ -273,4 +273,3 @@ class DiskPlugin(object):
 if __name__ == "__main__":
     a = collect()
     print(a)
-    print(a['asset_type'])
