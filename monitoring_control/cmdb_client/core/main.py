@@ -35,7 +35,7 @@ class CmdbClientHandler(object):
 
 
     def report_asset(self):
-        client = ClientHandler(['start', 'report_asset'])
+        client = ClientHandler(['', 'report_asset'])
         client.report_asset()
 
 
