@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 from users.views import LoginView, LogoutView
 from users.views import IndexView
-from TimeSpace import urls as timespace_url
+from monitor import urls as monitor_url
 from cmdb import urls as cmdb_url
 
 
@@ -42,7 +42,7 @@ urlpatterns = [
     url(r'^cmdb/', include(cmdb_url), name="cmdb"),
 
     # 监控url
-    url(r'^monitor/', include(timespace_url), name="monitor"),
+    url(r'^monitor/', include(monitor_url), name="monitor"),
 ]
 
 

@@ -19,6 +19,11 @@ class Asset(object):
 			'warning': [],
 		}
 
+		self.asset_obj = None
+		self.clean_data = None
+		self.waiting_approval = None
+		
+
 	def response_msg(self, msg_type, key, msg):
 		if msg_type in self.response:
 			self.response[msg_type].append({key: msg})
