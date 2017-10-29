@@ -1,6 +1,5 @@
 # -*- encoding: utf-8 -*-
 import redis
-# from monitoring_control import settings
 
 REDIS_CONN = {
 	'HOST': '8.8.8.128',

@@ -9,8 +9,8 @@ Params = {
 	'request_timeout': 30,
 	
 	'urls': {
-		'asset_report_with_no_id': '/cmdb/asset/report/asset_with_no_asset_id/',
-		'asset_report': '/cmdb/asset/report/',
+		'asset_report_with_no_id': '/cmdb/asset/report/asset_with_no_asset_id/', # 没有资产id进行报告
+		'asset_report': '/cmdb/asset/report/', # 资产id报告
 	},
 	
 	'asset_id': '%s/var/.asset_id' % BaseDir,

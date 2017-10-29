@@ -8,7 +8,7 @@ import json
 # Create your views here.
 class AssetReport(View):
 	def get(self, request):
-		return HttpResponse('---test---')
+		return HttpResponse(json.dumps('---test---'), content_type="application/json")
 
 	def post(self, request):
 		ass_handler = core.Asset(request)
@@ -63,6 +63,10 @@ class CmdbView(View):
     def get(self, request):
         return render(request, "cmdb/control.html")
 
+
+'''
+	对主机的远程操作
+'''
 
 
 

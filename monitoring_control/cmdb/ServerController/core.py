@@ -1,6 +1,8 @@
 # -*- encoding: utf-8 -*-
 import json
-from cmdb.models import Asset, Server, Manufactory, CPU, Disk, NIC, RAM
+from cmdb.models import Asset, Server, Manufactory, CPU, Disk, NIC, RAM, EventLog
+from users.models import UserProfile
+
 
 class Asset(object):
 	
@@ -42,6 +44,7 @@ class Asset(object):
 		try:
 			if not only_check_sn:
 				self.asset_obj = Asset.objects.get(id=int(data['asset_id']), sn=data['sn'])			
+				print(self.asset_obj)
 			else:
 				self.asset_obj = Asset.objects.get(sn=data['sn'])
 			return True
@@ -128,9 +131,17 @@ class Asset(object):
 		data = self.request.POST.get("asset_data")
 		if data:
 			try:
-				pass
-			except:
-				pass
+				data = json.loads(data)
+				asset_obj = Asset.objects.get_or_create(sn=data.get('sn'), name=data.get('sn'))
+				data['asset_id'] = asset_obj[0].id
+				self.mandatory_check(data)
+				self.clean_data = data
+				if not self.response['error']:
+					return True
+			except ValueError as e:
+				self.response_msg('error', 'AssetDataInvalid', str(e))
+		else:
+			self.response_msg('error', 'AssetDataInvalid', 'The reported asset data is not valid or provided')
 
 
 	def __verify_field(self, data_set, field_key, data_type, required=True):
@@ -154,6 +165,18 @@ class Asset(object):
 		create_obj = func()
 
 
+	def _create_server(self):
+		self.__create_server_info()
+		self.__create_or_update_manufactory()
+		self.__create_cpu_component()
+		self.__create_disk_component()
+		self.__create_nic_component()
+		self.__create_ram_component()
+
+		log_msg = "Asset [<a href='/admin/assets/asset/%s' target='_blank'>%s</a>]"
+		self.response_msg('info', 'NewAssetOnline', log_msg)
+
+
 	def _update_server(self):
 		nic = self.__update_asset_component(data_source=self.clean_data['nic'],
 											fk='nic_set',
@@ -173,18 +196,6 @@ class Asset(object):
 		cpu = self.__update_cpu_component()
 		manufactory = self.__update_manufactory_component()
 		server = self.__update_server_component()
-
-
-	def _create_server(self):
-		self.__create_server_info()
-		self.__create_or_update_manufactory()
-		self.__create_cpu_component()
-		self.__create_disk_component()
-		self.__create_nic_component()
-		self.__create_ram_component()
-
-		log_msg = "Asset [<a href='/admin/assets/asset/%s' target='_blank'>%s</a>]"
-		self.response_msg('info', 'NewAssetOnline', log_msg)
 
 
 	def __create_server_info(self, ignore_errs=False):
@@ -355,7 +366,34 @@ class Asset(object):
 
 
 	def log_handler(asset_obj, event_name, user, detail, component=None):
-		pass
+		'''
+			(1, u'硬件变更'),
+			(2, u'新增配件'),
+			(3, u'设备下线'),
+			(4, u'设备上线'),
+		'''
+		log_catelog = {
+			1: ['FieldChanged', 'HardwareChanges'],
+			2: ['NewComponentAdded'],
+		}
+
+		if not user.id:
+			user = UserProfile.objects.filter(is_admin=True).last()
+		event_type = None
+		for k, v in log_catelog.items():
+			if event_name in v:
+				event_type = k
+				break
+
+		log_obj = EventLog(
+			name=event_name, 
+			event_type=event_type, 
+			asset_id=asset_obj.id, 
+			component=component, 
+			detail=detail, user_id=user.id
+		)
+
+		log_obj.save()
 
 
 	def __filter_add_or_deleted_components(self, model_obj_name, data_from_db, data_source, identify_field):

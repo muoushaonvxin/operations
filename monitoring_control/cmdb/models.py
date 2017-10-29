@@ -204,7 +204,7 @@ class Software(models.Model):
 		('centos', 'CentOS'),
 		('ubuntu', 'Ubuntu'),
 	)
-	type = models.CharField(u'系统类型', choices=os_types_choice, max_length=32)
+	system_type = models.CharField(u'系统类型', choices=os_types_choice, max_length=32)
 	distribution = models.CharField(u'发型版本', choices=os_distribution_choice, max_length=32)
 	version = models.CharField(u'软件/系统版本', max_length=64)
 	language_choices = (

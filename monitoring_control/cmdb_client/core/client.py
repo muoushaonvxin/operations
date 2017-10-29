@@ -155,7 +155,7 @@ class ClientHandler(object):
 		asset_id_file = settings.Params['asset_id']
 		has_asset_id = False
 		if os.path.isfile(asset_id_file):
-			asset_id = open(asset_id_file).read().strip()
+			asset_id = open(asset_id_file, 'r').read().strip()
 			if asset_id.isdigit():
 				return asset_id
 			else:
