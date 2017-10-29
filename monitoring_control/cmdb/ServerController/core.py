@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 import json
-from cmdb.models import Asset, Server, Manufactory, CPU, Disk, NIC, RAM, EventLog
+from cmdb.models import Server, Manufactory, CPU, Disk, NIC, RAM, EventLog
+from cmdb.models import Asset as Asset_list
 from users.models import UserProfile
 
 
@@ -43,12 +44,12 @@ class Asset(object):
 
 		try:
 			if not only_check_sn:
-				self.asset_obj = Asset.objects.get(id=int(data['asset_id']), sn=data['sn'])			
-				print(self.asset_obj)
+				self.asset_obj = Asset_list.objects.get(id=int(data['asset_id']), sn=data['sn'])
 			else:
-				self.asset_obj = Asset.objects.get(sn=data['sn'])
+				self.asset_obj = Asset_list.objects.get(sn=data['sn'])
 			return True
 		except Exception as e:		
+			print(e)
 			self.response_msg('error', 'AssetDataInvalid', 'Cannot find asset object in DB by using asset id [%s] and SN [%s]' % (data['asset_id'], data['sn']))
 			self.waiting_approval = True
 			return False
@@ -215,8 +216,8 @@ class Asset(object):
 				obj.save()
 				return obj
 		except Exception as e:
-			# self.response_msg('error', 'ObjectCreationException', 'Object [server] %s' % )
-			print("aaa")
+			self.response_msg('error', 'ObjectCreationException', 'Object [server] %s' % str(e))
+			# print("aaa")
 
 
 	def __create_or_update_manufactory(self, ignore_errs=False):
@@ -255,7 +256,7 @@ class Asset(object):
 				self.response_msg('info', 'NewComponentAdded', log_msg)
 				return obj
 		except Exception as e:
-			self.response_msg('info', 'NewComponentAdded', log_msg)
+			self.response_msg('error', 'ObjectCreationException', 'Object [cpu] %s' % str(e))
 
 
 	def __create_disk_component(self):
