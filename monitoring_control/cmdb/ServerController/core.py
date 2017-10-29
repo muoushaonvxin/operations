@@ -133,7 +133,7 @@ class Asset(object):
 		if data:
 			try:
 				data = json.loads(data)
-				asset_obj = Asset.objects.get_or_create(sn=data.get('sn'), name=data.get('sn'))
+				asset_obj = Asset_list.objects.get_or_create(sn=data.get('sn'), name=data.get('sn'))
 				data['asset_id'] = asset_obj[0].id
 				self.mandatory_check(data)
 				self.clean_data = data
