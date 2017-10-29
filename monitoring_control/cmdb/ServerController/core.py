@@ -1,7 +1,6 @@
 # -*- encoding: utf-8 -*-
 import json
-from cmdb.models import Server, Manufactory, CPU, Disk, NIC, RAM, EventLog
-from cmdb.models import Asset as Asset_list
+from cmdb import models
 from users.models import UserProfile
 
 
@@ -44,9 +43,9 @@ class Asset(object):
 
 		try:
 			if not only_check_sn:
-				self.asset_obj = Asset_list.objects.get(id=int(data['asset_id']), sn=data['sn'])
+				self.asset_obj = models.Asset.objects.get(id=int(data['asset_id']), sn=data['sn'])
 			else:
-				self.asset_obj = Asset_list.objects.get(sn=data['sn'])
+				self.asset_obj = models.Asset.objects.get(sn=data['sn'])
 			return True
 		except Exception as e:		
 			print(e)
@@ -133,7 +132,7 @@ class Asset(object):
 		if data:
 			try:
 				data = json.loads(data)
-				asset_obj = Asset_list.objects.get_or_create(sn=data.get('sn'), name=data.get('sn'))
+				asset_obj = models.Asset.objects.get_or_create(sn=data.get('sn'), name=data.get('sn'))
 				data['asset_id'] = asset_obj[0].id
 				self.mandatory_check(data)
 				self.clean_data = data
@@ -212,7 +211,7 @@ class Asset(object):
 					'os_release': self.clean_data.get('os_release'),
 				}
 
-				obj = Server(**data_set)
+				obj = models.Server(**data_set)
 				obj.save()
 				return obj
 		except Exception as e:
@@ -225,11 +224,11 @@ class Asset(object):
 			self.__verify_field(self.clean_data, 'manufactory', str)
 			manufactory = self.clean_data.get('manufactory')
 			if not len(self.response['error']) or ignore_errs == True:
-				obj_exist = Manufactory.objects.filter(manufactory=manufactory)
+				obj_exist = models.Manufactory.objects.filter(manufactory=manufactory)
 				if obj_exist:
 					obj = obj_exist[0]
 				else:
-					obj = Manufactory(manufactory=manufactory)
+					obj = models.Manufactory(manufactory=manufactory)
 					obj.save()
 				self.asset_obj.manufactory = obj
 				self.asset_obj.save()
@@ -250,7 +249,7 @@ class Asset(object):
 					'cpu_core_count': self.clean_data.get('cpu_core_count'),
 				}
 
-				obj = CPU(**data_set)
+				obj = models.CPU(**data_set)
 				obj.save()
 				log_msg = "Asset[%s] ---> has added now [cpu] component with data [%s]" % (self.asset_obj)
 				self.response_msg('info', 'NewComponentAdded', log_msg)
@@ -279,7 +278,7 @@ class Asset(object):
 							'manufactory': disk_item.get('manufactory'),
 						}
 
-						obj = Disk(**data_set)
+						obj = models.Disk(**data_set)
 						obj.save()
 
 				except Exception as e:
@@ -306,7 +305,7 @@ class Asset(object):
 							'netmask': nic_item.get('netmask'),
 						}
 
-						obj = NIC(**data_set)
+						obj = models.NIC(**data_set)
 						obj.save()
 
 				except Exception as e:
@@ -330,7 +329,7 @@ class Asset(object):
 							'model': ram_item.get('model'),
 						}
 
-						obj = RAM(**data_set)
+						obj = models.RAM(**data_set)
 						obj.save()
 
 				except Exception as e:
@@ -359,7 +358,7 @@ class Asset(object):
 					model_obj.save()
 					log_msg = "Asset[%s] --> componet[%s] --> field[%s] has changed from [%s] to "
 					self.response_msg('info', 'FieldChanged', log_msg)
-					log_handler(self.asset_obj, 'FieldChanged', self.request.user, log_msg, model_obj)
+					self.log_handler(self.asset_obj, 'FieldChanged', self.request.user, log_msg, model_obj)
 			else:
 				self.response_msg('warning', 'AssetUpdateWarning', "Asset component [%s]'s field [%s] is not")
 
@@ -386,7 +385,7 @@ class Asset(object):
 				event_type = k
 				break
 
-		log_obj = EventLog(
+		log_obj = models.EventLog(
 			name=event_name, 
 			event_type=event_type, 
 			asset_id=asset_obj.id, 
@@ -470,7 +469,7 @@ class Asset(object):
 		for i in deleting_obj_list:
 			log_msg = "Asset[%s] ---> component[%s] ---> is lacking from reporting source data, assume it has been removed "
 			self.response_msg('info', 'HardwareChanges', log_msg)
-			log_handler(self.asset_obj, 'HardwareChanges', self.request.user, log_msg, identify_field)
+			self.log_handler(self.asset_obj, 'HardwareChanges', self.request.user, log_msg, identify_field)
 			i.delete()
 
 

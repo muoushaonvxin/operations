@@ -308,8 +308,8 @@
       <file leaf-file-name="core.py" pinned="false" current-in-tab="true">
         <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb/ServerController/core.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3105">
-              <caret line="135" column="47" lean-forward="true" selection-start-line="135" selection-start-column="47" selection-end-line="135" selection-end-column="47" />
+            <state relative-caret-position="142">
+              <caret line="536" column="54" lean-forward="false" selection-start-line="536" selection-start-column="54" selection-end-line="536" selection-end-column="54" />
               <folding>
                 <element signature="e#26#37#0" expanded="true" />
               </folding>
@@ -365,6 +365,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -474,7 +475,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -717,7 +717,7 @@
     <frame x="-8" y="-8" width="1382" height="723" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18532526" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18835099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -752,10 +752,11 @@
     <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/tools/password/zip_crack.py" />
     <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/tools/password/ssh_crack.py" />
     <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/tools/password/ssh_crack.py" />
+    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/cmdb/ServerController/core.py" />
     <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb/ServerController/core.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3105">
-          <caret line="135" column="47" lean-forward="true" selection-start-line="135" selection-start-column="47" selection-end-line="135" selection-end-column="47" />
+        <state relative-caret-position="142">
+          <caret line="536" column="54" lean-forward="false" selection-start-line="536" selection-start-column="54" selection-end-line="536" selection-end-column="54" />
           <folding>
             <element signature="e#26#37#0" expanded="true" />
           </folding>
