@@ -1,5 +1,6 @@
 from django.db import models
 from users.models import UserProfile
+from datetime import datetime
 
 # Create your models here.
 class Asset(models.Model):
@@ -31,8 +32,8 @@ class Asset(models.Model):
 	idc = models.ForeignKey('IDC', verbose_name=u'IDC机房', null=True, blank=True)
 
 	memo = models.TextField(u'备注', null=True, blank=True)
-	create_date = models.DateTimeField(blank=True, auto_now_add=True)
-	update_date = models.DateTimeField(blank=True, auto_now=True)
+	create_date = models.DateTimeField(blank=True, default=datetime.now)
+	update_date = models.DateTimeField(blank=True, null=True, default=datetime.now)
 
 	class Meta:
 		verbose_name = u"资产总表"
@@ -51,13 +52,13 @@ class Server(models.Model):
 	created_by = models.CharField(choices=created_by_choices, max_length=128, blank=True, null=True)
 	hosted_on = models.ForeignKey('self', related_name='hosted_on_server', blank=True, null=True)
 	model = models.CharField(u'型号', max_length=128, null=True, blank=True)
-	raid_type = models.CharField(u'raid类型', max_length=5)
+	raid_type = models.CharField(u'raid类型', max_length=5, null=True, blank=True)
 	os_type = models.CharField(u'操作系统类型', max_length=32)
 	os_distribution = models.CharField(u'发型版本', max_length=32)
 	os_release = models.CharField(u'操作系统版本', max_length=32)
 
-	create_date = models.DateTimeField(blank=True, auto_now_add=True)
-	update_date = models.DateTimeField(blank=True, null=True, auto_now_add=True)
+	create_date = models.DateTimeField(blank=True, default=datetime.now)
+	update_date = models.DateTimeField(blank=True, null=True, default=datetime.now)
 
 	class Meta:
 		verbose_name = u'服务器'
@@ -73,7 +74,7 @@ class CPU(models.Model):
 	cpu_count = models.SmallIntegerField(u'物理cpu个数')
 	cpu_core_count = models.SmallIntegerField(u'cpu核数')
 	memo = models.TextField(u'备注', null=True, blank=True)
-	create_date = models.DateTimeField(auto_now_add=True)
+	create_date = models.DateTimeField(default=datetime.now)
 	update_date = models.DateTimeField(blank=True, null=True)
 
 	class Meta:
@@ -87,7 +88,7 @@ class CPU(models.Model):
 class Disk(models.Model):
 	asset = models.ForeignKey('Asset')
 	sn = models.CharField(u'SN号', max_length=128, blank=True, null=True)
-	slot = models.CharField(u'插槽位', max_length=64)
+	slot = models.IntegerField(u'插槽位', null=True, blank=True)
 	manufactory = models.CharField(u'制造商', max_length=64, blank=True, null=True)
 	model = models.CharField(u'磁盘型号', max_length=128, blank=True, null=True)
 	capacity = models.FloatField(u'磁盘容量GB')
@@ -101,7 +102,7 @@ class Disk(models.Model):
 
 	iface_type = models.CharField(u'接口类型', max_length=64, choices=disk_iface_choice, default='SAS')
 	memo = models.TextField(u'备注', blank=True, null=True)
-	create_date = models.DateTimeField(blank=True, auto_now_add=True)
+	create_date = models.DateTimeField(blank=True, default=datetime.now)
 	update_date = models.DateTimeField(blank=True, null=True)
 
 	auto_create_fields = ['sn', 'slot', 'manufactory', 'model', 'capacity', 'iface_type']
@@ -122,7 +123,7 @@ class RAM(models.Model):
 	slot = models.CharField(u'插槽', max_length=64)
 	capacity = models.IntegerField(u'内存大小(MB)')
 	memo = models.CharField(u'备注', max_length=128, blank=True, null=True)
-	create_date = models.DateTimeField(blank=True, auto_now_add=True)
+	create_date = models.DateTimeField(blank=True, default=datetime.now)
 	update_date = models.DateTimeField(blank=True, null=True)
 
 	def __str__(self):
@@ -146,7 +147,7 @@ class NIC(models.Model):
 	netmask = models.CharField(max_length=64, blank=True, null=True)
 	bonding = models.CharField(max_length=64, blank=True, null=True)
 	memo = models.CharField(u'备注', max_length=128, blank=True, null=True)
-	create_date = models.DateTimeField(blank=True, auto_now_add=True)
+	create_date = models.DateTimeField(blank=True, default=datetime.now)
 	update_date = models.DateTimeField(blank=True, null=True)
 
 	def __str__(self):
@@ -165,7 +166,7 @@ class RaidAdaptor(models.Model):
 	slot = models.CharField(u'插口', max_length=64)
 	model = models.CharField(u'型号', max_length=64, blank=True, null=True)
 	memo = models.TextField(u'备注', blank=True, null=True)
-	create_date = models.DateTimeField(blank=True, auto_now_add=True)
+	create_date = models.DateTimeField(blank=True, default=datetime.now)
 	update_date = models.DateTimeField(blank=True, null=True)
 
 	def __str__(self):
@@ -184,7 +185,7 @@ class NetworkDevice(models.Model):
 	firmware = models.ForeignKey('Software', blank=True, null=True)
 	port_num = models.SmallIntegerField(u'端口个数', null=True, blank=True)
 	device_detail = models.TextField(u'设置详细配置', null=True, blank=True)
-	create_date = models.DateTimeField(auto_now_add=True)
+	create_date = models.DateTimeField(default=datetime.now)
 	update_date = models.DateTimeField(blank=True, null=True)
 
 	class Meta:
@@ -253,11 +254,11 @@ class Contract(models.Model):
 	memo = models.TextField(u'备注', blank=True, null=True)
 	price = models.IntegerField(u'合同金额')
 	detail = models.TextField(u'合同详细', blank=True, null=True)
-	start_date = models.DateField(blank=True)
-	end_date = models.DateField(blank=True)
+	start_date = models.DateTimeField(blank=True, default=datetime.now)
+	end_date = models.DateTimeField(blank=True, default=datetime.now)
 	license_num = models.IntegerField(u'license数量', blank=True)
-	create_date = models.DateField(auto_now_add=True)
-	update_date = models.DateField(auto_now=True)
+	create_date = models.DateTimeField(default=datetime.now)
+	update_date = models.DateTimeField(default=datetime.now)
 
 	class Meta:
 		verbose_name = u"合同"
@@ -282,7 +283,7 @@ class IDC(models.Model):
 class Tag(models.Model):
 	name = models.CharField('Tag name', max_length=32, unique=True)
 	creater = models.ForeignKey(UserProfile)
-	create_date = models.DateField(auto_now_add=True)
+	create_date = models.DateTimeField(default=datetime.now)
 
 	def __str__(self):
 		return self.name
@@ -302,7 +303,7 @@ class EventLog(models.Model):
 	asset = models.ForeignKey('Asset')
 	component = models.CharField(u'事件子项', max_length=255, blank=True, null=True)
 	detail = models.DateTimeField(u'事件详情')
-	date = models.DateTimeField(u'事件时间', auto_now_add=True)
+	date = models.DateTimeField(u'事件时间', default=datetime.now)
 	user = models.ForeignKey(UserProfile, verbose_name=u"事件通知人")
 
 	def __str__(self):
@@ -347,10 +348,10 @@ class NewAssetApprovalZone(models.Model):
 	os_distribution = models.CharField(max_length=64, blank=True, null=True)
 	os_type = models.CharField(max_length=64, blank=True, null=True)
 	os_release = models.CharField(max_length=64, blank=True, null=True)
-	data = models.TextField(u'资产数据')
-	date = models.DateTimeField(u'汇报日期', auto_now_add=True)
+	data = models.TextField(u'资产数据', max_length=255, blank=True, null=True)
+	date = models.DateTimeField(u'汇报日期', default=datetime.now)
 	approved = models.BooleanField(u'已批准', default=False)
-	approved_by = models.ForeignKey(UserProfile, verbose_name=u"汇报相关人员")
+	approved_by = models.ForeignKey(UserProfile, verbose_name=u"汇报相关人员", blank=True, null=True)
 	approved_date = models.DateTimeField(u'批准日期', blank=True, null=True)
 
 	def __str__(self):
