@@ -108,14 +108,16 @@ class Win32Info(object):
 				item_data['name'] = nic.Index
 				if nic.IPAddress is not None:
 					item_data['ipaddress'] = nic.IPAddress[0]
-					item_data['netmask'] = nic.IPSubnet
+					item_data['netmask'] = nic.IPSubnet[0]
 				else:
 					item_data['ipaddress'] = ''
 					item_data['netmask'] = ''
-				
 				bonding = 0
 				data.append(item_data)
 
 		return {'nic': data}
 
 
+if __name__ == '__main__':
+    a = collect()
+    print(a)
