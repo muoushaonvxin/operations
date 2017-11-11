@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb797d33-e2aa-4996-bd04-52bf0563fade" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/0002_auto_20171029_1307.py" afterPath="" />
+    <list default="true" id="d8323f32-9095-4b16-ab17-382121eda69d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/Controller/core.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/ServerController/core.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/ServerController/utils.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/Controller/utils.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MegaCli8.07.10.tar.gz" afterPath="$PROJECT_DIR$/MegaCli8.07.10.tar.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dump.rdb" afterPath="$PROJECT_DIR$/dump.rdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/logs/linux_run_log" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/logs/linux_run_log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/logs/windows_run_log" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/logs/windows_run_log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/MegaCli" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/MegaCli" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/dump.rdb" afterPath="$PROJECT_DIR$/monitoring_control/dump.rdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/login/user_all_bg.gif" afterPath="$PROJECT_DIR$/monitoring_control/static/images/login/user_all_bg.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/login/user_bottom_c.gif" afterPath="$PROJECT_DIR$/monitoring_control/static/images/login/user_bottom_c.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/login/user_bottom_l.gif" afterPath="$PROJECT_DIR$/monitoring_control/static/images/login/user_bottom_l.gif" />
@@ -27,7 +23,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/monitor/left/module6bg.png" afterPath="$PROJECT_DIR$/monitoring_control/static/images/monitor/left/module6bg.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/monitor/left/user_main_c.gif" afterPath="$PROJECT_DIR$/monitoring_control/static/images/monitor/left/user_main_c.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/static/images/monitor/top/about_nav_bg.jpg" afterPath="$PROJECT_DIR$/monitoring_control/static/images/monitor/top/about_nav_bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paramiko" afterPath="$PROJECT_DIR$/paramiko" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smblime3.tar.gz" afterPath="$PROJECT_DIR$/smblime3.tar.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
@@ -125,17 +120,21 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/publish/tests.py" afterPath="$PROJECT_DIR$/Published/publish/tests.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Published/publish/views.py" afterPath="$PROJECT_DIR$/Published/publish/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dump.rdb" afterPath="$PROJECT_DIR$/dump.rdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/monitoring_control/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/.idea/misc.xml" afterPath="$PROJECT_DIR$/monitoring_control/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/.idea/modules.xml" afterPath="$PROJECT_DIR$/monitoring_control/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/.idea/monitoring_control.iml" afterPath="$PROJECT_DIR$/monitoring_control/.idea/monitoring_control.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/.idea/preferred-vcs.xml" afterPath="$PROJECT_DIR$/monitoring_control/.idea/preferred-vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/.idea/workspace.xml" afterPath="$PROJECT_DIR$/monitoring_control/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/ServerController/core.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/ServerController/core.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/ServerController/utils.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/ServerController/utils.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/admin.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/apps.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/0002_auto_20171030_2049.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/0002_auto_20171030_2049.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/0003_auto_20171030_2056.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/0003_auto_20171030_2056.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/0004_auto_20171030_2111.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/0004_auto_20171030_2111.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/0005_auto_20171030_2121.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/0005_auto_20171030_2121.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/migrations/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/models.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/page_urls.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/page_urls.py" />
@@ -143,24 +142,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/tests.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/tests.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/urls.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb/views.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/bin/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/bin/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/bin/cmdb_client.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/bin/cmdb_client.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/conf/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/conf/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/conf/settings.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/conf/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/api_token.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/api_token.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/client.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/client.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/info_collection.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/core/info_collection.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/GetLinuxSysInfo.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/GetLinuxSysInfo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/MegaSAS.log" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/MegaSAS.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/linux/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/plugin_api.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/plugin_api.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/windows/GetWindowsSysInfo.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/windows/GetWindowsSysInfo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/windows/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/plugins/windows/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/var/.asset_id" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/var/.asset_id" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/cmdb_client/var/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/cmdb_client/var/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/dump.rdb" afterPath="$PROJECT_DIR$/monitoring_control/dump.rdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/manage.py" afterPath="$PROJECT_DIR$/monitoring_control/manage.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor/ServerController/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor/ServerController/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor/ServerController/data_optimization.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor/ServerController/data_optimization.py" />
@@ -184,6 +166,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor/migrations/0010_auto_20170831_0107.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor/migrations/0010_auto_20170831_0107.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor/migrations/0011_auto_20170901_1951.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor/migrations/0011_auto_20170901_1951.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor/migrations/0012_auto_20171020_2303.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor/migrations/0012_auto_20171020_2303.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor/migrations/0013_auto_20171020_2312.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor/migrations/0013_auto_20171020_2312.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor/migrations/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor/migrations/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor/models.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/monitor/page_urls.py" afterPath="$PROJECT_DIR$/monitoring_control/monitor/page_urls.py" />
@@ -257,6 +240,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/migrations/0003_auto_20170826_2206.py" afterPath="$PROJECT_DIR$/monitoring_control/users/migrations/0003_auto_20170826_2206.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/migrations/0004_remove_userprofile_name.py" afterPath="$PROJECT_DIR$/monitoring_control/users/migrations/0004_remove_userprofile_name.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/migrations/0005_auto_20170826_2209.py" afterPath="$PROJECT_DIR$/monitoring_control/users/migrations/0005_auto_20170826_2209.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/migrations/0006_auto_20171029_1036.py" afterPath="$PROJECT_DIR$/monitoring_control/users/migrations/0006_auto_20171029_1036.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/migrations/__init__.py" afterPath="$PROJECT_DIR$/monitoring_control/users/migrations/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/models.py" afterPath="$PROJECT_DIR$/monitoring_control/users/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitoring_control/users/tests.py" afterPath="$PROJECT_DIR$/monitoring_control/users/tests.py" />
@@ -306,11 +290,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
-        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb/migrations/__init__.py">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/monitoring_control/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="444">
+              <caret line="169" column="31" lean-forward="true" selection-start-line="169" selection-start-column="31" selection-end-line="169" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -318,24 +302,8 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/monitoring_control/tools/video/collection.py" />
-        <option value="$PROJECT_DIR$/monitoring_control/tools/password/ssh_crack.py" />
-        <option value="$PROJECT_DIR$/monitoring_control/cmdb/ServerController/core.py" />
-      </list>
-    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -346,7 +314,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1370" />
+    <option name="width" value="1382" />
     <option name="height" value="723" />
   </component>
   <component name="ProjectView">
@@ -364,7 +332,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -391,89 +359,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="password" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cmdb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring_control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cmdb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -481,7 +369,6 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -573,12 +460,6 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -704,34 +585,34 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eb797d33-e2aa-4996-bd04-52bf0563fade" name="Default" comment="" />
-      <created>1509122584268</created>
+      <changelist id="d8323f32-9095-4b16-ab17-382121eda69d" name="Default" comment="" />
+      <created>1510412111201</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1509122584268</updated>
+      <updated>1510412111201</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1370" height="723" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="723" extended-state="7" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19694656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16111952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -747,25 +628,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/tools/video/collection.py" />
-    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/tools/password/zip_crack.py" />
-    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/tools/password/ssh_crack.py" />
-    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/tools/password/ssh_crack.py" />
-    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/cmdb/ServerController/core.py" />
-    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/cmdb/ServerController/core.py" />
-    <entry file="file:$PROJECT_DIR$/../../8.8.8.128/operation/monitoring_control/cmdb/ServerController/core.py" />
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb/migrations/0004_auto_20171030_2041.py">
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/monitoring_control/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/monitoring_control/cmdb/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="444">
+          <caret line="169" column="31" lean-forward="true" selection-start-line="169" selection-start-column="31" selection-end-line="169" selection-end-column="31" />
           <folding />
         </state>
       </provider>

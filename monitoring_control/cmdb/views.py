@@ -1,6 +1,6 @@
 from django.shortcuts import render, HttpResponse
 from django.views.generic import View
-from .ServerController import core
+from .Controller import core
 from cmdb.models import Asset, Server, CPU, Disk, RAM, NIC, RaidAdaptor, NetworkDevice
 from cmdb.models import NewAssetApprovalZone
 import json

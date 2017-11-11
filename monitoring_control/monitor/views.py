@@ -2,7 +2,7 @@ from django.shortcuts import render, HttpResponse
 from django.views.generic import View
 import json
 # Create your views here.
-from .ServerController import monitorControll, redis_conn, data_optimization, data_processing
+from .Controller import monitorControll, redis_conn, data_optimization, data_processing
 from monitor import models
 from users import models
 
