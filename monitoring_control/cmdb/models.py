@@ -33,7 +33,7 @@ class Asset(models.Model):
 
 	memo = models.TextField(u'备注', null=True, blank=True)
 	create_date = models.DateTimeField(blank=True, default=datetime.now)
-	update_date = models.DateTimeField(blank=True, null=True, default=datetime.now)
+	update_date = models.DateTimeField(blank=True, null=True)
 
 	class Meta:
 		verbose_name = u"资产总表"
@@ -58,7 +58,7 @@ class Server(models.Model):
 	os_release = models.CharField(u'操作系统版本', max_length=32)
 
 	create_date = models.DateTimeField(blank=True, default=datetime.now)
-	update_date = models.DateTimeField(blank=True, null=True, default=datetime.now)
+	update_date = models.DateTimeField(blank=True, null=True)
 
 	class Meta:
 		verbose_name = u'服务器'
