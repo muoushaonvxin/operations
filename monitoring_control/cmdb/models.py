@@ -88,7 +88,7 @@ class CPU(models.Model):
 class Disk(models.Model):
 	asset = models.ForeignKey('Asset')
 	sn = models.CharField(u'SN号', max_length=128, blank=True, null=True)
-	slot = models.IntegerField(u'插槽位', null=True, blank=True)
+	slot = models.IntegerField(u'插槽位', max_length=64, null=True, blank=True)
 	manufactory = models.CharField(u'制造商', max_length=64, blank=True, null=True)
 	model = models.CharField(u'磁盘型号', max_length=128, blank=True, null=True)
 	capacity = models.FloatField(u'磁盘容量GB')

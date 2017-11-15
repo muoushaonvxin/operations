@@ -33,7 +33,9 @@ class Asset(object):
                 self.response_msg('error', 'MandatoryCheckFailed',
                                   "The field [%s] is mandatory and not provided in your reporting data" % field)
         else:
-            if self.response['error']: return False
+            if self.response['error']:
+                return False
+
         try:
 
             if not only_check_sn:
@@ -55,8 +57,7 @@ class Asset(object):
         if data:
             try:
                 data = json.loads(data)
-                if self.mandatory_check(data,
-                                        only_check_sn=True):  # the asset is already exist in DB,just return it's asset id to client
+                if self.mandatory_check(data, only_check_sn=True):  # the asset is already exist in DB,just return it's asset id to client
                     response = {'asset_id': self.asset_obj.id}
                 else:
                     if hasattr(self, 'waiting_approval'):
@@ -146,8 +147,7 @@ class Asset(object):
         if data:
             try:
                 data = json.loads(data)
-                asset_obj = models.Asset.objects.get_or_create(sn=data.get('sn'), name=data.get(
-                    'sn'))  # push asset id into reporting data before doing the mandatory check
+                asset_obj = models.Asset.objects.get_or_create(sn=data.get('sn'), name=data.get('sn'))  # push asset id into reporting data before doing the mandatory check
                 data['asset_id'] = asset_obj[0].id
                 self.mandatory_check(data)
                 self.clean_data = data
@@ -221,7 +221,7 @@ class Asset(object):
         nic = self.__update_asset_component(data_source=self.clean_data['nic'],
                                             fk='nic_set',
                                             update_fields=['name', 'sn', 'model', 'macaddress', 'ipaddress', 'netmask',
-                                                           'bonding'],9
+                                                           'bonding'],
                                             identify_field='macaddress'
                                             )
         disk = self.__update_asset_component(data_source=self.clean_data['physical_disk_driver'],
