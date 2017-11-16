@@ -11,8 +11,7 @@ class Asset(object):
         self.mandatory_fields = ['sn', 'asset_id', 'asset_type']  # must contains 'sn' , 'asset_id' and 'asset_type'
         self.field_sets = {
             'asset': ['manufactory'],
-            'server': ['model', 'cpu_count', 'cpu_core_count', 'cpu_model', 'raid_type', 'os_type', 'os_distribution',
-                       'os_release'],
+            'server': ['model', 'cpu_count', 'cpu_core_count', 'cpu_model', 'raid_type', 'os_type', 'os_distribution', 'os_release'],
             'networkdevice': []
         }
         self.response = {
@@ -27,6 +26,7 @@ class Asset(object):
         else:
             raise ValueError
 
+    # 强制数据合法性检测
     def mandatory_check(self, data, only_check_sn=False):
         for field in self.mandatory_fields:
             if field not in data:
@@ -137,7 +137,6 @@ class Asset(object):
             self.create_asset()
         else:  # asset already already exist , just update it
             print('\033[33;1m---asset already exist ,going to update----\033[0m')
-
             self.update_asset()
 
     def data_is_valid_without_id(self):
@@ -196,14 +195,9 @@ class Asset(object):
             try:
                 data_set[field_key] = data_type(field_val)
             except ValueError as e:
-                self.response_msg('error', 'InvalidField',
-                                  "The field [%s]'s data type is invalid, the correct data type should be [%s] " % (
-                                      field_key, data_type))
-
+                self.response_msg('error', 'InvalidField', "The field [%s]'s data type is invalid, the correct data type should be [%s] " % (field_key, data_type))
         elif required == True:
-            self.response_msg('error', 'LackOfField',
-                              "The field [%s] has no value provided in your reporting data [%s]" % (
-                                  field_key, data_set))
+            self.response_msg('error', 'LackOfField', "The field [%s] has no value provided in your reporting data [%s]" % (field_key, data_set))
 
     def create_asset(self):
         '''
