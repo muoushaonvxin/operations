@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+	</head>
+
+	<body>
+		<table>
+		    <th></th>
+
+			{% for obj in new_assets %}
+				<tb>{{ obj.sn }}</tb>
+				<tb>{{ obj.asset_type }}</tb>
+			{% endfor %}
+		</table>
+		{{ response_dic }}
+	</body>
+</html>
